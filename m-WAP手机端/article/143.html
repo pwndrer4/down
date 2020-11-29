@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+<title>怎么使用dism命令修复win10系统-仿飞翔下载</title>
+<meta name="keywords" content="" />
+<meta name="description" content="怎么使用dism命令修复win10系统" />
+<link href="/statics/m_v2/skin_css/m_xpgod.css" type="text/css" rel="stylesheet">
+<script>
+window.onload = function(){
+    document.getElementById("contentTextsss").innerHTML = document.getElementById("contentTextsss").innerHTML.replace(/src=\"\/d\/file\//g,"src=\"http:\/\/xpgod.zuseng.com\/d\/file\/");
+}
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="/"><img src="/statics/m_v2/skin_img/logo.png" alt="仿飞翔下载" /></a></div>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/fjyx/">游戏</a></li>
+    <li><a href="/sjrj/">软件</a></li>
+    <li><a href="/news/" class="last">资讯</a></li>
+  </ul>
+</div>
+<div class="article_title">
+  <div class="title">怎么使用dism命令修复win10系统</div>
+  <div class="au_time">
+    <span class="span_auti"><span class="author"></span><em>作者：佚名</em></span>
+    <span class="span_auti ml55"><span class="time"></span><em>时间：2016-05-16</em></span>
+  </div>
+</div>
+<div class="intro_txt" id="contentTextsss"><p>怎么使用dism命令修复win10系统?除了SFC外，Win10系统还有一个命令可以联机修复系统，那就是Dism命令了，那么要怎么修复呢?</p>
+<p><strong>工作原理：</strong></p>
+<p>DISM可以联网将你当前的系统文件和官方的原镜像进行比对，然后恢复不一样的文件。</p>
+<p><strong>命令使用方法：</strong></p>
+<p>1、按下WIN+X然后选择命令提示符管理员;</p>
+<p style="text-align: center;"><img alt="怎么使用dism命令修复win10系统" src="/d/file/huoche/201605221622/20160508102900259.jpg" style="height: 431px; width: 570px;" /></p>
+<p>2、打开后依次执行下面两条命令：</p>
+<p>DISM.exe /Online /Cleanup-image /Scanhealth</p>
+<p>DISM.exe /Online /Cleanup-image /Restorehealth</p>
+<p style="text-align: center;"><img alt="怎么使用dism命令修复win10系统" src="/d/file/huoche/201605221622/20160508102900950.jpg" /></p>
+<p>第一条命令是扫描你全部系统文件并和官方系统文件对比。</p>
+<p>第二条命令是把那些不同的系统文件还原成系统官方源文件，跟重装差不多。</p>
+<p>若要使用你自己的一些来源，不使用 Windows 更新来修复一个联机映像，则键入：</p>
+<p>Dism /Online /Cleanup-Image /RestoreHealth /Source:c：testmountwindows /LimitAccess</p>
+<p>在命令中有/online的需要在联网下操作，Win10系统会自动从官方镜像来恢复受损文件。</p>
+<p>以上就是Win10使用Dism命令自动检查异常文件修复系统的方法了，如果你的系统出现了未知的故障，可以尝试用Dism命令来检查文件修复系统。</p></div>
+<div class="pagesss"></div>
+<div class="line"></div>
+<div class="main_xgyx">
+  <div class="xgyx_title">相关资讯</div>
+  <div class="xgyx_list">
+    <ul class="clearfix">
+            <li><a href="/article/140.html"><span></span>win10预览版14342更新内容汇总</a></li>
+            <li><a href="/article/142.html"><span></span>win10如何关闭windows安全警报</a></li>
+            <li><a href="/article/143.html"><span></span>怎么使用dism命令修复win10系统</a></li>
+            <li><a href="/article/145.html"><span></span>win10build14328应用列表空白bug怎么办</a></li>
+            <li><a href="/article/146.html"><span></span>win10预览版10586更新内容汇总</a></li>
+	
+          </ul>
+  </div>
+</div>
+<div id="SOHUCS"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrbiKxmG&conf=prod_8e11cfb50c20f2a0b31d59926e9e42c7">
+</script>
+<div class="footer">
+  <a href="javascript:void(0);" class="back_top"><span><img src="/statics/m_v2/skin_img/top.png" alt="" /></span><em>返回顶部</em></a>
+</div>
+<div class="fade"></div>
+<script src="/statics/m_v2/skin_js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<div style="display: none">
+  <script>
+$(function(){
+	$('.game_list .list_div:last,.rank_list .list_div:last,.zx_list .list_div').css('border-bottom-width',0);
+	$(".back_top").click(function(){
+		$('body,html').animate({scrollTop:0},100);
+		return false;
+	});
+	$('.paih_list').each(function(index, element) {
+		$(this).find('.list_div:last').css('border-bottom-width',0);
+	});
+	/*var imhwd=$('.mrd_pic').width();
+	$('.mrd_pic ul li').css('width',imhwd);
+	var imght=$('.mrd_pic li img').height();
+	$('.mrd_pic').css('height',imght);*/	
+	
+	$('.az_ios:last,.news_list dl:last').addClass('last');
+	
+	/*$('.zx_list .list_div_rg a').click(function() {
+		$('.fade').show();
+		$('.login_box').show();
+	});*/
+	$('.close').live('click',function() {
+		$('.fade').hide();
+		$('.login_box').hide();
+	});
+	
+	//
+	$('.span_close').click(function() {
+		$('.bt_gg').hide();
+		$('.footer').css('margin-bottom',0);
+	});
+})
+  </script>
+</div>
+</body>
+</html>

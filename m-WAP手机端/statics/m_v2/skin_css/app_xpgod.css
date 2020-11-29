@@ -1,0 +1,777 @@
+@charset "gbk";
+/* CSS Document */
+*html{ _background-image:url(about:blank); _background-attachment:fixed; }
+body{font:12px tahoma,'\5b8b\4f53',sans-serif;font-family:"Microsoft YaHei";font-size:12px; width:100%; overflow-x:hidden;}
+*{margin:0px; padding:0px;}
+ul li{list-style:none;}
+li{list-style:none;}
+img{border:none;}
+a{color:#333; text-decoration:none; cursor:pointer;}
+a:hover{ color:#2ea75c;}
+em{font-style:normal;}
+input,button,textarea{ outline:none; resize:none; border:0; font-family:"Microsoft YaHei";}
+.clearfix{zoom:1;}
+.clearfix:after,.comment_box dl:after,.comment_box dd:after{clear:both; height:0px; font-size:0px; visibility:hidden;display:block;content:" ";}
+
+
+.top{ height:100px; background:#1b2632; padding:0 2%; overflow:hidden;}
+.logo{ width:195px; height:52px; float:left; margin:24px 0;}
+.logo img,.game_icon img,.footer a span img,.main3_list dl dt img,.news_list dl dt img{ width:100%; height:100%;}
+.search{ float:right; width:420px; height:80px; margin:10px 0; background:#fff; border-radius:50px; overflow:hidden; position:relative; }
+.search input{ width:270px; height:32px; line-height:32px;border:none; margin:24px 32px; font-size:26px; color:#999; background:none; float:left; outline:none;}
+.search button{ width:50px; height:50px; background:url(../skin_img/search_bt.png) no-repeat; background-size:cover; margin:15px 0; border:none; float:left;}
+.delete{ position:absolute; right:100px; top:15px; width:50px; height:51px; background:url(../skin_img/delete_bj.png) no-repeat; background-size:cover; display:none;}
+.menu{ height:100px; background:#f3f3f3;}
+.menu ul li{ width:25%; float:left;}
+.menu ul li a{ display:block; width:100%; height:97px; line-height:97px; font-size:30px; text-align:center;}
+.menu ul li a.last{ color:#2ea75c; border-bottom:3px solid #2ea75c; background:#fff;}
+
+.gg_box a{ display:block; width:100%; height:100%;}
+.gg_box img{ width:100%; height:auto; display:block;}
+
+.sort{ height:100px; background:#f6f6f6;}
+.sort ul li{ width:33.3%; float:left; text-align:center; height:80px; padding:10px 0; position:relative;}
+.sort ul li a{ display:block; width:100%; height:100%;}
+.sort ul li a span{ display:block; width:46px; height:46px; margin:0 auto; background:url(../skin_img/zxsl.png) no-repeat; background-size:cover;}
+.sort ul li a em{ display:block; font-size:24px; color:#333; margin-top:2px;}
+.sort ul li.zdxz a span{ height:42px; background:url(../skin_img/zdxz.png) no-repeat; background-size:cover;}
+.sort ul li.wjtj a span{ width:43px; height:46px; background:url(../skin_img/wjtj.png) no-repeat; background-size:cover;}
+.sort ul li.zxsl.last a span{ background:url(../skin_img/zxsl_last.png) no-repeat; background-size:cover;}
+.sort ul li.zdxz.last a span{ background:url(../skin_img/zdxz_last.png) no-repeat; background-size:cover;}
+.sort ul li.wjtj.last a span{ background:url(../skin_img/wjtj_last.png) no-repeat; background-size:cover;}
+.sort .li_bj,.main3_title .li_bj{ position:absolute; top:0; right:0; width:1px; height:100%; background:url(../skin_img/li_bj.png) no-repeat; background-size:cover;}
+
+.list_div{ margin:0 2%; padding:20px 0; border-bottom:1px dashed #e5e5e5; height:120px; overflow:hidden; position:relative; padding-right:150px;}
+.list_div_lf{ /*float:left;*/ padding-left:140px; position:relative;}
+.game_icon{ position:absolute; top:0; left:0; width:120px; height:120px;}
+.game_icon img{ border-radius:15px;}
+.game_intro .p_title{ height:40px; line-height:40px; margin-bottom:5px; overflow:hidden;}
+.game_intro .p_title a{ display:inline-block; font-size:30px; float:left;}
+.game_intro .p_title span{ display:inline-block; width:68px; height:30px; background:url(../skin_img/score_bj.png) no-repeat; background-size:cover; text-indent:5px; font-size:18px; color:#fff; line-height:30px; float:left; margin:5px 0 5px 28px;}
+.game_intro .p_title span em{ font-size:24px;}
+.game_intro .p_intro{ height:40px; line-height:40px; font-size:22px; color:#999; overflow:hidden;}
+
+.list_div_rg{ float:right;}
+.list_div_rg a{ display:block; width:140px; height:70px; margin:27.5px 0; background:url(../skin_img/ljxz_bj.png) no-repeat; background-size:cover; line-height:70px; text-align:center; font-size:24px; color:#fff; border-radius:4px;}
+
+.game_more{ padding:14px 0; background:#f6f6f6;}
+.game_more a{ display:block; width:280px; height:60px; line-height:60px; margin:0 auto; background:#fff; border:1px solid #2ea75c; font-size:24px; text-align:center; color:#2ea75c; border-radius:5px;}
+
+
+.link_box{height:80px; line-height:80px; border-top:3px solid #2ea75c; padding:0 2%; font-size:26px; color:#999; position:relative; margin-top:23px;}
+.link_box .tit{ position:absolute; left:2%; top:0; width:130px;}
+.link_box .lj{height:80px; line-height:80px; padding-left:130px;}
+.link_box .lj ul{list-style:outside none none;height:80px;overflow:hidden;margin:0;}
+.link_box .lj ul li{float:left;display:inline;height:75px;width:100%; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.link_box .lj a{color:#9d9ea1; display:inline-block;/* max-width:300px;*/ float:left; margin-right:48px; white-space:nowrap; overflow:hidden;}
+.link_box .lj a:hover{text-decoration:underline;}
+
+.footer{ padding:38px 0; background:#1b2632; text-align:center; margin-top:15px;}
+.footer a{ display:inline-block; height:50px; line-height:50px;}
+.footer a.back_top{ margin-left:0px;}
+.footer a span{ display:inline-block; width:50px; height:50px; float:left;} 
+.footer a em{ display:inline-block; float:left; font-size:30px; color:#dcedff; margin-left:13px;}
+
+
+
+.slideBox{ position:relative; overflow:hidden; width:100%; }
+	.slideBox .hd{ position:absolute; height:14px; line-height:14px; bottom:18px; right:2%; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:14px; height:14px; margin:0 5px; border-radius:14px; background:#fff; text-indent:-9999px; opacity:0.7;   }
+	.slideBox .hd li.on{ background:#5ab60d; opacity:1; }
+	.slideBox .bd{ position:relative; z-index:0; }
+	.slideBox .bd li{ position:relative; text-align:center;  }
+	.slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;}
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  
+	.slideBox .bd li .tit{ display:block; width:70%; padding-right:30%;  position:absolute; bottom:0; text-indent:2%; height:50px; line-height:50px; background:url(../skin_img/bj.png) repeat; color:#fff;  text-align:left; font-size:28px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;  }
+	
+	
+.main_title,.main3_title{ padding:0 2%; background:#f6f6f6; height:90px; line-height:90px;}
+.main_title span{ float:left; font-size:30px; color:#333;}
+.more{ font-size:26px; color:#999; float:right;}
+.main_list{ padding:23px 2% 0 2%;}
+.main_list ul li,.tlyx_list ul li{ float:left; width:17%; margin-right:10%; margin-bottom:18px; overflow:hidden;}
+.main_list ul li.br0,.tlyx_list ul li.br0{ margin-right:0;}
+.main_list ul li a,.tlyx_list ul li a{ display:block;}
+.main_list ul li a img,.tlyx_list ul li a img{ width:100%; border-radius:15px; display:block;}
+.main_list ul li a img{ width:110px; height:110px; margin:0 auto;}
+.main_list ul li a em,.tlyx_list ul li a em{ display:block; font-size:24px; text-align:center; line-height:48px; height:48px; overflow:hidden;}
+
+.main3_title ul li{ width:25%; height:90px; float:left; text-align:center; position:relative;}
+.main3_title ul li a{ display:inline-block; text-align:center; line-height:90px; height:100%; width:auto; margin:0 auto;}
+.main3_title ul li a span{ display:inline-block; width:49px; height:40px; background:url(../skin_img/i_gl.png) no-repeat; background-size:cover; float:left; margin:25px 0;}
+.main3_title ul li.xw a span{ width:45px; background:url(../skin_img/i_xw.png) no-repeat; background-size:cover;}
+.main3_title ul li.sp a span{ width:42px; height:42px; background:url(../skin_img/i_sp.png) no-repeat; background-size:cover;}
+.main3_title ul li.jc a span{ width:40px; background:url(../skin_img/i_jc.png) no-repeat; background-size:cover;}
+.main3_title ul li a em{ font-size:30px; color:#333; margin-left:7px; float:left;}
+.main3_title ul li.last a span{ background:url(../skin_img/i_gl_last.png) no-repeat; background-size:cover;}
+.main3_title ul li.xw.last a span{ background:url(../skin_img/i_xw_last.png) no-repeat; background-size:cover;}
+.main3_title ul li.sp.last a span{ background:url(../skin_img/i_sp_last.png) no-repeat; background-size:cover;}
+.main3_title ul li.jc.last a span{ background:url(../skin_img/i_jc_last.png) no-repeat; background-size:cover;}
+.sort ul li.last a em,.main3_title ul li.last a em{ color:#2ea75c; }
+
+.main3_list{ padding:0 2%;}
+.main3_list dl{ padding:25px 0; height:135px; border-bottom:1px solid #e5e5e5; padding-left:259px; position:relative;}
+.main3_list dl dt{ width:240px; height:135px; position:absolute; left:0; top:25px;}
+.main3_list dl dd .p_title{ font-size:30px; margin-bottom:10px; height:40px; overflow:hidden;}
+.main3_list dl dd .p_intro{ line-height:30px; height:60px; overflow:hidden; font-size:22px; color:#999; display:none; }
+.main3_list dl dd .p_time,.news_list dl dd .p_time{ height:22px; margin-top:4px;}
+.main3_list dl dd .p_time span,.news_list dl dd .p_time span{ display:inline-block; width:22px; height:22px; background:url(../skin_img/time_bj.png) no-repeat; background-size:cover; float:left;}
+.main3_list dl dd .p_time em,.news_list dl dd .p_time em{ font-size:18px; color:#bbb; float:left; margin-left:5px; line-height:20px; margin-top:4px; }
+
+.main4{ margin-top:36px;}
+.main4_title{ height:70px;}
+.main4_title ul{ height:70px; line-height:70px; margin:0 auto; border-radius:50px; overflow:hidden; width:360px;}
+.main4_title ul li{ width:50%; height:100%; float:left; background:#e0e0e0; font-size:30px; color:#666; text-align:center;}
+.main4_title ul li.last{ background:#2ea75c; color:#fff;}
+.paih_list .game_intro .p_intro em.red{ color:#ff6565;}
+.paih_list .game_intro .p_intro span,.zx_list .p_intro span{ float:left; margin-right:8px;}
+.hide{ display:none;}
+
+.zx_list .list_div_rg a{ background:#2ea75c; border-radius:4px; width:162px;}
+.main_intro{ background:#f6f6f6; padding:0 2%;}
+.div_intro{ line-height:48px; font-size:24px; color:#888; padding-top:10px;}
+.div_intro.last{ height:144px; overflow:hidden;}
+#more-intro{ margin:23px 0; text-align:center;}
+#more-intro a{ display:inline-block; padding:0 20px; height:40px; background:#fff; border:1px solid #e5e5e5; border-radius:5px; font-size:20px; color:#3a3a3a; line-height:40px; text-align:center;}
+
+.mrd_bl,.mrd_br{ width:70px; height:130px; position:absolute; top:40%;cursor:pointer;overflow:hidden; text-indent:-9999px; z-index:999;}
+.mrd_bl{ left:0; background:url(../skin_img/a_pre.png) no-repeat; background-size:cover; }
+.mrd_br{right:0; background:url(../skin_img/a_next.png) no-repeat; background-size:cover; }
+.mrd_bl.mrd_blon{ background:url(../skin_img/a_pre_n.png) no-repeat; background-size:cover; }
+.mrd_br.mrd_bron{ background:url(../skin_img/a_next_n.png) no-repeat; background-size:cover; }
+.mrd_bl i,.mrd_br i{ display:block; width:100%; height:100%; }
+.mrd_br i{ background-position:-323px -132px;}
+
+.bg_list {zoom:1; padding:40px 5%;position:relative; z-index:0;}
+.mrd_pic { width:100%;overflow:hidden;display:block;position:relative; /*height:1000px;*/}
+.mrd_pic ul{ width:4000px;}
+.mrd_pic li { float:left; overflow:hidden; position:relative;}
+.mrd_pic li img { display:block; cursor:pointer; /*width:100%;*/}
+
+.main_tlyx,.main_xgyx{ padding:0 2%;}
+.tlyx_title,.xgyx_title{ line-height:80px; font-size:30px; color:#3a3a3a;}
+.tlyx_list ul li{ margin-bottom:0;}
+
+.cmt_box{ background:#f6f6f6; padding:0 2%;}
+.cmt_title{ line-height:77px; height:77px;}
+.cmt_wypl{ float:left; font-size:30px; color:#3a3a3a;}
+.cmt_sl{ float:right; font-size:22px; color:#999;}
+.cmt_sl span{ color:#ff5353;}
+.input_box{ border:1px solid #e5e5e5; border-radius:5px; height:200px; overflow:hidden;}
+.text_bj{ height:90px; background:#fff; padding:20px;}
+.text_bj textarea{ width:100%; height:100%; background:none; border:0 none; font-size:24px; color:#666;}
+.pl_bj{ height:70px; background:#f9f9f9;}
+.pl_bj a,.pl_bj input{ display:block; float:right; width:150px; height:70px; line-height:70px; background:#2ea75c; text-align:center; font-size:24px; color:#fff;}
+.cmt_list{ padding-bottom:58px; margin-bottom:-23px;}
+.cmt_list dl{ padding:20px 0; border-bottom:1px solid #e5e5e5;}
+.cmt_list dl dt .title{ float:left; font-size:26px; color:#333; max-width:60%;}
+.cmt_list dl dt .title span{ color:#999;}
+.cmt_list dl dt .time{ float:right; font-size:20px; color:#999;}
+.cmt_list dl dd .p_intro{ padding:20px 0; font-size:22px; color:#666;}
+.cmt_list dl dd .p_button{ height:47px;}
+.cmt_list dl dd .p_button a{ display:inline-block; width:100px; height:45px; line-height:45px; float:right; text-indent:-9999px; border:1px solid #e5e5e5; border-radius:40px; background:#fff; margin-left:25px; position:relative;}
+.cmt_list dl dd .p_button a em{ display:block; width:36px; height:36px; background:url(../skin_img/bt_zan.png) no-repeat; background-size:cover; margin:4.5px auto;}
+.cmt_list dl dd .p_button span.spanbox{ display:inline-block; float:right;}
+.cmt_list dl dd .p_button span.sl{ line-height:45px; color:#999; font-size:24px;}
+
+.cmt_list dl dd .p_button a.reback em{ width:38px; height:34px; background:url(../skin_img/bt_reback.png) no-repeat; background-size:cover; margin:5.5px auto;}
+.cmt_list dl dd .p_reback{ font-size:22px; color:#666; padding-bottom:20px;}
+.cmt_list .p_reback .title{ font-size:24px; color:#333;}
+.cmt_list .p_reback .addre{ font-size:22px; color:#999;}
+
+.zx_list .list_div{ padding-right:170px;}
+.list_div_rg{ position:absolute; right:0; top:20px;}
+
+.fade{ width:100%; height:100%; background:#000; opacity:0.4; position:fixed; left:0; top:0; display:none;}
+.login_box{ width:100%; position:fixed; left:0; top:20%; display:none;}
+.login_k{ width:537px; margin:0 auto;}
+.login_bj{/* width:322px;*/ margin:0 auto; border-radius:30px 30px 30px 0; background:#fff; padding:62px 20px 62px 165px; position:relative;}
+.login_icon{ position:absolute; left:20px; top:35px; width:135px; /*height:120px;*/ max-width:200px;}
+.login_icon img{ border-radius:10px; width:100%;}
+.login_icon em{ display:block; font-size:30px; color:#333; margin:22px 0; text-align:center; }
+
+.az_ios.last{ margin-top:38px;}
+.login_intro .bt_xz a{ display:block; height:72px; line-height:72px; color:#fff; font-size:24px; border-radius:5px; padding:0 0 0 59px; overflow:hidden; position:relative;}
+.login_intro .bt_xz a.az{ background:#2ea75c;}
+.login_intro .bt_xz a.ios{ background:#ffb932;}
+.login_intro .bt_xz a .span_icon{ display:inline-block; float:left; width:42px; height:49px; background:url(../skin_img/tc_az.png) no-repeat; background-size:cover; margin-top:15px; position:absolute; left:14px; top:0;}
+.login_intro .bt_xz a .span_txt{ float:left; margin-left:10px; overflow:hidden;}
+.login_intro .bt_xz a .span_txt em{ font-size:20px;}
+.login_intro .bt_txt{ text-align:center; margin-top:35px;}
+.login_intro .bt_txt a{ font-size:24px; color:#999; text-decoration:underline; text-shadow:2px 3px 4px #c9c8c8; display:block;}
+.login_intro .bt_xz a.ios .span_icon{ background:url(../skin_img/tc_ios.png) no-repeat; background-size:cover; width:43px;}
+
+.close{ width:80px; height:80px; position:absolute; right:-40px; top:-40px; background:#2ea75c; border-radius:80px; overflow:hidden;}
+.close a{ display:block; width:100%; padding:18px 0;}
+.close a em{ display:block; width:44px; height:44px; margin:0 auto; background:url(../skin_img/close.png) no-repeat; background-size:cover;}
+
+
+.article_title{ background:#f6f6f6; padding:0 2%;}
+.article_title .title{ line-height:52px; padding:25px 2%; text-align:center; font-size:36px; color:#3a3a3a;}
+.au_time{ text-align:center; padding-bottom:20px;}
+.au_time .span_auti{ display:inline-block;}
+.au_time .span_auti span{ display:inline-block; float:left;}
+.au_time .span_auti span.author{ width:28px; height:28px; background:url(../skin_img/tt_author.png) no-repeat; background-size:cover;}
+.au_time .span_auti span.time{ width:28px; height:27px; background:url(../skin_img/tt_time.png) no-repeat; background-size:cover;}
+.au_time .span_auti em{ font-size:24px; color:#bcbcbc; float:left; margin-left:8px;}
+.au_time .span_auti.ml55{ margin-left:55px;}
+.zx_list .game_intro .p_intro{ /*margin-top:40px;*/}
+.intro_txt{ background:#f6f6f6; padding:10px 2%;}
+.intro_txt p{ line-height:52px; font-size:24px; color:#999;text-align:justify; text-justify:inter-ideograph;}
+.intro_txt img{ max-width:100%; margin:10px 0;}
+.pagess{background:#f6f6f6; }
+.page{ padding:10px 0 15px 0; height:30px; background:#f6f6f6; margin:0 auto;text-align:center;vertical-align:middle;width:320px;}
+.pagr_bj{ display:inline-block; margin:0 auto;}
+.page a{ color:#fff;display:inline-block; width:0px; height:60px; background:#2ea75c; border-radius:60px; float:left;}
+.page a.none{ background:#e0e0e0;}
+.page span{ display:inline-block; height:30px; line-height:30px; font-size:30px; color:#bbb; float:left;}
+.page a em{ display:block; width:2px; height:30px; margin:10px auto;}
+.page a.pre em{ background:url(../skin_img/page_lf.png) no-repeat; background-size:cover; background-size: 60%}
+.page a.next em{ background:url(../skin_img/page_rg.png) no-repeat; background-size:cover;margin-left:12px;background-size: 60%}
+
+
+.page a{ width:30px; height:30px; border-radius:30px;}
+.page a em{ width:14px; height:30px; margin:7.5px auto;}
+.page span{ height:30px; line-height:30px; font-size:16px; margin:0 8px;}
+
+
+
+//.page{ padding:20px 0;}
+//.page a{ width:50px; height:50px; border-radius:50px;}
+//.page a em{ width:19px; height:35px; margin:7.5px auto;}
+
+
+
+
+.xgyx_list{ margin-top:-10px;}
+.xgyx_list ul li{ width:100%; float:left; height:60px; line-height:60px; overflow:hidden; position:relative; text-indent:25px;}
+.xgyx_list ul li span{ display:inline-block; width:14px; height:14px; background:url(../skin_img/xgzx_bj.png) no-repeat; background-size:cover; position:absolute; left:0; top:23px;}
+.xgyx_list ul li a{ font-size:26px; color:#666;}
+.line{ margin:0 2%; height:1px; background:#e5e5e5;}
+
+.game_list{ padding:0 2%;}
+.news_list{ padding:0 2%;}
+.news_list dl{ padding:20px 0 20px 215px; height:125px; overflow:hidden; position:relative; border-bottom:1px solid #e5e5e5;}
+.news_list dl.last{ border-bottom:none;}
+.news_list dl dt{ position:absolute; left:0; top:20px; width:190px; height:125px;}
+.news_list dl dd p.title{ font-size:28px; color:#333; line-height:49px; height:98px; overflow:hidden; margin-top:-10px;}
+.news_list dl dd .p_time{ margin-top:12px;}
+.news_list dl dd .p_time em{ font-size:20px; color:#999;}
+
+.search_tt{ position:relative; font-size:30px; color:#333; padding-left:21px; margin:23px 2% 0 2%;}
+.game_intro .p_title a em,.zixun_list ul li a em{ color:#ff5454;}
+.search_tt span{ display:block; position:absolute; left:0; top:7.5px; width:5px; height:25px; background:#2ea75c;}
+.search_list .game_intro .p_title,.rank_list .game_intro .p_title{ margin-bottom:7px;}
+/*.search_list .game_intro .p_intro,.rank_list .game_intro .p_intro{ height:35px; line-height:35px;}*/
+.zixun_list{ padding:0 2% 25px 2%;}
+.zixun_list ul li{ width:100%; float:left; line-height:60px; height:60px; overflow:hidden; position:relative;}
+.zixun_list ul li a{ padding-left:20px; font-size:26px; color:#666; display:block; overflow:hidden;}
+.zixun_list ul li a span{ width:14px; height:14px; display:inline-block; background:url(../skin_img/zxlist_bj.png) no-repeat; background-size:cover; position:absolute; left:0; top:23px;}
+
+.rank_sort{ background:#f6f6f6; padding:10px 2%;}
+.rank_sort ul{ background:#fff; border-radius:4px;}
+.rank_sort ul li{ width:50%; float:left; line-height:90px; height:90px; text-align:center; position:relative;}
+.rank_sort ul li .rank_bj{ display:block; width:1px; height:100%; background:url(../skin_img/li_bj.png) no-repeat; background-size:cover; position:absolute; right:0; top:0;}
+.rank_sort ul li a{ display:inline-block; width:auto; margin:0 auto;}
+.rank_sort ul li a span{ display:inline-block; float:left; margin-right:18px;}
+.rank_sort ul li a em{ float:left; font-size:30px; color:#666;}
+.rank_sort ul li a.last em{ color:#2ea75c;}
+.rank_sort ul li a span.sy{ width:42px; height:30px; margin-top:30px; background:url(../skin_img/rank_sy.png) no-repeat; background-size:cover;}
+.rank_sort ul li a span.rj{ width:39px; height:36px; margin-top:27px; background:url(../skin_img/rank_rj.png) no-repeat; background-size:cover;}
+.rank_sort ul li a.last span.sy{ background:url(../skin_img/rank_sy_last.png) no-repeat; background-size:cover;}
+.rank_sort ul li a.last span.rj{ background:url(../skin_img/rank_rj_last.png) no-repeat; background-size:cover;}
+
+.shell a { display:inline-block; height:80px; line-height:80px; text-decoration: none; color: #333; }
+.shell { }
+#div1 { height: 80px; overflow: hidden; }
+
+.bt_gg{ position:fixed; left:0; bottom:0; width:100%;}
+.bt_gg img{ width:100%; max-height:114px;}
+.bt_gg a{ display:block; width:100%; height:100%;}
+
+.span_close{ display:block; width:72px; height:72px; position:absolute; right:5%; bottom:50%; background:url(../skin_img/closess.png) no-repeat; background-size:cover;}
+
+.cmt_list dl dd .input_box{ width:100%;}
+
+.ztmenu{ height:54px; padding:23px 0; background:#f6f6f6;}
+.ztmenu ul li{ width:50%; float:left; position:relative; height:100%; text-align:center; line-height:50px;}
+.ztmenu ul li a{ display:inline-block; text-align:center;}
+.ztmenu ul li a span{ display:inline-block; float:left; margin-right:22px; width:54px; height:54px;}
+.ztmenu ul li a span.rj{ background:url(../skin_img/xgrj.png) no-repeat; background-size:cover;}
+.ztmenu ul li a span.wz{ background:url(../skin_img/xgwz.png) no-repeat; background-size:cover;}
+.ztmenu ul li a span.yx{ background:url(../skin_img/xgyx.png) no-repeat; background-size:cover;}
+.ztmenu ul li.on a span.rj{ background:url(../skin_img/xgrjs.png) no-repeat; background-size:cover;}
+.ztmenu ul li.on a span.yx{ background:url(../skin_img/xgyxs.png) no-repeat; background-size:cover;}
+.ztmenu ul li.on a span.wz{ background:url(../skin_img/xgwzs.png) no-repeat; background-size:cover;}
+.ztmenu ul li a em{ font-size:30px; color:#333; float:left;}
+.ztmenu ul li.on a em{ color:#2ea75c;}
+.linediv{ position:absolute; right:0; top:0; width:1px; height:54px; background:#e5e5e5;}
+
+.mainztjj{ padding:25px 0; border-bottom:1px solid #e5e5e5;}
+.xgyxbox .list_div{ height:130px;}
+.xgyxbox .list_div_lf{ padding-left:150px;}
+.xgyxbox .game_icon{ width:130px; height:130px;}
+.xgyxbox .game_intro .p_title{ margin-bottom:28px;}
+.xgyxbox .game_intro .p_intro{ height:32px; line-height:32px; font-size:18px;}
+.xgyxbox .list_div_rg a{ height:60px; line-height:60px; background:#2ea75c; margin:60px 0 0 0;}
+.xgyxbox .paih_list .game_intro .p_intro span{ display:inline-block; width:50%; margin:0;}
+
+
+.wzlist{ padding:0 2%;}
+.wzlist dl{ border-bottom:1px dashed #e5e5e5; padding:20px 0; min-height:60px; position:relative; padding-left:86px;}
+.wzlist dl dt{ position:absolute; left:0; top:20px; width:60px; height:60px; line-height:60px; text-align:center; font-size:36px; color:#fff; background:url(../skin_img/rankbj.png) no-repeat; background-size:cover;}
+.wzlist dl dt.first{ background:url(../skin_img/rankbj_first.png) no-repeat; background-size:cover;}
+.wzlist dl dt.second{ background:url(../skin_img/rankbj_second.png) no-repeat; background-size:cover;}
+.wzlist dl dt.third{ background:url(../skin_img/rankbj_third.png) no-repeat; background-size:cover;}
+.wzlist dl dd .title{ margin-top:-5px;}
+.wzlist dl dd .title a{ font-size:26px; color:#333;}
+.wzlist dl dd .till{ font-size:18px; color:#999; height:22px; line-height:22px; margin-top:20px;}
+.wzlist dl dd .txt{ font-size:18px; color:#666; line-height:40px; margin-top:5px;}
+.wzlist dl dd .till span{ display:inline-block; width:50%;}
+
+.mainztjj{ padding:25px 2%;}
+.jjbox{ /*padding-left:254px;*/ position:relative; /*height:160px;*/ overflow:hidden;}
+.jjbox_img{ width:246px; height:160px; position:relative; /*left:0; top:0;*/ float:left; margin-right:10px;}
+.jjbox_img a{ display:block; width:100%; height:100%;}
+.jjbox_img img{ width:100%; height:100%;}
+.jjbox_img p{ position:absolute; left:0; right:0; bottom:0; height:40px; line-height:40px; overflow:hidden; padding:0 14px; font-size:18px; color:#fff; background:url(../skin_img/libj.png) repeat;}
+.jjbox_txt .title{ max-height:70px; line-height:35px; overflow:hidden;}
+.jjbox_txt .title span{ display:inline-block; padding:0 10px; background:#2ea75c; font-size:22px; color:#fff; margin-right:6px;}
+.jjbox_txt .title a{ font-size:24px; color:#333;}
+.jjbox_txt .txt{ line-height:30px; /*height:120px; overflow:hidden;*/ margin-top:5px; font-size:18px; color:#666;}
+.sjbox .jjbox_txt .title a{ font-size:26px;}
+.jjbox_txt .sjzz{ line-height:35px; margin-top:3px; height:35px; overflow:hidden; font-size:18px; color:#999;}
+.jjbox_txt .sjzz span{ display:inline-block; width:50%; height:35px; overflow:hidden;s}
+.sjbox .jjbox_txt .txt{ line-height:30px; /*height:87px;*/}
+
+
+@media screen and (max-width:450px){
+.login_k{ width:275px;}
+.top{ height:50px;}
+.logo{ width:113px; height:30px; margin:10px 0;}
+.search{ width:158px; height:30px; margin:10px 0;}
+.search input{ width:85px; height:22px; line-height:22px; margin:4px 34px 4px 10px; font-size:12px;}
+.search button{ width:20px; height:20px; margin:5px 0;}
+.delete{ width:20px; height:20px; top:5px; right:32px;}	
+
+.menu{ height:50px;}
+.menu ul li a{ height:47px; line-height:47px; font-size:18px;}
+
+.sort{ height:50px;}
+.sort ul li{ height:40px; padding:5px 0;}
+.sort ul li a span{ width:22px; height:22px;}
+.sort ul li a em{ font-size:14px; margin-top:0;}
+.sort ul li.zdxz a span{ height:20px; margin-bottom:2px;}
+.sort ul li.wjtj a span{ width:22px; height:24px;}
+.sort .li_bj,.main3_title .li_bj,.rank_sort ul li .rank_bj{ background:url(../skin_img/li_bj_50.png) no-repeat; background-size:cover;}
+
+.list_div{ padding:10px 0; padding-right:70px; height:70px; overflow:hidden;}
+.list_div_lf{ padding-left:80px;}
+.game_icon{ width:70px; height:70px;}
+.game_intro .p_title{ height:24px; line-height:24px;}
+.game_intro .p_title a{ font-size:16px; max-width:108px; overflow:hidden;}
+.game_intro .p_title span{ width:41px; height:18px; text-indent:3px; font-size:12px; line-height:18px; margin:3px 0 5px 8px;}
+.game_intro .p_title span em{ font-size:12px;}
+.game_intro .p_intro{ height:21px; line-height:21px; font-size:12px;}
+.list_div_rg a{ width:60px; height:30px; line-height:30px; font-size:12px; margin:11px 0;}
+
+.link_box{ height:40px; line-height:40px; font-size:12px;}
+.link_box .tit{ width:80px;}
+.link_box .lj{ height:40px; line-height:40px; padding-left:65px;}
+.link_box .lj ul{ height:40px;}
+.link_box .lj ul li{ height:35px;}
+.link_box .lj a{ /*max-width:90px;*/ margin-right:18px;}
+
+.game_more{ padding:8px 0;}
+.game_more a{ width:100px; height:30px; line-height:30px; font-size:16px;}
+
+.footer{ padding:25px 0;}
+.footer a{ height:30px; line-height:30px;}
+.footer a span{ width:30px; height:30px;}
+.footer a em{ font-size:16px; margin-left:8px;}
+
+/*index*/
+.slideBox .bd li .tit{ height:30px; line-height:30px; font-size:14px;}
+.slideBox .hd{ height:10px; line-height:10px; bottom:11px;}
+.slideBox .hd li{ width:10px; height:10px; margin:0 3px; border-radius:10px;}
+
+.main_title, .main3_title{ height:50px; line-height:50px;}
+.main_title span{ font-size:20px;}
+.more{ font-size:16px;}
+
+.main_list{ padding:13px 2% 0 2%;}
+.main_list ul li, .tlyx_list ul li{ margin-bottom:5px;}
+.main_list ul li{ height:80px;}
+.main_list ul li a em, .tlyx_list ul li a em{ font-size:12px; height:28px; line-height:28px;}
+
+.main3_title ul li{ height:50px;}
+.main3_title ul li a{ line-height:50px;}
+.main3_title ul li a span{ width:20px; height:16px; margin:17px 0;}
+.main3_title ul li a em{ font-size:14px; margin-left:3px;}
+.main3_title ul li.xw a span{ width:18px;}
+.main3_title ul li.sp a span,.main3_title ul li.jc a span{ width:16px; height:16px;}
+
+.main3_list dl{ padding:15px 0; height:68px; padding-left:130px;}
+.main3_list dl dt{ width:120px; height:68px; top:15px;}
+.main3_list dl dd .p_title{ font-size:14px; height:42px; line-height:21px; margin-bottom:0; margin-top:-1px;}
+.main3_list dl dd .p_intro{ line-height:16px; height:32px; font-size:12px;}
+.main3_list dl dd .p_time, .news_list dl dd .p_time{ height:21px; margin-top:2px;}
+.main3_list dl dd .p_time span, .news_list dl dd .p_time span{ width:14px; height:14px; margin-top:2px;}
+.main3_list dl dd .p_time em, .news_list dl dd .p_time em{ font-size:12px; margin-left:5px; line-height:20px; margin-top:0;}
+
+.main4{ margin-top:20px;}
+.main4_title{ height:40px;}
+.main4_title ul{ height:40px; line-height:40px; width:160px;}
+.main4_title ul li{ font-size:14px;}
+
+/*main_about*/
+.zx_list .list_div{ padding-right:70px;}
+.zx_list .list_div_rg a{ width:62px;}
+.zx_list .game_intro .p_intro{ margin-top:0;}
+
+.div_intro{ line-height:26px; font-size:16px;}
+.div_intro.last{ height:78px; overflow:hidden;}
+
+#more-intro{ margin:13px 0;}
+#more-intro a{ height:30px; line-height:30px; font-size:16px; padding:0 10px;}
+
+.bg_list{ padding:10px 5%;}
+.mrd_bl, .mrd_br{ width:30px; height:56px;}
+
+.tlyx_title, .xgyx_title{ line-height:50px; font-size:20px;}
+.cmt_title{ height:50px; line-height:50px;}
+.cmt_wypl{ font-size:20px;}
+.cmt_sl{ font-size:14px;}
+.text_bj{ height:50px; padding:10px;}
+.text_bj textarea{ font-size:16px;}
+.input_box{ height:110px;}
+.pl_bj{ height:40px;}
+.pl_bj a,.pl_bj input{ width:80px; height:40px; line-height:40px; font-size:14px;}
+.main_list ul li a img, .tlyx_list ul li a img{ border-radius:10px;}
+.main_list ul li a img{ width:52px; height:52px; margin:0 auto;}
+
+.cmt_list dl dt .title{ font-size:14px;}
+.cmt_list dl dt .time{ font-size:14px;}
+.cmt_list dl dd .p_intro{ padding:10px 0; font-size:16px;}
+
+.cmt_list dl dd .p_button{ height:27px;}
+.cmt_list dl dd .p_button a{ width:50px; height:25px; line-height:25px; margin-left:10px;}
+.cmt_list dl dd .p_button a.reback em{ width:20px; height:18px; margin:3.5px auto;}
+.cmt_list dl dd .p_button a em{ width:18px; height:18px; margin:3.5px auto;}
+.cmt_list dl dd .p_reback{ font-size:16px; padding-bottom:10px;}
+.cmt_list .p_reback .title{ font-size:18px;}
+.cmt_list .p_reback .addre{ font-size:16px;}
+.cmt_list{ padding-bottom:38px;}
+
+/*news_about*/
+.article_title .title{ line-height:26px; padding:15px 2%; font-size:16px;}
+.au_time{ height:20px; overflow:hidden; padding-bottom:10px;}
+.au_time .span_auti span.author{ width:15px; height:15px;}
+.au_time .span_auti em{ font-size:14px; margin-top:0;}
+.au_time .span_auti span.time{ width:15px; height:14px;}
+.au_time .span_auti.ml55{ margin-left:10px;}
+.zx_list.news .game_intro .p_intro{ /*margin-top:26px;*/}
+
+.intro_txt p{ line-height:28px; font-size:16px;}
+
+
+
+.xgyx_list ul li{ height:35px; line-height:35px; text-indent:15px;}
+.xgyx_list ul li a{ font-size:16px;}
+.xgyx_list ul li span{ width:10px; height:10px; top:12.5px;}
+
+/*news_index*/
+.news_list dl{ padding:10px 0 10px 105px; height:65px;}
+.news_list dl dt{ width:99px; height:65px; top:10px;}
+.news_list dl dd p.title{ font-size:16px; line-height:22px; height:44px; margin-top:-3px; margin-bottom:8px;}
+
+.login_bj{ padding:20px 10px 42px 92px; border-radius:20px 20px 20px 0;}
+.close{ width:40px; height:40px; right:-20px; top:-20px; border-radius:30px;}
+.close a{ padding:10px 0;}
+.close a em{ width:20px; height:20px;}
+.login_icon em{ line-height:20px; /*height:20px;*/ font-size:12px; margin:5px 0;}
+.login_icon{ /*width:60px; height:60px; left:10px;*/ top:34px; left:10px; width:64px;	}
+.login_intro .bt_xz a.ios .span_icon{ width:20px; top:0;}
+.login_intro .bt_xz a{ height:32px; line-height:32px; font-size:12px; padding:0 0 0 24px;}
+.login_intro .bt_xz a .span_icon{ width:20px; height:23px; margin-top:7px; left:4px;}
+.login_intro .bt_xz a .span_txt{ margin-left:5px;}
+.login_intro .bt_xz a .span_txt em{ font-size:12px;}
+.login_intro .bt_txt{ margin-top:15px;}
+.login_intro .bt_txt a{ font-size:14px;}
+.az_ios.last{ margin-top:15px;}
+
+/*rank*/
+.rank_sort ul li{ height:50px; line-height:50px;}
+.rank_sort ul li a span{ margin-right:8px;}
+.rank_sort ul li a span.sy{ width:20px; height:14px; margin-top:18px;}
+.rank_sort ul li a em{ font-size:16px;}
+.rank_sort ul li a span.rj{ width:15px; height:14px; margin-top:18px;}
+
+.rank_list .game_intro .p_title{ margin-bottom:4px;}
+.rank_list .game_intro .p_intro{ height:21px; line-height:21px;}
+
+/*search*/
+.search_tt{ font-size:20px; padding-left:15px; margin:10px 2% 0 2%}
+.search_tt span{ top:3.5px; height:19px;}
+.zixun_list ul li{ height:32px; line-height:32px;}
+.zixun_list ul li a{ font-size:14px; padding-left:14px;}
+.zixun_list ul li a span{ width:8px; height:8px; top:11px;}
+.zixun_list{ padding-bottom:10px;}
+
+#div1{ height:40px; line-height:40px;}
+
+.span_close{ width:32px; height:32px;}
+.paih_list .game_intro .p_intro span{ overflow:hidden;}
+
+.cmt_list dl dd .p_button span.sl{ line-height:27px; font-size:18px;}
+
+.ztmenu{ height:24px; padding:13px 0;}
+.ztmenu ul li{ line-height:24px;}
+.ztmenu ul li a span{ width:24px; height:24px; margin-right:5px;}
+.ztmenu ul li a em{ font-size:14px;}
+.linediv{ height:24px;}
+
+.xgyxbox .list_div{ height:60px;}
+.xgyxbox .list_div_lf{ padding-left:70px;}
+.xgyxbox .game_icon{ width:60px; height:60px;}
+.xgyxbox .game_intro .p_title{ margin-bottom:2px;}
+.xgyxbox .game_intro .p_intro{ height:18px; line-height:18px; font-size:12px;}
+.xgyxbox .list_div_rg a{ height:30px; line-height:30px; margin:17px 0 0 0;}
+
+.mainztjj{ padding:15px 2%;}
+.jjbox{/* padding-left:130px; height:81px;*/}
+.jjbox_img{ width:125px; height:81px;}
+.jjbox_img p{ height:20px; line-height:20px; padding:0 6px; font-size:12px;}
+.jjbox_txt .title{ max-height:40px; line-height:20px;}
+.jjbox_txt .title span{ padding:0 5px; font-size:12px; margin-right:3px;}
+.jjbox_txt .title a{ font-size:14px;}
+.jjbox_txt .txt{ line-height:21px; /*height:60px;*/ font-size:12px; margin-top:0;}
+
+.sjbox .jjbox_txt .title a{ font-size:14px;}
+.jjbox_txt .sjzz{ line-height:20px; height:20px; font-size:12px; margin-top:0; margin:-3px 0;}
+.sjbox .jjbox_txt .txt{ line-height:21px; /*height:60px;*/}
+.jjbox_txt .sjzz span{ text-align:right;}
+
+.wzlist dl{ padding:10px 0; min-height:30px; padding-left:40px;}
+.wzlist dl dt{ top:10px; width:30px; height:30px; line-height:30px; font-size:16px;}
+.wzlist dl dd .title{ margin-top:-3px;}
+.wzlist dl dd .title a{ font-size:16px;}
+.wzlist dl dd .till{ font-size:12px; height:22px; line-height:22px; margin-top:5px;}
+.wzlist dl dd .txt{ font-size:15px; line-height:26px; margin-top:-2px;}
+
+
+}
+
+@media screen and (min-width:451px) and (max-width:670px){
+.login_k{ width:361px;}
+.top{ height:70px;}
+.logo{ width:150px; height:40px; margin:15px 0;}
+.search{ width:236px; height:45px; margin:12.5px 0;}
+.search input{ width:165px; height:37px; line-height:37px; font-size:20px; margin:4px 12px; padding-right:15px;}
+.search button{ width:30px; height:30px; margin:7.5px 0;}
+.delete{ right:50px; top:8px; width:29px; height:30px;}
+
+.menu{ height:70px;}
+.menu ul li a{ height:67px; line-height:67px; font-size:22px;}
+
+.sort{ height:70px;}
+.sort ul li{ height:60px; padding:5px 0;}
+.sort ul li a span{ width:36px; height:36px;}
+.sort ul li a em{ font-size:16px;}
+.sort ul li.zdxz a span{ height:33px; margin-bottom:3px;}
+.sort ul li.wjtj a span{ width:34px; height:36px;}	
+
+.sort .li_bj,.main3_title .li_bj,.rank_sort ul li .rank_bj{ background:url(../skin_img/li_bj_70.png) no-repeat; background-size:cover;}
+
+.list_div{ padding:15px 0; padding-right:100px; height:80px; overflow:hidden;}
+.list_div_lf{ padding-left:90px;}
+.game_icon{ width:80px; height:80px;}
+.game_intro .p_title{ height:30px; line-height:30px;}
+.game_intro .p_title a{ font-size:20px;}
+.game_intro .p_title span{ width:45px; height:20px; line-height:20px; font-size:12px; margin:6px 0 5px 12px;}
+.game_intro .p_title span em{ font-size:14px;}
+.game_intro .p_intro{ height:24px; line-height:24px; font-size:16px;}
+.list_div_rg{ top:15px;}
+.list_div_rg a{ width:100px; height:50px; line-height:50px; margin:15px 0; font-size:18px;}
+
+.game_more a{ height:45px; line-height:45px; width:180px; font-size:20px;}
+
+.link_box{ height:55px; line-height:55px; font-size:16px;}
+.link_box .tit{ width:90px;}
+.link_box .lj{ height:55px; line-height:55px; padding-left:80px;}
+.link_box .lj ul{ height:55px;}
+.link_box .lj ul li{ height:50px;}
+.link_box .lj a{ /*max-width:130px;*/ margin-right:38px;}
+
+.footer{ padding:28px 0;}
+.footer a{ height:35px; line-height:35px;}
+.footer a span{ width:35px; height:35px;}
+.footer a em{ font-size:22px;}
+
+/*index*/
+.slideBox .bd li .tit{ height:40px; line-height:40px; font-size:20px;}
+.slideBox .hd{ height:12px; line-height:12px; bottom:14px;}
+.slideBox .hd li{ width:12px; height:12px; margin:0 3px; border-radius:12px;}
+
+.main_title, .main3_title{ height:70px; line-height:70px;}
+.main_title span{ font-size:24px;}
+.more{ font-size:18px;}
+
+.main_list{ padding:18px 2% 0 2%;}
+.main_list ul li a em, .tlyx_list ul li a em{ font-size:16px; line-height:32px; height:32px;}
+.main_list ul li, .tlyx_list ul li{ margin-bottom:5px;}
+
+.main3_title ul li{ height:70px;}
+.main3_title ul li a{ line-height:70px;}
+.main3_title ul li a span{ width:30px; height:24px; margin:23px 0;}
+.main3_title ul li a em{ font-size:20px;}
+.main3_title ul li.xw a span{ width:27px; height:24px;}
+.main3_title ul li.sp a span,.main3_title ul li.jc a span{ width:24px; height:24px;}
+
+.main3_list dl{ padding:18px 0; padding-left:185px; height:96px;}
+.main3_list dl dt{ width:170px; height:96px; top:18px;}
+.main3_list dl dd .p_title{ font-size:18px; margin-bottom:5px; height:48px;}
+.main3_list dl dd .p_intro{ line-height:20px; height:40px; font-size:16px;}
+.main3_list dl dd .p_time em, .news_list dl dd .p_time em{ font-size:14px;}
+.main3_list dl dd .p_time span, .news_list dl dd .p_time span{ width:18px; height:18px; margin-top:2px;}
+
+.main4{ margin-top:26px;}
+.main4_title{ height:60px;}
+.main4_title ul{ height:60px; line-height:60px; width:260px;}
+.main4_title ul li{ font-size:22px;}
+
+.zx_list .game_intro .p_intro{ margin-top:0;}
+.zx_list .list_div_rg a{ width:122px;}
+.zx_list .list_div{ padding-right:125px;}
+
+.div_intro{ line-height:30px; font-size:20px;}
+.div_intro.last{ height:90px; overflow:hidden;}
+
+#more-intro{ margin:18px 0;}
+#more-intro a{ height:35px; line-height:35px; font-size:18px;}
+
+.mrd_bl, .mrd_br{ width:45px; height:84px;}
+
+.cmt_title{ height:55px; line-height:55px;}
+.cmt_wypl{ font-size:24px;}
+.cmt_sl{ font-size:16px;}
+.text_bj{ height:70px; padding:15px;}
+.text_bj textarea{ font-size:20px;}
+.input_box{ height:150px;}
+.pl_bj{ height:50px;}
+.pl_bj a,.pl_bj input{ height:50px; line-height:50px; width:110px; font-size:20px;}
+.cmt_list dl dt .title{ font-size:18px; height:29px; overflow:hidden;}
+.cmt_list dl dt .time{ font-size:18px;}
+
+/*news_about*/
+.article_title .title{ line-height:36px; padding:15px 2%; font-size:24px;}
+.au_time .span_auti span.author{ width:17px; height:17px;}
+.au_time .span_auti em{ font-size:16px; margin-top:0;}
+.au_time .span_auti span.time{ width:18px; height:17px;}
+.au_time .span_auti.ml55{ margin-left:20px;}
+
+.zx_list.news .game_intro .p_intro{/* margin-top:25px;*/}
+.intro_txt p{ font-size:18px; line-height:34px;}
+
+
+
+.tlyx_title, .xgyx_title{ line-height:60px; font-size:24px;}
+.xgyx_list ul li{ height:40px; line-height:40px; text-indent:20px;}
+.xgyx_list ul li a{ font-size:20px;}
+.xgyx_list ul li span{ width:12px; height:12px; top:14px;}
+
+.cmt_list dl dd .p_intro{ padding:10px 0; font-size:18px;}
+.cmt_list dl dd .p_button a{ width:60px; height:30px; margin-left:15px;}
+.cmt_list dl dd .p_button a em{ width:24px; height:24px; margin:3px auto;}
+.cmt_list dl dd .p_button a.reback em{ width:28px; height:24px; margin:3px auto;}
+.cmt_list .p_reback .title,.cmt_list .p_reback .addre{ font-size:20px;}
+.cmt_list dl dd .p_reback{ font-size:18px;}
+
+.login_bj{ padding:35px 15px 58px 130px;}
+.close{ width:50px; height:50px; right:-25px; top:-25px;}
+.close a{ padding:10px 0;}
+.close a em{ width:30px; height:30px;}
+.login_icon{ /*width:80px; height:80px; left:15px;*/ top:50px; width:90px; left:15px;}
+.login_icon em{ font-size:16px; margin:12px 0;}
+.login_intro .bt_xz a{ height:55px; line-height:55px; font-size:15px; padding:0 0 0 31px;}
+.login_intro .bt_xz a .span_icon{ width:30px; height:34px; margin-top:15px; left:6px;}
+.login_intro .bt_xz a .span_txt em{ font-size:14px;}
+.login_intro .bt_xz a.ios .span_icon{ width:30px;}
+.login_intro .bt_txt a{ font-size:18px;}
+.az_ios.last{ margin-top:18px;}
+.login_intro .bt_txt{ margin-top:15px;}
+
+.news_list dl{ height:86px; padding:15px 0 15px 140px;}
+.news_list dl dt{ width:130px; height:86px; top:15px;}
+.news_list dl dd p.title{ font-size:18px; line-height:28px; height:56px; margin-top:-5px;}
+
+/*rank*/
+.rank_sort ul li{ height:70px; line-height:70px;}
+.rank_sort ul li a span{ margin-right:10px;}
+.rank_sort ul li a span.sy{ width:30px; height:21px; margin-top:24.5px;}
+.rank_sort ul li a em{ font-size:22px;}
+.rank_sort ul li a span.rj{ width:23px; height:21px; margin-top:24.5px;}
+.rank_list .game_intro .p_title{ margin-bottom:5px;}
+
+/*search*/
+.search_tt{ font-size:26px; margin:15px 2% 0 2%;}
+.zixun_list ul li{ height:40px; line-height:40px;}
+.zixun_list ul li a{ font-size:20px;}
+.zixun_list ul li a span{ top:15px; width:12px; height:12px;}
+
+.span_close{ width:45px; height:45px;}
+#div1{ height:55px; line-height:55px;}
+.main_list ul li{ height:106px;}
+
+.cmt_list dl dd .p_button span.sl{ line-height:32px; font-size:20px;}
+.main_list ul li a img{ width:74px; height:74px;}
+
+.ztmenu{ height:34px; padding:18px 0;}
+.ztmenu ul li{ line-height:34px;}
+.ztmenu ul li a span{ margin-right:10px; width:34px; height:34px;}
+.ztmenu ul li a em{ font-size:20px;}
+
+.mainztjj{ padding:18px 2%;}
+.jjbox{ /*padding-left:220px; height:136px;*/}
+.jjbox_img{ width:210px; height:136px;}
+.jjbox_img p{ height:30px; line-height:30px; padding:0 8px; font-size:14px;}
+.jjbox_txt .title{ max-height:48px; line-height:24px;}
+.sjbox .jjbox_txt .title{ height:auto;}
+.jjbox_txt .title span{ padding:0 6px; font-size:16px;}
+.jjbox_txt .title a{ font-size:16px;}
+.jjbox_txt .txt{ line-height:27px; /*height:104px;*/ font-size:15px;}
+
+.xgyxbox .list_div{ height:95px;}
+.xgyxbox .list_div_lf{ padding-left:105px;}
+.xgyxbox .game_icon{ width:95px; height:95px;}
+.xgyxbox .game_intro .p_title{ margin-bottom:17px;}
+.xgyxbox .game_intro .p_intro{ height:26px; line-height:26px; font-size:15px;}
+.xgyxbox .list_div_rg a{ height:50px; line-height:50px; margin:39px 0 0 0;}
+
+.sjbox .jjbox_txt .title a{ font-size:15px;}
+.jjbox_txt .sjzz{ height:25px; line-height:25px; font-size:12px;}
+.sjbox .jjbox_txt .txt{ margin:0;}
+
+.wzlist dl{ padding:15px 0; min-height:45px; padding-left:55px;}
+.wzlist dl dt{ top:15px; width:45px; height:45px; line-height:45px; font-size:28px;}
+.wzlist dl dd .title a{ font-size:20px;}
+.wzlist dl dd .till{ font-size:14px; height:22px; line-height:22px; margin-top:14px;}
+.wzlist dl dd .txt{ font-size:16px; line-height:30px; margin-top:0;}
+
+}
+
+@media screen and (min-width:600px) and (max-width:655px){
+.search{ width:300px;}
+.delete{ right:80px;}
+.search input{ width:180px; margin:4px 22px}
+}
+
+.cmt_list .input_box{ margin-top:10px; display:none;}
+
+.login_intro .bt_xz.none a.ios{ background:#a0a0a0;}
+.login_intro .bt_txt.none a{ color:#a0a0a0; text-decoration:none;}
+
+
+
+#infscr-loading{position:fixed;_position:absolute;left:45%;bottom:40px;_bottom:auto;_topexpression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-150));z-index:100;width:150px;padding:10px;border-radius:10px;background:#000;opacity:0.6;  filter:alpha(opacity=60);text-align:center;color:#FFF;}
+#infscr-loading img{display: none;}

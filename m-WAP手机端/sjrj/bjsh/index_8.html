@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>便捷生活 - 仿飞翔下载</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="/shouji/statics/skin_css/index.css?sd" />
+		<script  type="text/javascript" src="/shouji/statics/skin_js/jquery-1.8.3.min.js"></script>
+		<script  type="text/javascript" src="/shouji/statics/skin_js/searchword.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/jquery.global.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/tupqh.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<base target="_blank" />
+	</head>
+	<body>
+<div class="top_bj">
+  <div class="top">
+    <div class="top_lf">
+      <ul>
+        <li><a href="http://xpgod.zuseng.com" class="top_menu_a">首页</a></li>
+        <li onmouseover="show('quanzdh');" onmouseout="hide('quanzdh');" id="bj_hover" class=""> <a href="javascript:void(0)" target="_self" class="top_menu_a dh_bj">全站导航</a>
+          <div id="quanzdh" style="display: none;">
+            <div class="qh_top">
+              <div class="qh_top_title">下载专区</div>
+              <div class="qh_top_list"> <a href="/fjyx/" class="dh_a">游戏库</a> <a href="/sjrj/" class="dh_a">软件库</a> </div>
+              <div class="qh_top_title">资讯中心</div>
+              <div class="qh_top_list zx"> <a href="/news/gonglue/" class="dh_a">手游攻略</a> <a href="/news/yueyu/" class="dh_a">越狱教程</a> <a href="/news/shuaji/" class="dh_a">刷机教程</a> <a href="/news/video/" class="dh_a">精彩视频</a> <a href="/news/zixun/" class="dh_a">新闻资讯</a> </div>
+            </div>
+            <div class="qh_bottom">
+              <div class="qh_bottom_title">热门游戏</div>
+              <div class="qh_bottom_list">
+			  <a href="/phone/6337.html" class="qhbt_a">梦幻西游3</a> 
+			  <a href="/phone/5103.html" class="qhbt_a">御剑情缘</a> 
+			  <a href="/phone/5575.html" class="qhbt_a">斗犬OL</a> 
+			  <a href="/phone/6338.html" class="qhbt_a">天天打波利</a> 
+			  <a href="/phone/5561.html" class="qhbt_a">梦幻降魔录</a> 
+			  <a href="/phone/4902.html" class="qhbt_a">守望前线</a> 
+			  <a href="/phone/5109.html" class="qhbt_a">呆萌小怪物钻石版</a> 
+			  <a href="/phone/6331.html" class="qhbt_a">宁采臣</a> 
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="top_rg"> <a onclick="SetHome(this,window.location)" class="top_menu_a a_pad">设为首页</a> <a class="top_menu_a a_pad" onclick="shoucang(document.title,window.location)">收藏本站</a> </div>
+  </div>
+</div>
+<div class="daohang_bj">
+  <div class="daohang">
+    <div class="search-box">
+      <form class="search-form" action="/e/search/index.php" method="post" name="searchform" id="searchform" target="_blank">
+        <input class="search-text" type="text" name="keyboard" id="keyboard">
+        <input type="image" class="search-btn" src="/shouji/statics/skin_img/search-btn.png">
+        <div class="search-select">
+          <div class="search-type">
+            <select name="tbname">
+              <option value="news" class="sedsa">资讯</option>
+              <option value="soft" class="sedsa">软件</option>
+              <option value="phone" class="sedsa">手机</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+      </form>
+    </div>
+    <div class="dh_logo"><a href="/" target="_self"><img src="/shouji/statics/skin_img//logo.png" alt="logo" target="_self"></a></div>
+    <div class="dh_menu dh_menu_paih">
+      <ul>
+        <li class="paihb_menu_li"><a href="/fjyx/" class="d_manu_a">下游戏</a><a href="/fjyx/xxyz/" class="x_menu_a">休闲</a><a href="/fjyx/sjqz/" class="x_menu_a">射击</a><a href="/shouji/phb.html" class="x_menu_a">排行</a></li>
+        <li class="paihb_menu_li"><a href="/sjrj/" class="d_manu_a">装应用</a><a href="/sjrj/xtgj/" class="x_menu_a">系统</a><a href="/sjrj/sjdh/" class="x_menu_a">导航</a><a href="/sjrj/sjyd/" class="x_menu_a">阅读</a></li>
+        <li class="paihb_menu_li"><a href="/news/" class="d_manu_a">看资讯</a><a href="/news/gonglue/" class="x_menu_a">攻略</a><a href="/news/yueyu/" class="x_menu_a">越狱</a><a href="/news/zixun/" class="x_menu_a">新闻</a></li>
+        <li class="paihb_menu_li"><a href="/news/video/" class="d_manu_a">看视频</a><a href="/news/shuaji/" class="x_menu_a">刷机</a><a href="/article/hardware/" class="x_menu_a">硬件</a><a href="/article/wljs/" class="x_menu_a">技术</a></li>
+      </ul>
+    </div>
+    <div class="dh_rmss"> 热门搜索:<a href='/e/search/result/?searchid=9' target=_blank>qq2016</a>&nbsp;<a href='/e/search/result/?searchid=18' target=_blank>浏览器</a>&nbsp;<a href='/e/search/result/?searchid=19' target=_blank>腾讯</a>&nbsp;<a href='/e/search/result/?searchid=12' target=_blank>360杀毒</a>&nbsp;<a href='/e/search/result/?searchid=11' target=_blank>抢票软件</a>&nbsp;<a href='/e/search/result/?searchid=10' target=_blank>电脑管家</a><br> </div>
+  </div>
+</div>
+
+		<div class="main_bj main_bjs">
+			<div class="w1204">
+				<div class="main_bpic">
+					<div class="bpic1"><script src="/d/js/acmsd/thea1.js"></script></div>
+    				<div class="bpic2"><script src="/d/js/acmsd/thea2.js"></script></div>
+				</div>
+				<div class="search_bj">
+					<div class="main_lf search_main_lfs">
+						<div class="main_lf_weizhi">您的位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/sjrj/">软件库</a>&nbsp;>&nbsp;<a href="/sjrj/bjsh/">便捷生活</a></div>
+						<div class="search_hd">
+							<div class="sliderbox">
+								<div class="btn_bj lfbd"><div id="btn-left" class="arrow-btn dasabled" style="cursor: auto;"></div></div>
+								<div class="slider">
+									<ul> 
+										<li>
+											<a href="/phone/4054.html" title="到位">
+												<img src="/d/file/huoche/2016052111/20160311022702488.png" alt="到位" />
+												<span></span>
+												<b class="slider_name">到位</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4048.html" title="身边生活">
+												<img src="/d/file/huoche/2016052111/20160312093041575.png" alt="身边生活" />
+												<span></span>
+												<b class="slider_name">身边生活</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4040.html" title="一淘">
+												<img src="/d/file/huoche/2016052111/20160314025036658.png" alt="一淘" />
+												<span></span>
+												<b class="slider_name">一淘</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4039.html" title="首汽租车">
+												<img src="/d/file/huoche/2016052111/20160315083718896.png" alt="首汽租车" />
+												<span></span>
+												<b class="slider_name">首汽租车</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4038.html" title="首汽约车">
+												<img src="/d/file/huoche/2016052111/20160315090246686.png" alt="首汽约车" />
+												<span></span>
+												<b class="slider_name">首汽约车</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4027.html" title="快钱钱包">
+												<img src="/d/file/huoche/2016052111/20160317101738672.png" alt="快钱钱包" />
+												<span></span>
+												<b class="slider_name">快钱钱包</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4026.html" title="家庭记账系统">
+												<img src="/d/file/huoche/2016052111/20160317030439955.png" alt="家庭记账系统" />
+												<span></span>
+												<b class="slider_name">家庭记账系统</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4025.html" title="爱代驾">
+												<img src="/d/file/huoche/2016052111/20160317102422487.png" alt="爱代驾" />
+												<span></span>
+												<b class="slider_name">爱代驾</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4021.html" title="问药">
+												<img src="/d/file/huoche/2016052111/20160317104959206.png" alt="问药" />
+												<span></span>
+												<b class="slider_name">问药</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4019.html" title="美的商城">
+												<img src="/d/file/huoche/2016052111/20160315102024252.png" alt="美的商城" />
+												<span></span>
+												<b class="slider_name">美的商城</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4018.html" title="美家帮">
+												<img src="/d/file/huoche/2016052111/20160318094045800.png" alt="美家帮" />
+												<span></span>
+												<b class="slider_name">美家帮</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4009.html" title="识货">
+												<img src="/d/file/huoche/2016052111/20160316085438324.png" alt="识货" />
+												<span></span>
+												<b class="slider_name">识货</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4006.html" title="帮5买">
+												<img src="/d/file/huoche/2016052111/20160316091945176.png" alt="帮5买" />
+												<span></span>
+												<b class="slider_name">帮5买</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4004.html" title="51导游">
+												<img src="/d/file/huoche/2016052111/20160316101536544.png" alt="51导游" />
+												<span></span>
+												<b class="slider_name">51导游</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3998.html" title="贴心医生">
+												<img src="/d/file/huoche/2016052111/20160317110252869.png" alt="贴心医生" />
+												<span></span>
+												<b class="slider_name">贴心医生</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3996.html" title="0元购">
+												<img src="/d/file/huoche/2016052111/20160318085942305.png" alt="0元购" />
+												<span></span>
+												<b class="slider_name">0元购</b>
+												<b class="slider_sort">便捷生活</b>
+											</a>
+										</li>
+								</div>
+								<div class="btn_bj rgbd"><div id="btn-right" class="arrow-btn" style="cursor: pointer;"></div></div>
+							  </div>
+						</div>
+						<div class="search_title">
+							<span class="search_title_lf">分类筛选</span>
+							<span class="search_title_rg">共计<b>277</b>款游戏</span>
+						</div>
+						<div class="search_sort">
+							<div class="search_pingtai">
+								<span class="search_tips">类别：</span>
+								<ul class="search_sort_ul">
+								<li class="search_sort_li "><a href="/sjrj/" target="_self">全部<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/xtgj/" target="_self">系统工具<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/mtbf/" target="_self">媒体播放<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/tpcl/" target="_self">图片处理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/wlll/" target="_self">网络浏览<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/txgl/" target="_self">通讯管理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjdh/" target="_self">手机导航<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjyd/" target="_self">手机阅读<span></span></a></li>
+													<li class="search_sort_li  searc_cur"><a href="/sjrj/bjsh/" target="_self">便捷生活<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/spmh/" target="_self">锁屏美化<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/srf/" target="_self">输入法<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/qtyy/" target="_self">其他应用<span></span></a></li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="sort_list">
+							<ul class="sort_ul">
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3965.html" title="度秘">度秘</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3965.html" title="度秘" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160319014115574.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3965.html" title="度秘" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">度秘</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">度秘app下载是百度出品的一款机器人助理应用。度秘已经在餐饮、电影、宠物三个场景提供秘书化服务，很快将延伸到美甲、代驾、教育、医疗、金融等其他行业中，覆盖了吃、住、行、玩的方方面面。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3960.html" title="爱酷天气">爱酷天气</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3960.html" title="爱酷天气" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160321093321731.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3960.html" title="爱酷天气" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">爱酷天气</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">爱酷天气官方下载是专门为android用户推出的一款专业的天气查询软件，爱酷天气安卓版数据量小；更新速度快 免费的产品升级功能，为您提供最新的服务； 支持5天的天气预报，支持多种指数信息；本站提供爱酷天气安卓版下载。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3955.html" title="订餐小秘书">订餐小秘书</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3955.html" title="订餐小秘书" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160321091714788.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3955.html" title="订餐小秘书" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">订餐小秘书</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">赶快下载订餐小秘书客户端,为自己请一个24小时的优惠订餐的“美食小秘书”吧! 该版本还属于公测版,期待大家在使用之后多提宝贵意见,指出我们的不足,以便我们改进之后,为大家提供更好的产品和服务。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3949.html" title="中粮我买网">中粮我买网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3949.html" title="中粮我买网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160322095542689.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3949.html" title="中粮我买网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">中粮我买网</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供中粮我买网官方下载，这是一个吃货必备的购物神器，中粮我买网是网购用户首选的B2C网上购物商城，拥有休闲零食、进口食品、果蔬生鲜、米面粮油、日用百货等上万产品，具有商品搜索、浏览、购买支付、物流查询等功能，还会定期推出手机版专享优惠活动。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3942.html" title="拉手团购">拉手团购</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3942.html" title="拉手团购" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160323094601910.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3942.html" title="拉手团购" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">拉手团购</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供拉手团购客户端下载是拉手网精心打造的手机团购客户端，您可以通过它随时随地查询拉手网每天推出的精品团购，并且直接购买，成功消费后还会获得拉手网额外赠送的返利，您还可以在用户中心方便的管理拉手券和订单。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3944.html" title="宝贝格子">宝贝格子</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3944.html" title="宝贝格子" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160323031912125.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3944.html" title="宝贝格子" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">宝贝格子</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供宝贝格子app下载，这是一个专业的母婴孕妇用品购物商城，孕妇怀孕期间的日常用品，婴儿宝宝的日常用品需求都可以在这里一站式购全。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3946.html" title="Hai360海外购">Hai360海外购</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3946.html" title="Hai360海外购" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160323092409309.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3946.html" title="Hai360海外购" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">Hai360海外购</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供hai360海外购客户端下载是一款全球购物平台应用。为您提供海外同价商品，支付支付宝、银行卡快捷支付方式，让您心动不会手软，想买就能买~现已接入美国Amazon、6pm、Vitacost等电商，还会提醒您最新的优惠活动，是不是很赞呢~</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3934.html" title="桔色">桔色</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3934.html" title="桔色" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160325090613502.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3934.html" title="桔色" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">桔色</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供提供桔色成人官网下载，这是一款成人社区娱乐平台，专业的提供两性的情趣物品，异性交流，聚合兴趣相投的时尚男女，交流两性话题的社交互动平台。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3927.html" title="路口">路口</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3927.html" title="路口" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160327092336743.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3927.html" title="路口" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">路口</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">又是一款方便剁手族购物的app平台出师，路口app下载号称最好用的网购优惠APP，你的全球购物海淘免税店，海外代购正品特卖神器。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3921.html" title="8684公交">8684公交</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3921.html" title="8684公交" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160330084930463.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3921.html" title="8684公交" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">8684公交</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">8684公交下载是一款全国公交地铁免费查询软件，出门在外，很多不便，8684公交为你实时提供出门车辆乘坐查询，车次查询，发车时间查询等等服务。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3917.html" title="妈咪知道">妈咪知道</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3917.html" title="妈咪知道" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160324085952321.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3917.html" title="妈咪知道" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">妈咪知道</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供妈咪知道安卓版下载是一款—怀孕育儿备孕，为妈妈提供专业的在线医生快速问诊服务。妈咪知道里有千万达人免费在线为您解答孕育全程各阶段的问题。还可以免费获取孕期产检、营养饮食、保健护理，育儿喂养、成长发育、早教知识等健康咨询服务。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3890.html" title="洋葱淘">洋葱淘</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3890.html" title="洋葱淘" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160329040912497.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3890.html" title="洋葱淘" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">洋葱淘</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供洋葱淘app下载明星达人带你海淘全球正品美妆，一款不止卖货的美妆海淘APP！美妆达人告诉你什么是热门夯货！美妆编辑教你什么产品适合你！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3891.html" title="掌上医生">掌上医生</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3891.html" title="掌上医生" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160329010804317.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3891.html" title="掌上医生" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">掌上医生</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">掌上医生app下载,一款集“问医生+自主诊断+网上购药”等多种形式服务为一体健康服务APP。专业医生一对一在线解答你的健康问题，让你做到足不出户问医生。点击立刻获取！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3883.html" title="易购网">易购网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3883.html" title="易购网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160330015638557.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3883.html" title="易购网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">易购网</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">易购网app下载是一款比价返现导购网站应用。“易购网”为网民提供比较购物、购物返现、导购资讯、网购社区等服务，更有淘宝京东等500多家商城返现金，让您购物更划算。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3881.html" title="百度医生">百度医生</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3881.html" title="百度医生" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160330021138104.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3881.html" title="百度医生" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">百度医生</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">百度医生app下载是全国最大线上预约挂号平台，汇聚国内权威医院，优选各类专业医生，致力于打造全新就诊体验。百度医生，可预约挂号医生超过18万，覆盖全国近300个城市，包括北上广深等全国一二线城市，全国3000多家医院</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3868.html" title="多点">多点</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3868.html" title="多点" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160330104518715.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3868.html" title="多点" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">多点</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">多点app下载是一款O2O生活服务平台应用。多点提供超市内的蔬菜、水果、海鲜、水产、米面、粮油、零食、小吃、家居、日化等日常消费品。支持冷链配送，送货到家。超市免排队，周边超市优质商品一小时内送达，比超市更享优惠。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3798.html" title="步步生金">步步生金</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3798.html" title="步步生金" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160409102225617.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3798.html" title="步步生金" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">步步生金</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">步步生金app是一款实时记录运动数据GPS运动量的软件，是为广大运动爱好者量身打造的；步步生金记录让你时时刻刻了解你的运动信息，同时在你运动的同时你还能获得一定的收益，喜欢可以试试。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3783.html" title="光大信用卡">光大信用卡</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3783.html" title="光大信用卡" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160413063928142.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3783.html" title="光大信用卡" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">光大信用卡</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">光大信用卡app下载是光大银行出品的一款信用卡专属服务应用。光大信用卡包括信用卡账单、还款、积分、卡片申请、优惠活动，还提供了签到有礼、幸运抽奖等娱乐服务，同时还提供了包括办卡服务、账户服务、特色服务等。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3780.html" title="招商银行掌上生活">招商银行掌上生活</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3780.html" title="招商银行掌上生活" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160412062819715.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3780.html" title="招商银行掌上生活" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">招商银行掌上生活</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">招商银行掌上生活客户端下载：招商用户可以分期理财、卡片精彩、饭票、影票、积分玩家、掌上商城、机酒火车、旅游海购……八大电商频道全程为您提供丰富优惠的商品。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3761.html" title="民生信用卡">民生信用卡</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3761.html" title="民生信用卡" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160412104820454.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3761.html" title="民生信用卡" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">民生信用卡</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">民生信用卡手机客户端下载是民生银行为信用卡客户专门打造的专属移动金融服务应用，包括我的民生、信用卡、电子账户、更多服务四个板块。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3752.html" title="360天气">360天气</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3752.html" title="360天气" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160413021029603.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3752.html" title="360天气" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">360天气</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">出门看天气，好的天气才能给你一个好的心情，360天气预报下载为你实时提供一个准确的天气信息，让你出门在外不在担心准备不足。360天气预报是一款不错的天气预报软件哦，精准，更新及时。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3737.html" title="交管12123">交管12123</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3737.html" title="交管12123" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160415033821714.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3737.html" title="交管12123" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">交管12123</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供一款方便有车族查询车辆违规，罚款，缴费查询手机客户端软件交管12123 app下载。互联网服务平台个人用户注册，机动车 驾驶证 违法处理等业务预约、受理和办理，交通安全信息查询、业务告知提醒、业务导办和道路通行服务等全方位交通安全服务。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3734.html" title="平安信用卡">平安信用卡</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3734.html" title="平安信用卡" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160417095830610.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3734.html" title="平安信用卡" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">平安信用卡</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供平安信用卡app下载，这是平安银行官方推出的一款平安银行卡信用卡管理，办理应用软件。方便用户申请信用卡，查询办理动态，资金管理查询，账单查询，额度还款等等。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3735.html" title="杭州银行">杭州银行</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3735.html" title="杭州银行" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160416093106516.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3735.html" title="杭州银行" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">杭州银行</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂给杭州银行用户提供一款方便管理手上银行卡的app手机客户端软件：杭州银行网上银行下载,这是有杭州银行官网推出的一款手机银行客户端管理平台，用户可以直接用手机管理资金的银行卡，办理业务等等。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<!--list.var5-->
+
+																						</ul>
+						</div>
+						<div class="fenye">
+							<ul class="fenye_ul"><a href="/sjrj/bjsh/index_7.html" class="pre" target="_self"><em></em></a><span><a href="/sjrj/bjsh/index_6.html" target="_self">6</a></span><span><a href="/sjrj/bjsh/index_7.html" target="_self">7</a></span><span>8</span><span><a href="/sjrj/bjsh/index_9.html" target="_self">9</a></span><span><a href="/sjrj/bjsh/index_10.html" target="_self">10</a></span><span><a href="/sjrj/bjsh/index_11.html" target="_self">11</a></span><a href="/sjrj/bjsh/index_9.html" class="next" target="_self"><em></em></a></ul>
+						</div>
+					</div>
+					<div class="main_rg search_main_rgs">
+						<script src="/d/js/acmsd/thea16.js"></script>
+						<div class="main_rg_yxtj">
+							<div class="yxtj_title"><span class="titles">热门推荐</span></div>
+							<div class="yxtj_list">
+								<ul class="search_yxtj_ul">
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="掌上医生"><img src="/d/file/huoche/2016052111/20160329010804317.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="掌上医生">掌上医生</a></p>
+												<p class="li_rg_other">12.6MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">便捷生活</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="妈咪知道"><img src="/d/file/huoche/2016052111/20160324085952321.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="妈咪知道">妈咪知道</a></p>
+												<p class="li_rg_other">5.8MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">便捷生活</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="8684公交"><img src="/d/file/huoche/2016052111/20160330084930463.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="8684公交">8684公交</a></p>
+												<p class="li_rg_other">12.84 MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">便捷生活</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="路口"><img src="/d/file/huoche/2016052111/20160327092336743.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="路口">路口</a></p>
+												<p class="li_rg_other">15.8MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">便捷生活</p>
+											</div>
+										</li>
+																	
+								</ul>
+							</div>
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件专题</span></div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/minecraft/" class="rmzt_a" title="minecraft下载">
+									<img src="/d/file/p/2016-05-24/495c6d743bed4645b18edf9e114315c2.png" alt="minecraft下载">
+									<b>minecraft下载</b>	
+								</a>
+							</div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/yxlmfzdq/" class="rmzt_a" title="英雄联盟辅助大全">
+									<img src="/d/file/p/2016-05-25/1a5050ecad80a1413dd27821a14790ef.png" alt="英雄联盟辅助大全">
+									<b>英雄联盟辅助大全</b>	
+								</a>
+							</div>
+                    								
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件排行榜</span></div>
+								<div class="forth_rg_list">
+									<ul class="forth_ul">
+										<li class="forth_li w78">排名</li>
+										<li class="forth_li w91">软件</li>
+										<li class="forth_li w68">人气</li>
+										<li class="forth_li w30">下载</li>
+									</ul>
+								</div>
+								<div class="forth_rg_rank">
+									<ul class="forth_ul_main">
+									 							  									 							  
+	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">1</span>
+												<span class="rank_name"><a href="/phone/4850.html" title="双开大师">双开大师</a></span>
+												<span class="rank_renqi">32</span>
+												<span class="rank_download"><a href="/phone/4850.html" title="双开大师">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">2</span>
+												<span class="rank_name"><a href="/phone/4474.html" title="腾讯wifi管家">腾讯wifi管家</a></span>
+												<span class="rank_renqi">21</span>
+												<span class="rank_download"><a href="/phone/4474.html" title="腾讯wifi管家">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">3</span>
+												<span class="rank_name"><a href="/phone/4812.html" title="百度地图导航">百度地图导航</a></span>
+												<span class="rank_renqi">5</span>
+												<span class="rank_download"><a href="/phone/4812.html" title="百度地图导航">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">4</span>
+												<span class="rank_name"><a href="/phone/4642.html" title="360手机急救箱">360手机急救箱</a></span>
+												<span class="rank_renqi">4</span>
+												<span class="rank_download"><a href="/phone/4642.html" title="360手机急救箱">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">5</span>
+												<span class="rank_name"><a href="/phone/4731.html" title="水星路由">水星路由</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4731.html" title="水星路由">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">6</span>
+												<span class="rank_name"><a href="/phone/4681.html" title="360安全换机">360安全换机</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4681.html" title="360安全换机">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">7</span>
+												<span class="rank_name"><a href="/phone/4649.html" title="Adobe Air">Adobe Air</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4649.html" title="Adobe Air">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">8</span>
+												<span class="rank_name"><a href="/phone/4625.html" title="掌心管家">掌心管家</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4625.html" title="掌心管家">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">9</span>
+												<span class="rank_name"><a href="/phone/4842.html" title="万能遥控">万能遥控</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4842.html" title="万能遥控">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">10</span>
+												<span class="rank_name"><a href="/phone/4852.html" title="百度传课">百度传课</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4852.html" title="百度传课">下载</a></span>
+											</div>
+										</li>										                                                                           											    									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+			<p class="footer_top"><a href="/support/about.html">关于本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/help.html">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/advertise.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/rjfb.html">软件发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">下载声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemap.html">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemaps.xml">网站RSS</a></p>
+			<p class="footer_md">手机天堂是国内最专业的手机软件、手机游戏下载中心,手机天堂以服务用户为理念，努力打造成国内最大、最安全快速的手机软件、手机游戏下载平台。</p>
+		</div>
+		</div>
+ 
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/script_index2.js"></script>
+	</body>
+</html>

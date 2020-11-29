@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+<title>XP系统为什么开机老是要按F1才能进去系统？-仿飞翔下载</title>
+<meta name="keywords" content="" />
+<meta name="description" content="XP系统为什么开机老是要按F1才能进去系统？" />
+<link href="/statics/m_v2/skin_css/m_xpgod.css" type="text/css" rel="stylesheet">
+<script>
+window.onload = function(){
+    document.getElementById("contentTextsss").innerHTML = document.getElementById("contentTextsss").innerHTML.replace(/src=\"\/d\/file\//g,"src=\"http:\/\/xpgod.zuseng.com\/d\/file\/");
+}
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="/"><img src="/statics/m_v2/skin_img/logo.png" alt="仿飞翔下载" /></a></div>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/fjyx/">游戏</a></li>
+    <li><a href="/sjrj/">软件</a></li>
+    <li><a href="/news/" class="last">资讯</a></li>
+  </ul>
+</div>
+<div class="article_title">
+  <div class="title">XP系统为什么开机老是要按F1才能进去系统？</div>
+  <div class="au_time">
+    <span class="span_auti"><span class="author"></span><em>作者：佚名</em></span>
+    <span class="span_auti ml55"><span class="time"></span><em>时间：2016-05-16</em></span>
+  </div>
+</div>
+<div class="intro_txt" id="contentTextsss"><p>您的电脑开机时候必须要按F1键才能正常进入系统，这是因为你的BIOS设置不当但也能正常引导系统，属非致命性故障，按F1是在问你是否继续。</p>
+<p>解决开机要按F1的方法是：</p>
+<p>1开机按F1键,这是因为你的BIOS设置不当但也能正常引导系统，属非致命性故障，按F1是在问你是否继续。 你没有安装软盘驱动器,但是在CMOS中设置了,开启软驱的选项.</p>
+<p>方法是:开机按Del键,进入BIOS设置,选择第一个&quot;基本设置&quot;,把floopy一项设置没&quot;Disabel&quot;无效就可以了.</p>
+<p>2刚开始开机时按DEL进入BIOS,按回车键进入第一项，看看里面的&ldquo;Drive A&rdquo;项是不是&ldquo;None&rdquo;，不是的话按&ldquo;Pgup&rdquo;或&ldquo;PgDn&rdquo;进行修改，修改后按&ldquo;ESC&rdquo;退出，选&ldquo;Save &amp; Exit Setup&rdquo;项按回车退出BIOS，重启，再不行的话就换了电池再按上面的步骤重新设置既可。</p>
+<p>3开机需要按下F1键才能进入，主要是因为BIOS中设置与真实硬件数据不符引起的，可以分为以下几种情况：</p>
+<p>1、实际上没有软驱或者软驱坏了，而BIOS里却设置有软驱，这样就导致了要按F1才能继续。</p>
+<p>2、原来挂了两个硬盘，在BIOS中设置成了双硬盘，后来拿掉其中一个的时候却忘记将BIOS设置改回来，也会出现这个问题。</p>
+<p>3、主板电池没有电了也会造成数据丢失从而出现这个故障。</p>
+<p>4、重新启动系统，进入BIOS设置中，发现软驱设置为1.44M了，但实际上机箱内并无软驱，将此项设置为NONE后，故障排除。</p>
+<p>曾经有很多人问过这样的问题，下面将我遇过的此类问题做一下总结，希望对大家有所帮助。</p>
+<p>1、Hareware Monitor found an error，enter POWER MANAGEMENT SETUP for details，Press F1 to continue，DEL to enter SETUP</p>
+<p>中文：监视功能发现错误，进入POWER MANAGEMENT SETUP察看详细资料，按F1键继续开机程序，按DEL键进入COMS设置。</p>
+<p>解释：有的主板具备硬件的监视功能，可以设定主板与CPU的温度监视、电压调整器的电压输出准位监视和对各个风扇转速的监视，当</p>
+<p>上述监视功能在开机时发觉有异常情况，那么便会出现上述这段话，这时可以进入COMS设置选择POWER MANAGEMENT SETUP，在右面的**Fan Monitor**、**Thermal Monitor**和**Voltage Monitor**察看是哪部分发出了异常，然后再加以解决。</p>
+<p>2、pri slave drive-ATAPI LNCOMPatible press F1 to Resume</p>
+<p>可能是你的光驱没接好或有故障,最好在CMOS中将各IDE口设为自动。</p>
+<p>3、Press F1 to continue,DEL to enter SETUP</p>
+<p>开机后 按DEL 进入 BIOS ，在选择软驱中选择 NONE 后按F10保存就可以了</p>
+<p>4、CMOS checksum error-Defaults loaded</p>
+<p>Press F1 to contnue?DEL to enter SETUP</p>
+<p>08/09/2000-i810-ITE8712-6A69ME1CC-00</p>
+<p>cmos电池没电。</p>
+<p>5、Warning!CPU has been changed!Please Enter CPU speed CMOS setup and Remember to save Before Exit!</p>
+<p>这说明BIOS设置被冲掉了，要重新设置BIOS(又叫做CMOS设置)。开机按住&ldquo;Del&rdquo;键进入设置，看你的主板说明书。你的CPU频率是多少?在BIOS中要选好外频，倍频反正是锁定的。外频总是66、100或133，要看CPU型号，从低往高设置。如果是AWARD的BIOS设置，在首页就选Frequency/Voltage Control (频率/电压的控制)，使用此菜单可以对频率、电压进行特别的设定。其中&ldquo;Clock By Slight Adjust(时钟频率微调)&rdquo;允许你选择CPU时钟频率。各种主板的BIOS设置有差别，可以参考自己的主板说明书进行调整。</p>
+<p>6、cpu has been changed please re-enter cpu settings in the cmos setup and remember to save before quit!</p>
+<p>有些主板上有个外频跳线,默认为100MHZ,还有些主板不支持自动调频.你只要进BIOS里把外频设置成你的CPU标准外频就可以了,倍频方面一般是自动设置，最好不要超频。</p>
+<p>如果上述解决办法都不能解决的话，你可以检查CMOS旁边电路是否有烧坏的迹象，我的机器就是因为CMOS旁边的电路有问题，上述机决方法都试过了也没用，最后一烙铁就搞定。呵呵，不妨你也试试</p>
+
+
+
+<p style="page-break-after: always"><span style="display: none">[page_break]</span></p>
+<p>开机F1问题</p>
+<p>开机需按F1才能进入系统 的故障</p>
+<p>现整理了一些原因及解决办法，希望对大家有帮助</p>
+<p>1.CMOS battery failed</p>
+<p>中文：CMOS电池失效。</p>
+<p>解释：这说明CMOS电池已经没电了，只要将主板上的钮扣电池取下，换一块新电池即可。大部分主板都是使用3V的钮扣电池，你可别将5V的电池买回来哦!你只要仔细查看电池的表面就可以清楚地看到上面标示&ldquo;3V&rdquo;的字样。</p>
+<p>2.CMOS check sum error-Defaults loaded</p>
+<p>中文：CMOS 执行全部检查时发现错误，要载入系统预设值。</p>
+<p>解释：一般来说出现这句话都是说电池快没电了，可以先换个电池试试，如果问题还是没有解决，那么说明CMOS RAM可能有问题，是一般人不会遇到的，这种信息多半是对主板BIOS刷新不完整才会出现的，惟一的处理方式就是重新刷新BIOS，但不能保证一定成功。</p>
+<p>如果没过一年就到经销商处换一块主板，过了一年就让经销商送回生产厂家修一下吧!</p>
+<p>3.Press ESC to skip memory test</p>
+<p>中文：正在进行内存检查，可按ESC键跳过。</p>
+<p>解释：这是因为在CMOS内没有设定跳过存储器的第二、三、四次测试，开机就会执行四次内存测试，当然你也可以按 ESC 键结束内存检查，不过每次都要这样太麻烦了，你可以进入COMS设置后选择BIOS FEATURS SETUP，将其中的Quick Power On Self Test设为</p>
+<p>Enabled，储存后重新启动即可。</p>
+<p>4.Keyboard error or no keyboard present</p>
+<p>中文：键盘错误或者未接键盘。</p>
+<p>解释：检查一下键盘的连线是否松动或者损坏。</p>
+<p>5.Hard disk install failure</p>
+<p>中文：硬盘安装失败。</p>
+<p>解释：这是因为硬盘的电源线或数据线可能未接好或者硬盘跳线设置不当。你可以检查一下硬盘的各根连线是否插好，看看同一根数据线上的两个硬盘的跳线的设置是否一样，如果一样，只要将两个硬盘的跳线设置的不一样即可(一个设为Master，另一个设为Slave)也可能是硬盘的电源线，数据线可能未接好或者硬盘跳线设置不当。</p>
+<p>6.Secondary slave hard fail</p>
+<p>中文：检测从盘失败</p>
+<p>解释：可能是CMOS设置不当，比如说没有从盘但在CMOS里设为有从盘，那么就会出现错误，这时可以进入COMS设置选择IDE HDD AUTO</p>
+<p>DETECTION进行硬盘自动侦测。也可能是硬盘的电源线、数据线可能未接好或者硬盘跳线设置不当，解决方法参照第5条。</p>
+<p>7.Floppy Disk(s) fail 或 Floppy Disk(s) fail(80) 或Floppy Disk(s) fail(40)</p>
+<p>中文：无法驱动软盘驱动器。</p>
+<p>解释：系统提示找不到软驱，看看软驱的电源线和数据线有没有松动或者是接错，或者是把软驱放到另一台机子上试一试，如果这些</p>
+<p>都不行，那么只好再买一个了。如果没有软驱的话，建议在CMOS Setup程序中将&ldquo;Drive A&rdquo;设置为&ldquo;None&rdquo;。</p>
+<p>8.Hard disk(s) diagnosis fail</p>
+<p>中文：执行硬盘诊断时发生错误。</p>
+<p>解释：出现这个问题一般就是说硬盘本身出现故障了，你可以把硬盘放到另一台机子上试一试，如果问题还是没有解决，只能去修一下了。</p>
+<p>9.Memory test fail</p>
+<p>中文：内存检测失败。</p>
+<p>解释：重新插拔一下内存条，看看是否能解决，出现这种问题一般是因为内存条互相不兼容,去换一条吧!</p>
+<p>10.Override enable-Defaults loaded</p>
+<p>中文：当前CMOS设定无法启动系统，载入BIOS中的预设值以便启动系统。</p>
+<p>解释：一般是在COMS内的设定出现错误，只要进入COMS设置选择LOAD SETUP DEFAULTS载入系统原来的设定值然后重新启动即可。</p>
+<p>11.Press TAB to show POST screen</p>
+<p>中文：按TAB键可以切换屏幕显示。</p>
+<p>解释：有的OEM厂商会以自己设计的显示画面来取代BIOS预设的开机显示画面，我们可以按TAB键来在BIOS预设的开机画面与厂商的自定义画面之间进行切换。</p>
+<p>12.Resuming from disk，Press TAB to show POST screen</p>
+<p>中文：从硬盘恢复开机，按TAB显示开机自检画面)。</p>
+<p>解释：这是因为有的主板的BIOS提供了Suspend to disk(将硬盘挂起)的功能，如果我们用Suspend to disk的方式来关机，那么我们在下次开机时就会显示此提示消息。</p>
+<p>13.Hareware Monitor found an error，enter POWER MANAGEMENT SETUP for details，Press F1 to continue，DEL to enter</p>
+<p>SETUP</p>
+<p>中文：监视功能发现错误，进入POWER MANAGEMENT SETUP察看详细资料，按F1键继续开机程序，按DEL键进入COMS设置。</p>
+<p>解释：有的主板具备硬件的监视功能，可以设定主板与CPU的温度监视、电压调整器的电压输出准位监视和对各个风扇转速的监视，</p>
+<p>当上述监视功能在开机时发觉有异常情况，那么便会出现上述这段话，这时可以进入COMS设置选择POWER MANAGEMENT SETUP，在右面的**Fan Monitor**、**Thermal Monitor**和**Voltage Monitor**察看是哪部分发出了异常，然后再加以解决。</p>
+<p>14、Display switch is set incorrectly</p>
+<p>(显示开关配置错误)</p>
+<p>解决方案：只要你的主板不是老掉牙的，就肯定不会出现这个信息。一般来说，老主板上有一个路线用来设置屏幕为单色或彩色。出现此信息表示主板上的设定和CMOS设置不一致，所以只要判断主板和CMOS设置谁为正确，然后更新错误的设置即可。</p>
+<p>15、Hard disk(s) initializing (Please wait a moment&hellip;)</p>
+<p>(正在对硬盘初始化，请稍等片刻)</p>
+<p>解决方案：这种信息在较新的硬盘上根本看不到，但在较老的硬盘上，因为速度较慢，所以就会看到这个信息</p>
+
+<p>相关问题：每次开机都要按f1,电脑开机要按f1,为什么开机时要按f1,每次开机都要按f1,我的电脑为什么开机时要按F1</p>
+<p>电脑开机按F1的解决方法</p></div>
+<div class="pagesss"></div>
+<div class="line"></div>
+<div class="main_xgyx">
+  <div class="xgyx_title">相关资讯</div>
+  <div class="xgyx_list">
+    <ul class="clearfix">
+            <li><a href="/article/99.html"><span></span>winxp系统微软补丁获取方法</a></li>
+            <li><a href="/article/100.html"><span></span>winxp迁移助手怎么样？360xp迁移助手功能大全</a></li>
+            <li><a href="/article/101.html"><span></span>winxp停止服务怎么办 winxp停止服务后解决方法</a></li>
+            <li><a href="/article/102.html"><span></span>xp系统停止服务 一大波黑客即将来袭</a></li>
+            <li><a href="/article/103.html"><span></span>xp系统停止服务后能再活5年</a></li>
+	
+          </ul>
+  </div>
+</div>
+<div id="SOHUCS"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrbiKxmG&conf=prod_8e11cfb50c20f2a0b31d59926e9e42c7">
+</script>
+<div class="footer">
+  <a href="javascript:void(0);" class="back_top"><span><img src="/statics/m_v2/skin_img/top.png" alt="" /></span><em>返回顶部</em></a>
+</div>
+<div class="fade"></div>
+<script src="/statics/m_v2/skin_js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<div style="display: none">
+  <script>
+$(function(){
+	$('.game_list .list_div:last,.rank_list .list_div:last,.zx_list .list_div').css('border-bottom-width',0);
+	$(".back_top").click(function(){
+		$('body,html').animate({scrollTop:0},100);
+		return false;
+	});
+	$('.paih_list').each(function(index, element) {
+		$(this).find('.list_div:last').css('border-bottom-width',0);
+	});
+	/*var imhwd=$('.mrd_pic').width();
+	$('.mrd_pic ul li').css('width',imhwd);
+	var imght=$('.mrd_pic li img').height();
+	$('.mrd_pic').css('height',imght);*/	
+	
+	$('.az_ios:last,.news_list dl:last').addClass('last');
+	
+	/*$('.zx_list .list_div_rg a').click(function() {
+		$('.fade').show();
+		$('.login_box').show();
+	});*/
+	$('.close').live('click',function() {
+		$('.fade').hide();
+		$('.login_box').hide();
+	});
+	
+	//
+	$('.span_close').click(function() {
+		$('.bt_gg').hide();
+		$('.footer').css('margin-bottom',0);
+	});
+})
+  </script>
+</div>
+</body>
+</html>

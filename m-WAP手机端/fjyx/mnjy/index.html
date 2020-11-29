@@ -1,0 +1,779 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>模拟经营 - 仿飞翔下载</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="/shouji/statics/skin_css/index.css?sd" />
+		<script  type="text/javascript" src="/shouji/statics/skin_js/jquery-1.8.3.min.js"></script>
+		<script  type="text/javascript" src="/shouji/statics/skin_js/searchword.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/jquery.global.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/tupqh.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<base target="_blank" />
+	</head>
+	<body>
+<div class="top_bj">
+  <div class="top">
+    <div class="top_lf">
+      <ul>
+        <li><a href="http://xpgod.zuseng.com" class="top_menu_a">首页</a></li>
+        <li onmouseover="show('quanzdh');" onmouseout="hide('quanzdh');" id="bj_hover" class=""> <a href="javascript:void(0)" target="_self" class="top_menu_a dh_bj">全站导航</a>
+          <div id="quanzdh" style="display: none;">
+            <div class="qh_top">
+              <div class="qh_top_title">下载专区</div>
+              <div class="qh_top_list"> <a href="/fjyx/" class="dh_a">游戏库</a> <a href="/sjrj/" class="dh_a">软件库</a> </div>
+              <div class="qh_top_title">资讯中心</div>
+              <div class="qh_top_list zx"> <a href="/news/gonglue/" class="dh_a">手游攻略</a> <a href="/news/yueyu/" class="dh_a">越狱教程</a> <a href="/news/shuaji/" class="dh_a">刷机教程</a> <a href="/news/video/" class="dh_a">精彩视频</a> <a href="/news/zixun/" class="dh_a">新闻资讯</a> </div>
+            </div>
+            <div class="qh_bottom">
+              <div class="qh_bottom_title">热门游戏</div>
+              <div class="qh_bottom_list">
+			  <a href="/phone/6337.html" class="qhbt_a">梦幻西游3</a> 
+			  <a href="/phone/5103.html" class="qhbt_a">御剑情缘</a> 
+			  <a href="/phone/5575.html" class="qhbt_a">斗犬OL</a> 
+			  <a href="/phone/6338.html" class="qhbt_a">天天打波利</a> 
+			  <a href="/phone/5561.html" class="qhbt_a">梦幻降魔录</a> 
+			  <a href="/phone/4902.html" class="qhbt_a">守望前线</a> 
+			  <a href="/phone/5109.html" class="qhbt_a">呆萌小怪物钻石版</a> 
+			  <a href="/phone/6331.html" class="qhbt_a">宁采臣</a> 
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="top_rg"> <a onclick="SetHome(this,window.location)" class="top_menu_a a_pad">设为首页</a> <a class="top_menu_a a_pad" onclick="shoucang(document.title,window.location)">收藏本站</a> </div>
+  </div>
+</div>
+<div class="daohang_bj">
+  <div class="daohang">
+    <div class="search-box">
+      <form class="search-form" action="/e/search/index.php" method="post" name="searchform" id="searchform" target="_blank">
+        <input class="search-text" type="text" name="keyboard" id="keyboard">
+        <input type="image" class="search-btn" src="/shouji/statics/skin_img/search-btn.png">
+        <div class="search-select">
+          <div class="search-type">
+            <select name="tbname">
+              <option value="news" class="sedsa">资讯</option>
+              <option value="soft" class="sedsa">软件</option>
+              <option value="phone" class="sedsa">手机</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+      </form>
+    </div>
+    <div class="dh_logo"><a href="/" target="_self"><img src="/shouji/statics/skin_img//logo.png" alt="logo" target="_self"></a></div>
+    <div class="dh_menu dh_menu_paih">
+      <ul>
+        <li class="paihb_menu_li"><a href="/fjyx/" class="d_manu_a">下游戏</a><a href="/fjyx/xxyz/" class="x_menu_a">休闲</a><a href="/fjyx/sjqz/" class="x_menu_a">射击</a><a href="/shouji/phb.html" class="x_menu_a">排行</a></li>
+        <li class="paihb_menu_li"><a href="/sjrj/" class="d_manu_a">装应用</a><a href="/sjrj/xtgj/" class="x_menu_a">系统</a><a href="/sjrj/sjdh/" class="x_menu_a">导航</a><a href="/sjrj/sjyd/" class="x_menu_a">阅读</a></li>
+        <li class="paihb_menu_li"><a href="/news/" class="d_manu_a">看资讯</a><a href="/news/gonglue/" class="x_menu_a">攻略</a><a href="/news/yueyu/" class="x_menu_a">越狱</a><a href="/news/zixun/" class="x_menu_a">新闻</a></li>
+        <li class="paihb_menu_li"><a href="/news/video/" class="d_manu_a">看视频</a><a href="/news/shuaji/" class="x_menu_a">刷机</a><a href="/article/hardware/" class="x_menu_a">硬件</a><a href="/article/wljs/" class="x_menu_a">技术</a></li>
+      </ul>
+    </div>
+    <div class="dh_rmss"> 热门搜索:<a href='/e/search/result/?searchid=9' target=_blank>qq2016</a>&nbsp;<a href='/e/search/result/?searchid=18' target=_blank>浏览器</a>&nbsp;<a href='/e/search/result/?searchid=19' target=_blank>腾讯</a>&nbsp;<a href='/e/search/result/?searchid=12' target=_blank>360杀毒</a>&nbsp;<a href='/e/search/result/?searchid=11' target=_blank>抢票软件</a>&nbsp;<a href='/e/search/result/?searchid=10' target=_blank>电脑管家</a><br> </div>
+  </div>
+</div>
+
+		<div class="main_bj main_bjs">
+			<div class="w1204">
+				<div class="main_bpic">
+					<div class="bpic1"><script src="/d/js/acmsd/thea1.js"></script></div>
+    				<div class="bpic2"><script src="/d/js/acmsd/thea2.js"></script></div>
+				</div>
+				<div class="search_bj">
+					<div class="main_lf search_main_lfs">
+						<div class="main_lf_weizhi">您的位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/fjyx/">游戏库</a>&nbsp;>&nbsp;<a href="/fjyx/mnjy/">模拟经营</a></div>
+						<div class="search_hd">
+							<div class="sliderbox">
+								<div class="btn_bj lfbd"><div id="btn-left" class="arrow-btn dasabled" style="cursor: auto;"></div></div>
+								<div class="slider">
+									<ul> 
+								</div>
+								<div class="btn_bj rgbd"><div id="btn-right" class="arrow-btn" style="cursor: pointer;"></div></div>
+							  </div>
+						</div>
+						<div class="search_title">
+							<span class="search_title_lf">分类筛选</span>
+							<span class="search_title_rg">共计<b>31</b>款游戏</span>
+						</div>
+						<div class="search_sort">
+							<div class="search_pingtai">
+								<span class="search_tips">类别：</span>
+								<ul class="search_sort_ul">
+								<li class="search_sort_li "><a href="/fjyx/" target="_self">全部<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/jsby/" target="_self">角色扮演<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/qpkp/" target="_self">棋牌卡牌<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/xxyz/" target="_self">休闲益智<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/dzgd/" target="_self">动作格斗<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/cltf/" target="_self">策略塔防<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/scjj/" target="_self">赛车竞速<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/tyjj/" target="_self">体育竞技<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/sjqz/" target="_self">射击枪战<span></span></a></li>
+													<li class="search_sort_li  searc_cur"><a href="/fjyx/mnjy/" target="_self">模拟经营<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/dnb/" target="_self">电脑版<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/qtsy/" target="_self">其他手游<span></span></a></li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="sort_list">
+							<ul class="sort_ul">
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6325.html" title="超級幻影貓">超級幻影貓</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6325.html" title="超級幻影貓" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160520011801417.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6325.html" title="超級幻影貓" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">超級幻影貓</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">超級幻影貓安卓版下载这是一款难度相当高的游戏，各种危险机关陷阱非常多，对玩家的操作要求较高。另外，游戏有一定的趣味性，给人一种很欢快的感觉。喜欢挑战的玩家可以尝试下这款游戏。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6303.html" title="摩尔庄园魔幻之旅">摩尔庄园魔幻之旅</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6303.html" title="摩尔庄园魔幻之旅" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160520104622508.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6303.html" title="摩尔庄园魔幻之旅" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">摩尔庄园魔幻之旅</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">摩尔庄园魔幻之旅手游下载，游戏熟悉的动漫人物摩尔登场，还有清新的游戏画面，丰富的游戏场景，超多的游戏关卡等你来挑战。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6225.html" title="世纪海战">世纪海战</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6225.html" title="世纪海战" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160107023530114.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6225.html" title="世纪海战" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">世纪海战</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">世纪海战是一款集结着顶级战舰的海战类战斗手游，本作是以第二次世界大战为背景的，画面非常的真实逼真，绝对让你能够体验到真实的海上列舰，赶紧来下载体验一下吧！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6210.html" title="爱养成3">爱养成3</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6210.html" title="爱养成3" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160113090349173.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6210.html" title="爱养成3" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">爱养成3</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">爱养成3手游破解版下载是一款休闲益智养成类手游，这是一款日系元素的小游戏，日系少女在将来的道路是变成天使还是堕落，圈凭你的旨意哦，任性而为的一款小手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6180.html" title="爱养成2">爱养成2</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6180.html" title="爱养成2" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160113085818542.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6180.html" title="爱养成2" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">爱养成2</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">爱养成2无限金币版是一款模拟经营类手机游戏，游戏中玩家们将掌控最后的结局，玩家们日常的表现都是由评分的哦，不同的评分最后的结果是不一样的！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6169.html" title="神树小奇兵">神树小奇兵</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6169.html" title="神树小奇兵" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160115105221404.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6169.html" title="神树小奇兵" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">神树小奇兵</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">神树小奇兵罗宾之怒中文版下载，由18TOUCH汉化组制作，神树小奇兵罗宾之怒（Little Raiders Robin  s Revenge）是一款来自育碧的冒险养成游戏。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6144.html" title="梦幻驯龙记">梦幻驯龙记</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6144.html" title="梦幻驯龙记" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160118085502286.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6144.html" title="梦幻驯龙记" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">梦幻驯龙记</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">梦幻驯龙记手游下载：游戏主人公乘坐的“玲珑一号”在经过三角洲边缘时，突然海面上挂起了巨大龙卷，为了避开水龙卷主人公误入了三角洲。船只漂泊三天之后，来到了一个神秘的岛屿。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6128.html" title="美美小店">美美小店</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6128.html" title="美美小店" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160119084840135.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6128.html" title="美美小店" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">美美小店</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">美美小店手游下载是一款女生都爱玩的手游哦，作为一款专为女性玩家量身定制的换装手游，美美小店延续了一贯的浪漫与绮丽风格，并在玩法、技能、剧情、人物设定等元素上给玩家带来了更多惊喜。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6126.html" title="星际风暴">星际风暴</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6126.html" title="星际风暴" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160120091858862.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6126.html" title="星际风暴" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">星际风暴</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">星际风暴手游安卓版是一款以经营模式跟战略形式为主的一款科幻塔防手游。玩家必须建设基地，训练军队，培养战力，军令如山，这样才能建立一支特种部队。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6087.html" title="模拟人生自由生活无限金币版">模拟人生自由生活无限金币版</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6087.html" title="模拟人生自由生活无限金币版" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160123094041111.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6087.html" title="模拟人生自由生活无限金币版" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">模拟人生自由生活无限金币版</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">模拟人生自由生活破解版下载是一款模拟经营类手机游戏，在游戏这个虚幻的世界里，我们却可以尽可能的演绎出完美人生，让我们来改变我们的人生，直到你满意为止!</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6020.html" title="私立蜀山学园">私立蜀山学园</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6020.html" title="私立蜀山学园" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160202085048701.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6020.html" title="私立蜀山学园" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">私立蜀山学园</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">私立蜀山学园游戏安卓版是一款画面非常精美清新带有古典唯美风格的仙侠类战斗rpg游戏，在游戏中玩家需要控制主角去完成一系列的对战任务。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/6000.html" title="航海归来">航海归来</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/6000.html" title="航海归来" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160201101744600.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/6000.html" title="航海归来" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">航海归来</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">航海归来手游下载是一款海上作战动作手游，玩家主要是在海上经营，抢劫船只，航海寻宝，海上冒险，海上贸易，为争夺港口，力坑海盗的故事展开序幕。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5990.html" title="我的世界0.14.0测试版build3">我的世界0.14.0测试版build3</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5990.html" title="我的世界0.14.0测试版build3" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160203102647953.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5990.html" title="我的世界0.14.0测试版build3" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">我的世界0.14.0测试版build3</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">我的世界0.14.0测试版build3 Minecraft是一款非常流行的网络模拟游戏，现在也出了手游版，在现实生活当中不可能出现的事情，你都可以在我的世界手游的虚拟网络里实现。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5770.html" title="僵尸咖啡厅ios版">僵尸咖啡厅ios版</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5770.html" title="僵尸咖啡厅ios版" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160309093714970.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5770.html" title="僵尸咖啡厅ios版" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">僵尸咖啡厅ios版</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">僵尸咖啡厅ios版下载是一款经营模拟类游戏。僵尸咖啡厅中文版讲述的是这是一家霸气侧漏的餐厅，经营餐厅的主角是僵尸，如果有别的餐厅过来抢生意，没关系！派僵尸军团过去把对方吃的一刚二净就可以啦。还有不能让僵尸服务员太累，不然也会吃顾客的啦。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5703.html" title="你必须造一艘船">你必须造一艘船</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5703.html" title="你必须造一艘船" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160315010935163.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5703.html" title="你必须造一艘船" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">你必须造一艘船</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">你必须造一艘船安卓版是一款什么样的单机游戏呢？你必须造一艘船有点类似角色扮演的游戏，一个真正精湛的三和无休止的赛跑者，在移动和完全上瘾的人的比赛。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5654.html" title="小王子的星球">小王子的星球</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5654.html" title="小王子的星球" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160318110536229.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5654.html" title="小王子的星球" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">小王子的星球</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">小王子的星球手游下载(Deiland)是一款画面非常精美清新带有卡通风格以生存为题材的角色扮演类游戏，在游戏中玩家需要控制小王子在各种神秘的环境下完成冒险任务。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5590.html" title="超脱力医院">超脱力医院</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5590.html" title="超脱力医院" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160323021651834.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5590.html" title="超脱力医院" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">超脱力医院</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">官方提供超脱力医院安卓版手游下载，这是一款模拟经营类手游，玩家在游戏当中主要是扮演者易名精神病主治医师，对各种精神病患者进行救治医治。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5548.html" title="她的花心根本停不下来">她的花心根本停不下来</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5548.html" title="她的花心根本停不下来" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160405020836553.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5548.html" title="她的花心根本停不下来" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">她的花心根本停不下来</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">她的花心根本停不下来下载这款游戏主要是讲述了一个人生的曲折故事，游戏主要以经营的模式诞生启程，主人公的她开始不安份了，在外面有点那个了，开始受到周边的指指点点，作为她的老公你将如何抉择呢？</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5492.html" title="迪士尼梦幻王国">迪士尼梦幻王国</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5492.html" title="迪士尼梦幻王国" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160407013316129.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5492.html" title="迪士尼梦幻王国" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">迪士尼梦幻王国</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">迪士尼梦幻王国破解版下载的内容和玩法方面，与通常此类游戏相似，常见的建造、收集资源、招揽顾客、升级等模式都将被很好的保留下来，而“明日世界”、“飞跃太空山”等经典设施也将被允许在玩家自己的迪斯尼乐园内修建。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5479.html" title="星战联盟">星战联盟</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5479.html" title="星战联盟" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160408025418672.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5479.html" title="星战联盟" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">星战联盟</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">星战联盟安卓版手游下载是一款星际题材的模拟经营加SLG的手机网游，采用unity3D引擎制作，游戏画面以3D的视角展现出宇宙的恢弘与大气，无论是在基地建设和战斗过程中都无异于享受一场视觉盛宴！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5481.html" title="足球经理2016">足球经理2016</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5481.html" title="足球经理2016" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160408024058753.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5481.html" title="足球经理2016" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">足球经理2016</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">足球经理2016安卓版手游下载是一款由世嘉推出的足球模拟经营类游戏，本作是其第六次登陆移动平台，比起PC的复杂精细，移动版则作了大量的精简为了达到简单易上手的效果，可以说为了移动平台量身打造而成的《足球经理》。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5473.html" title="不只三国">不只三国</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5473.html" title="不只三国" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160411031427113.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5473.html" title="不只三国" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">不只三国</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">不只三国手游下载这是一款带有多元素的手机游戏，游戏还是以战争策略为主，模拟经营为辅，玩家要带路自己的绝对征伐四方，扩大自己的城池。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5333.html" title="天才足球经理">天才足球经理</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5333.html" title="天才足球经理" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160420091918462.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5333.html" title="天才足球经理" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">天才足球经理</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供天才足球经理手游下载，天才足球经理手游ios版下载，天才足球经理手游安卓版下载跟天才足球经理游戏电脑版下载。本站还有天才足球经理手游礼包领取，最新的游戏资讯，攻略秘籍，喜欢的朋友还不下载体验一下。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5325.html" title="梦幻星工场">梦幻星工场</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5325.html" title="梦幻星工场" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160422090221234.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5325.html" title="梦幻星工场" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">梦幻星工场</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供梦幻星工场内购破解版手游安卓版下载，这是一款人物角色模拟场景经验类的手机游戏。还提供了梦幻星工场手游资讯，最新的游戏攻略，游戏秘籍，还有梦幻星工场游戏大礼包领取。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<!--list.var5-->
+
+																						</ul>
+						</div>
+						<div class="fenye">
+							<ul class="fenye_ul"><a class="pre none" target="_self"><em></em></a><span>1</span><span><a href="/fjyx/mnjy/index_2.html" target="_self">2</a></span><a href="/fjyx/mnjy/index_2.html" class="next" target="_self"><em></em></a></ul>
+						</div>
+					</div>
+					<div class="main_rg search_main_rgs">
+						<script src="/d/js/acmsd/thea16.js"></script>
+						<div class="main_rg_yxtj">
+							<div class="yxtj_title"><span class="titles">热门推荐</span></div>
+							<div class="yxtj_list">
+								<ul class="search_yxtj_ul">
+																	
+								</ul>
+							</div>
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件专题</span></div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/minecraft/" class="rmzt_a" title="minecraft下载">
+									<img src="/d/file/p/2016-05-24/495c6d743bed4645b18edf9e114315c2.png" alt="minecraft下载">
+									<b>minecraft下载</b>	
+								</a>
+							</div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/yxlmfzdq/" class="rmzt_a" title="英雄联盟辅助大全">
+									<img src="/d/file/p/2016-05-25/1a5050ecad80a1413dd27821a14790ef.png" alt="英雄联盟辅助大全">
+									<b>英雄联盟辅助大全</b>	
+								</a>
+							</div>
+                    								
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">游戏排行榜</span></div>
+								<div class="forth_rg_list">
+									<ul class="forth_ul">
+										<li class="forth_li w78">排名</li>
+										<li class="forth_li w91">软件</li>
+										<li class="forth_li w68">人气</li>
+										<li class="forth_li w30">下载</li>
+									</ul>
+								</div>
+								<div class="forth_rg_rank">
+									<ul class="forth_ul_main">
+	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">1</span>
+												<span class="rank_name"><a href="/phone/6337.html" title="梦幻西游3">梦幻西游3</a></span>
+												<span class="rank_renqi">32</span>
+												<span class="rank_download"><a href="/phone/6337.html" title="梦幻西游3">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">2</span>
+												<span class="rank_name"><a href="/phone/5103.html" title="御剑情缘">御剑情缘</a></span>
+												<span class="rank_renqi">20</span>
+												<span class="rank_download"><a href="/phone/5103.html" title="御剑情缘">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">3</span>
+												<span class="rank_name"><a href="/phone/5575.html" title="斗犬OL">斗犬OL</a></span>
+												<span class="rank_renqi">10</span>
+												<span class="rank_download"><a href="/phone/5575.html" title="斗犬OL">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">4</span>
+												<span class="rank_name"><a href="/phone/6338.html" title="天天打波利">天天打波利</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/6338.html" title="天天打波利">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">5</span>
+												<span class="rank_name"><a href="/phone/5561.html" title="梦幻降魔录">梦幻降魔录</a></span>
+												<span class="rank_renqi">4</span>
+												<span class="rank_download"><a href="/phone/5561.html" title="梦幻降魔录">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">6</span>
+												<span class="rank_name"><a href="/phone/4902.html" title="守望前线">守望前线</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4902.html" title="守望前线">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">7</span>
+												<span class="rank_name"><a href="/phone/5109.html" title="呆萌小怪物钻石版">呆萌小怪物钻石版</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/5109.html" title="呆萌小怪物钻石版">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">8</span>
+												<span class="rank_name"><a href="/phone/6331.html" title="宁采臣">宁采臣</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/6331.html" title="宁采臣">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">9</span>
+												<span class="rank_name"><a href="/phone/5567.html" title="仙侠遮天">仙侠遮天</a></span>
+												<span class="rank_renqi">2</span>
+												<span class="rank_download"><a href="/phone/5567.html" title="仙侠遮天">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">10</span>
+												<span class="rank_name"><a href="/phone/6336.html" title="口袋剑魂">口袋剑魂</a></span>
+												<span class="rank_renqi">2</span>
+												<span class="rank_download"><a href="/phone/6336.html" title="口袋剑魂">下载</a></span>
+											</div>
+										</li>                                                                   											    									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+			<p class="footer_top"><a href="/support/about.html">关于本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/help.html">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/advertise.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/rjfb.html">软件发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">下载声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemap.html">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemaps.xml">网站RSS</a></p>
+			<p class="footer_md">手机天堂是国内最专业的手机软件、手机游戏下载中心,手机天堂以服务用户为理念，努力打造成国内最大、最安全快速的手机软件、手机游戏下载平台。</p>
+		</div>
+		</div>
+ 
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/script_index2.js"></script>
+	</body>
+</html>

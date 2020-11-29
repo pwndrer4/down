@@ -1,0 +1,1 @@
+document.write("<div style=\"background:#fff;width:483px;height:108px;overflow:hidden;margin:auto;border:1px #f60 dashed;text-align:center;\">id_2¹ã¸æÎ»-485*110</div>")

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+<title>win8.1无线网络受限原因及解决方法大全-仿飞翔下载</title>
+<meta name="keywords" content="" />
+<meta name="description" content="win8.1无线网络受限原因及解决方法大全" />
+<link href="/statics/m_v2/skin_css/m_xpgod.css" type="text/css" rel="stylesheet">
+<script>
+window.onload = function(){
+    document.getElementById("contentTextsss").innerHTML = document.getElementById("contentTextsss").innerHTML.replace(/src=\"\/d\/file\//g,"src=\"http:\/\/xpgod.zuseng.com\/d\/file\/");
+}
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="/"><img src="/statics/m_v2/skin_img/logo.png" alt="仿飞翔下载" /></a></div>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/fjyx/">游戏</a></li>
+    <li><a href="/sjrj/">软件</a></li>
+    <li><a href="/news/" class="last">资讯</a></li>
+  </ul>
+</div>
+<div class="article_title">
+  <div class="title">win8.1无线网络受限原因及解决方法大全</div>
+  <div class="au_time">
+    <span class="span_auti"><span class="author"></span><em>作者：佚名</em></span>
+    <span class="span_auti ml55"><span class="time"></span><em>时间：2016-05-16</em></span>
+  </div>
+</div>
+<div class="intro_txt" id="contentTextsss"><p>win8.1无线网络受限问题特点是原因复杂而现象一致，所以解决起来比较棘手;那么win8.1无线网络受限怎么办呢?下面系统小编来帮你分析一下。</p>
+<table align="center" border="1" cellpadding="1" cellspacing="0" style="width: 500px">
+<tbody>
+	<tr>
+	<td rowspan="4">win8.1教程相关推荐</td>
+	<td>
+<p>思路一：<span style="color: #ff0000">检查网络及路由器信号是否畅通</span></p>
+<p>首先，确认网络是否欠费，无线路由器线路连接是否良好，无线网络信号发射是否正常。</p>
+<p>如果确定是路由器的问题，不妨重启路由器或者恢复路由器的设置为出厂状态。</p>
+<p>同时，如果可以，请更新无线路由器固件和计算机的无线网络适配器驱动程序为最新版本。</p>
+<p>思路二：<span style="color: #ff0000">检查网络服务状态</span></p>
+<p>按Winkey+R启动运行，键入&ldquo;services.msc&rdquo;启动服务管理窗口。确认DNS Client、DHCP Client以及IP Helper等网络服务状态(默认为开启)，然后重新启动计算机。</p>
+<p>思路三：<span style="color: #ff0000">检查IP地址和DNS服务器地址</span></p>
+<p>1、右击任务栏右侧无线网络图标，选择&ldquo;打开网络和共享中心&rdquo;(控制面板中也可以找到);</p>
+<p>2、在网络和共享中心窗口，点击查看活动网络状态下右侧的&ldquo;连接&rdquo;;</p>
+<p>3、在WLAN状态窗口中，选择&ldquo;属性&rdquo;;</p>
+<center>
+	<p><img alt="win8.1无线网络受限原因及解决方法大全" src="/d/file/huoche/201605221622/20140305041245583.jpg" /><br />
+	&nbsp;</p>
+</center>
+<p>4、在&ldquo;此连接使用下面项目&rdquo;中双击&ldquo;Internet协议版本4(TCP/IPv4)&rdquo;;</p>
+<p>5、确认需要的IP地址及DNS服务器地址输入是否正确，更改完成后按&ldquo;确定&rdquo;退出(默认为自动获取)。对于绑定了IP地址和DNS服务器地址的无线网络，要输入指定的IP地址和DNS服务器地址。</p>
+<p>思路四：<span style="color: #ff0000">使用系统内置的诊断工具</span></p>
+<p>系统自带的无线网络诊断功能还是很好用的，它可以定位网络问题并给予部分修复。</p>
+<p>启用系统内置的诊断工具，只需要在上述的WLAN状态窗口中选择&ldquo;诊断&rdquo;，然后按步骤操作即可。</p>
+<p>思路五：<span style="color: #ff0000">重置网络连接</span></p>
+<p>以管理员身份运行命令提示符，输入以下命令：</p>
+<p>&bull; NETSH INT IP RESET</p>
+<p>&bull; NETSH WINHTTP RESET PROXY</p>
+<p>&bull; IPCONFIG /FLUSHDNS</p>
+<p>每一行输入完成后按回车键确定，执行完毕即可重置网络连接。</p>
+<p>思路六：<span style="color: #ff0000">重置Winsock</span></p>
+<p>小编曾经误删了注册表中Winsock键值导致网络连接提示受限，因此在网络正常的时候，备份注册表以防万一。</p>
+<p>Winsock键值的位置：</p>
+<p>&bull; HKEY_LOCAL_MACHINESystemCurrentControlSetServicesWinsock</p>
+<p>&bull; HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesWinSock2</p>
+<center>
+	<p><img alt="win8.1无线网络受限原因及解决方法大全" src="/d/file/huoche/201605221622/20140305041350565.jpg" /><br />
+	&nbsp;</p>
+</center>
+<p>也可以使用命令提示符(以管理员身份运行)重置Winsock：</p>
+<p>&bull; netsh winsock reset</p></div>
+<div class="pagesss"></div>
+<div class="line"></div>
+<div class="main_xgyx">
+  <div class="xgyx_title">相关资讯</div>
+  <div class="xgyx_list">
+    <ul class="clearfix">
+            <li><a href="/article/222.html"><span></span>win8电脑启动后黑屏怎么办 win8启动黑屏解决办法</a></li>
+            <li><a href="/article/224.html"><span></span>windows update更新失败报错解决方法</a></li>
+            <li><a href="/article/225.html"><span></span>win8.1安装3月后更新假死问题解决教程</a></li>
+            <li><a href="/article/226.html"><span></span>win8出现蓝屏错误代码0x000007B怎么办</a></li>
+            <li><a href="/article/228.html"><span></span>win8.1开机开两次怎么办？win8.1开机开两次解决方法</a></li>
+	
+          </ul>
+  </div>
+</div>
+<div id="SOHUCS"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrbiKxmG&conf=prod_8e11cfb50c20f2a0b31d59926e9e42c7">
+</script>
+<div class="footer">
+  <a href="javascript:void(0);" class="back_top"><span><img src="/statics/m_v2/skin_img/top.png" alt="" /></span><em>返回顶部</em></a>
+</div>
+<div class="fade"></div>
+<script src="/statics/m_v2/skin_js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<div style="display: none">
+  <script>
+$(function(){
+	$('.game_list .list_div:last,.rank_list .list_div:last,.zx_list .list_div').css('border-bottom-width',0);
+	$(".back_top").click(function(){
+		$('body,html').animate({scrollTop:0},100);
+		return false;
+	});
+	$('.paih_list').each(function(index, element) {
+		$(this).find('.list_div:last').css('border-bottom-width',0);
+	});
+	/*var imhwd=$('.mrd_pic').width();
+	$('.mrd_pic ul li').css('width',imhwd);
+	var imght=$('.mrd_pic li img').height();
+	$('.mrd_pic').css('height',imght);*/	
+	
+	$('.az_ios:last,.news_list dl:last').addClass('last');
+	
+	/*$('.zx_list .list_div_rg a').click(function() {
+		$('.fade').show();
+		$('.login_box').show();
+	});*/
+	$('.close').live('click',function() {
+		$('.fade').hide();
+		$('.login_box').hide();
+	});
+	
+	//
+	$('.span_close').click(function() {
+		$('.bt_gg').hide();
+		$('.footer').css('margin-bottom',0);
+	});
+})
+  </script>
+</div>
+</body>
+</html>

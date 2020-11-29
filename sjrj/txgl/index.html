@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>通讯管理 - 1000s分享站</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="/shouji/statics/skin_css/index.css?sd" />
+		<script  type="text/javascript" src="/shouji/statics/skin_js/jquery-1.8.3.min.js"></script>
+		<script  type="text/javascript" src="/shouji/statics/skin_js/searchword.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/jquery.global.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/tupqh.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<base target="_blank" />
+	</head>
+	<body>
+<div class="top_bj">
+  <div class="top">
+    <div class="top_lf">
+      <ul>
+        <li><a href="http://www.1000s.cc" class="top_menu_a">首页</a></li>
+        <li onmouseover="show('quanzdh');" onmouseout="hide('quanzdh');" id="bj_hover" class=""> <a href="javascript:void(0)" target="_self" class="top_menu_a dh_bj">全站导航</a>
+          <div id="quanzdh" style="display: none;">
+            <div class="qh_top">
+              <div class="qh_top_title">下载专区</div>
+              <div class="qh_top_list"> <a href="/fjyx/" class="dh_a">游戏库</a> <a href="/sjrj/" class="dh_a">软件库</a> </div>
+              <div class="qh_top_title">资讯中心</div>
+              <div class="qh_top_list zx"> <a href="/news/gonglue/" class="dh_a">手游攻略</a> <a href="/news/yueyu/" class="dh_a">越狱教程</a> <a href="/news/shuaji/" class="dh_a">刷机教程</a> <a href="/news/video/" class="dh_a">精彩视频</a> <a href="/news/zixun/" class="dh_a">新闻资讯</a> </div>
+            </div>
+            <div class="qh_bottom">
+              <div class="qh_bottom_title">热门游戏</div>
+              <div class="qh_bottom_list">
+			  <a href="/phone/6337.html" class="qhbt_a">梦幻西游3</a> 
+			  <a href="/phone/5575.html" class="qhbt_a">斗犬OL</a> 
+			  <a href="/phone/5103.html" class="qhbt_a">御剑情缘</a> 
+			  <a href="/phone/6339.html" class="qhbt_a">决斗英雄</a> 
+			  <a href="/phone/6338.html" class="qhbt_a">天天打波利</a> 
+			  <a href="/phone/4902.html" class="qhbt_a">守望前线</a> 
+			  <a href="/phone/5335.html" class="qhbt_a">开心农场2:乡村度假无限钥匙版</a> 
+			  <a href="/phone/5561.html" class="qhbt_a">梦幻降魔录</a> 
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="top_rg"> <a onclick="SetHome(this,window.location)" class="top_menu_a a_pad">设为首页</a> <a class="top_menu_a a_pad" onclick="shoucang(document.title,window.location)">收藏本站</a> </div>
+  </div>
+</div>
+<div class="daohang_bj">
+  <div class="daohang">
+    <div class="search-box">
+      <form class="search-form" action="/e/search/index.php" method="post" name="searchform" id="searchform" target="_blank">
+        <input class="search-text" type="text" name="keyboard" id="keyboard">
+        <input type="image" class="search-btn" src="/shouji/statics/skin_img/search-btn.png">
+        <div class="search-select">
+          <div class="search-type">
+            <select name="tbname">
+              <option value="news" class="sedsa">资讯</option>
+              <option value="soft" class="sedsa">软件</option>
+              <option value="phone" class="sedsa">手机</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+      </form>
+    </div>
+    <div class="dh_logo"><a href="/" target="_self"><img src="/shouji/statics/skin_img//logo.png" alt="logo" target="_self"></a></div>
+    <div class="dh_menu dh_menu_paih">
+      <ul>
+        <li class="paihb_menu_li"><a href="/fjyx/" class="d_manu_a">下游戏</a><a href="/fjyx/xxyz/" class="x_menu_a">休闲</a><a href="/fjyx/sjqz/" class="x_menu_a">射击</a><a href="/shouji/phb.html" class="x_menu_a">排行</a></li>
+        <li class="paihb_menu_li"><a href="/sjrj/" class="d_manu_a">装应用</a><a href="/sjrj/xtgj/" class="x_menu_a">系统</a><a href="/sjrj/sjdh/" class="x_menu_a">导航</a><a href="/sjrj/sjyd/" class="x_menu_a">阅读</a></li>
+        <li class="paihb_menu_li"><a href="/news/" class="d_manu_a">看资讯</a><a href="/news/gonglue/" class="x_menu_a">攻略</a><a href="/news/yueyu/" class="x_menu_a">越狱</a><a href="/news/zixun/" class="x_menu_a">新闻</a></li>
+        <li class="paihb_menu_li"><a href="/news/video/" class="d_manu_a">看视频</a><a href="/news/shuaji/" class="x_menu_a">刷机</a><a href="/article/hardware/" class="x_menu_a">硬件</a><a href="/article/wljs/" class="x_menu_a">技术</a></li>
+      </ul>
+    </div>
+    <div class="dh_rmss"> 热门搜索:<a href='/e/search/result/?searchid=21' target=_blank>梦幻西游</a>&nbsp;<a href='/e/search/result/?searchid=23' target=_blank>qq</a>&nbsp;<a href='/e/search/result/?searchid=9' target=_blank>qq2016</a>&nbsp;<a href='/e/search/result/?searchid=22' target=_blank>360</a>&nbsp;<a href='/e/search/result/?searchid=29' target=_blank>2016</a>&nbsp;<a href='/e/search/result/?searchid=28' target=_blank>西游</a><br> </div>
+  </div>
+</div>
+
+		<div class="main_bj main_bjs">
+			<div class="w1204">
+				<div class="main_bpic">
+					<div class="bpic1"><script src="/d/js/acmsd/thea1.js"></script></div>
+    				<div class="bpic2"><script src="/d/js/acmsd/thea2.js"></script></div>
+				</div>
+				<div class="search_bj">
+					<div class="main_lf search_main_lfs">
+						<div class="main_lf_weizhi">您的位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/sjrj/">软件库</a>&nbsp;>&nbsp;<a href="/sjrj/txgl/">通讯管理</a></div>
+						<div class="search_hd">
+							<div class="sliderbox">
+								<div class="btn_bj lfbd"><div id="btn-left" class="arrow-btn dasabled" style="cursor: auto;"></div></div>
+								<div class="slider">
+									<ul> 
+										<li>
+											<a href="/phone/3930.html" title="途同">
+												<img src="/d/file/huoche/2016052111/20160325014658352.png" alt="途同" />
+												<span></span>
+												<b class="slider_name">途同</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3923.html" title="米呀">
+												<img src="/d/file/huoche/2016052111/20160329065023572.png" alt="米呀" />
+												<span></span>
+												<b class="slider_name">米呀</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3906.html" title="Google+">
+												<img src="/d/file/huoche/2016052111/20160325090036485.png" alt="Google+" />
+												<span></span>
+												<b class="slider_name">Google+</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3907.html" title="会会">
+												<img src="/d/file/huoche/2016052111/20160327091425739.png" alt="会会" />
+												<span></span>
+												<b class="slider_name">会会</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3903.html" title="魅族大鱼">
+												<img src="/d/file/huoche/2016052111/20160328084301983.png" alt="魅族大鱼" />
+												<span></span>
+												<b class="slider_name">魅族大鱼</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3898.html" title="is语音">
+												<img src="/d/file/huoche/2016052111/20160328102459990.png" alt="is语音" />
+												<span></span>
+												<b class="slider_name">is语音</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3877.html" title="小酱油">
+												<img src="/d/file/huoche/2016052111/20160405100654685.png" alt="小酱油" />
+												<span></span>
+												<b class="slider_name">小酱油</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3865.html" title="约你">
+												<img src="/d/file/huoche/2016052111/20160330012614890.png" alt="约你" />
+												<span></span>
+												<b class="slider_name">约你</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3853.html" title="猫盟">
+												<img src="/d/file/huoche/2016052111/20160405090231565.png" alt="猫盟" />
+												<span></span>
+												<b class="slider_name">猫盟</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3832.html" title="即会通">
+												<img src="/d/file/huoche/2016052111/20160408092239917.png" alt="即会通" />
+												<span></span>
+												<b class="slider_name">即会通</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3806.html" title="找室友">
+												<img src="/d/file/huoche/2016052111/20160408095204822.png" alt="找室友" />
+												<span></span>
+												<b class="slider_name">找室友</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3799.html" title="匹诺曹录音">
+												<img src="/d/file/huoche/2016052111/20160408103543203.png" alt="匹诺曹录音" />
+												<span></span>
+												<b class="slider_name">匹诺曹录音</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3800.html" title="车友盒子">
+												<img src="/d/file/huoche/2016052111/20160408101221588.png" alt="车友盒子" />
+												<span></span>
+												<b class="slider_name">车友盒子</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3796.html" title="啧啧">
+												<img src="/d/file/huoche/2016052111/20160411084724943.png" alt="啧啧" />
+												<span></span>
+												<b class="slider_name">啧啧</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3774.html" title="亲爱的">
+												<img src="/d/file/huoche/2016052111/20160413090537141.png" alt="亲爱的" />
+												<span></span>
+												<b class="slider_name">亲爱的</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3775.html" title="豆瓣广播">
+												<img src="/d/file/huoche/2016052111/20160414015705600.png" alt="豆瓣广播" />
+												<span></span>
+												<b class="slider_name">豆瓣广播</b>
+												<b class="slider_sort">通讯管理</b>
+											</a>
+										</li>
+								</div>
+								<div class="btn_bj rgbd"><div id="btn-right" class="arrow-btn" style="cursor: pointer;"></div></div>
+							  </div>
+						</div>
+						<div class="search_title">
+							<span class="search_title_lf">分类筛选</span>
+							<span class="search_title_rg">共计<b>146</b>款游戏</span>
+						</div>
+						<div class="search_sort">
+							<div class="search_pingtai">
+								<span class="search_tips">类别：</span>
+								<ul class="search_sort_ul">
+								<li class="search_sort_li "><a href="/sjrj/" target="_self">全部<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/xtgj/" target="_self">系统工具<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/mtbf/" target="_self">媒体播放<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/tpcl/" target="_self">图片处理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/wlll/" target="_self">网络浏览<span></span></a></li>
+													<li class="search_sort_li  searc_cur"><a href="/sjrj/txgl/" target="_self">通讯管理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjdh/" target="_self">手机导航<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjyd/" target="_self">手机阅读<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/bjsh/" target="_self">便捷生活<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/spmh/" target="_self">锁屏美化<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/srf/" target="_self">输入法<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/qtyy/" target="_self">其他应用<span></span></a></li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="sort_list">
+							<ul class="sort_ul">
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4831.html" title="呱呱视频">呱呱视频</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4831.html" title="呱呱视频" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151211034820891.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4831.html" title="呱呱视频" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">呱呱视频</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">本站提供呱呱视频社区官方最新版下载：是一款功能强大的多人互动视频聊天室。支持超大、清晰的视频为用户带来视觉上的享受。大屏、清晰并且畅通无阻的视频观感，是呱呱视频社区所具备的的优势。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4822.html" title="淘友汇">淘友汇</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;2人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4822.html" title="淘友汇" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151217095713555.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4822.html" title="淘友汇" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">淘友汇</p>
+											<p class="hover_top_others">2人安装</p>
+										</div>
+										<div class="sort_hover_md">本站提供淘友汇电脑版下载：淘友汇是一款交友聊天通讯app，你可以在这边淘到自己的闺蜜朋友，可以找到志同道合的朋友，可以找到红颜知己。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4816.html" title="微信gif表情包">微信gif表情包</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4816.html" title="微信gif表情包" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151213102544511.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4816.html" title="微信gif表情包" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">微信gif表情包</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂官网提供微信gif表情包下载：微信gif表情包是一款微信聊天辅助动态表情，你可以自己制作一个动态的表情，加上文字语音的效果，让你的朋友们开心一刻。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4802.html" title="蜜桃语音">蜜桃语音</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4802.html" title="蜜桃语音" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151217091837176.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4802.html" title="蜜桃语音" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">蜜桃语音</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">蜜桃语音app下载安卓版：是一款语音聊天的社交软件，能够随机帮你匹配语音聊天对象。上线就能聊天，无需等待，总有帅哥美女主动搭讪。另外还有专属女生的特权，你可以陪各种人聊天，获取小小的收益，心动了吗？快来下载吧！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4793.html" title="找到ta">找到ta</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4793.html" title="找到ta" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151217102627332.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4793.html" title="找到ta" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">找到ta</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">找到ta官网app下载是一款通过个人好友朋友圈找到朋友，不想通过社交软件，不想上非诚勿扰节目，不想上珍爱网，不想去相亲，你可以通过找到ta安卓版找到你的对象哦。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4785.html" title="微家园">微家园</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4785.html" title="微家园" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151220091503325.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4785.html" title="微家园" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">微家园</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">微家园家长版下载是一款专业的幼儿园家园共育互动平台应用。通过“微家园” 家长可以通过手机端，便捷地与教师进行即时交流，随时了解幼儿情况，教师也可以通过文字、图片、表情、语音等形式给家长发送消息，“微家园”家长教师使用它能更好的教育好孩子，共同关注孩</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4779.html" title="blued">blued</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4779.html" title="blued" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151222094038235.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4779.html" title="blued" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">blued</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">blued下载电脑版是一款国内最专业的同志交友应用。Blued不仅速度快、人气旺，可基于地理定位寻找离你最近的GAY友，更可实时在线聊天、分享心情，让交友更便捷，沟通更顺畅。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4774.html" title="微洽">微洽</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4774.html" title="微洽" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151222104521460.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4774.html" title="微洽" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">微洽</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">微洽APP是为企业和职场人士提供工作沟通协作的平台，核心团队凭借十多年的企业应用软件、互联网运营服务经验，努力追求更专业的行业理解、更贴心的技术运用。自2013年创立以来，微洽APP正快速发展成行业的领先品牌。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4763.html" title="微信猎手">微信猎手</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;2人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4763.html" title="微信猎手" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151218113156617.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4763.html" title="微信猎手" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">微信猎手</p>
+											<p class="hover_top_others">2人安装</p>
+										</div>
+										<div class="sort_hover_md">微信猎手电脑版下载是最近火爆微信好友圈的一款管理软件，它可以帮助您查看对方是否互相是好友，备份导出好友微信号最简单不过了。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4743.html" title="kk语音">kk语音</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4743.html" title="kk语音" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151222095031365.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4743.html" title="kk语音" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">kk语音</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">kk语音电脑版下载是一款为手游玩家量身定做的集混公会、游戏内即时聊天为一体的社交APP，KK语音有着专业的公会组织，可边玩游戏边聊天。快来抢先体验手游公会神器！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4741.html" title="漂流瓶子">漂流瓶子</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4741.html" title="漂流瓶子" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151222110655870.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4741.html" title="漂流瓶子" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">漂流瓶子</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">漂流瓶子电脑版是一款匿名移动社交应用。想要找“瓶友”吗？在“漂流瓶子”上写上您的简短沟通信息，与您志趣相投的朋友就来了，与您一起吐槽、分享心事。还可以搭讪美女哦~</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4732.html" title="富聊">富聊</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;2人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4732.html" title="富聊" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151224100120282.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4732.html" title="富聊" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">富聊</p>
+											<p class="hover_top_others">2人安装</p>
+										</div>
+										<div class="sort_hover_md">富聊电脑版下载是一款网络交友app社交应用，可以通过陪聊方式赚取积分，支持照片分享、语音聊天、轨迹查询等功能，通过聊天、发美照等方式可赚取积分，并可将积分兑换成奖品，使您在互动中获取更多的乐趣和价值。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4729.html" title="天翼电话本">天翼电话本</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4729.html" title="天翼电话本" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151224103757984.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4729.html" title="天翼电话本" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">天翼电话本</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">天翼电话本是一款智能手机通讯录应用，为用户提供了便捷的通话服务、联系人管理以及短信管理功能。另外，用户可通过天翼帐号登录，享受更多便利服务及特权。189邮箱、天翼云、流量宝及天翼用户中心轻松转换。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4723.html" title="黑白校园">黑白校园</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4723.html" title="黑白校园" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151225093949347.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4723.html" title="黑白校园" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">黑白校园</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">黑白校园app官方下载是款大学专属聊天社交社区，在黑白校园你可以分为昼夜两个身份，白天可以乖乖的传递一些正能量啊做个乖孩子，晚上就可以匿名爆料啦!想爆什么就爆什么吧!</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4721.html" title="伐木累">伐木累</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4721.html" title="伐木累" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151225104552436.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4721.html" title="伐木累" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">伐木累</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">伐木累app下载是一款电竞明星和主播图文、语音、视频资讯app。聚焦电竞圈一线红人，第一时间获取游戏资讯。包揽明星动态，关注潮流衣食住行！快来加入我们吧~ We are 伐木累!</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4708.html" title="挖豆">挖豆</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4708.html" title="挖豆" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151224091941666.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4708.html" title="挖豆" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">挖豆</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">挖豆app安卓版下载是一款不一样的网络通信社交app软件，挖豆可以左右你的生活乐趣，可以分享一下你的心情，是现代网络最流行的一款同城分享app平台。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4705.html" title="PP语音">PP语音</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4705.html" title="PP语音" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151224093545288.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4705.html" title="PP语音" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">PP语音</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">PP语音电脑版下载是一款电话约聊，美女电话煲，交友通讯app平台，PP语音是最近非常热门的一款语音交友软件，PP为point to point，点对点的意思，ppcall即为点对点的电话沟通。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4704.html" title="百变语音">百变语音</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4704.html" title="百变语音" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151225084931991.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4704.html" title="百变语音" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">百变语音</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">百变语音手机版app下载：是一款关于语音变声类的手机软件，为用户提供二十多中变声特效，男生女生、可爱搞怪、幽灵等等多种，你想怎么变就怎么变！欢迎喜欢的用户下载体验！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4697.html" title="第一弹">第一弹</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4697.html" title="第一弹" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151225091452372.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4697.html" title="第一弹" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">第一弹</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">第一弹官网app下载是一款二次元社交应用。“第一弹”覆盖知名动漫游戏作品中有趣、有梗、奇葩、涨姿势的劲爆内容，提供新番动画、连载漫画、种子等超全海量资源下载，满足您的追番需求。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4684.html" title="贝聊">贝聊</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4684.html" title="贝聊" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151229084104684.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4684.html" title="贝聊" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">贝聊</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">贝聊电脑版下载下载是免费的家园共育平台，由手机软件和电脑管理系统组成，可免费发送视频、图片和文字等信息，并提供单人和多人在线聊天。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4630.html" title="和通讯录">和通讯录</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4630.html" title="和通讯录" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20151231111619675.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4630.html" title="和通讯录" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">和通讯录</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">和通讯录电脑版下载是一款强大的联系人分组管理，是结合中国移动彩云平台推出的免费通讯录手机应用。手机中的联系人信息同步到云端的彩云通讯录平台，同时还拥有智能拨号、短信管理、隐私保护、黑白名单、归属地等功能。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4624.html" title="偶扑">偶扑</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4624.html" title="偶扑" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160105092019968.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4624.html" title="偶扑" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">偶扑</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">偶扑下载app手机版有什么用处，偶扑app可以帮助你干嘛？你在偶扑app平台里可以跟你喜欢的明星粉丝团一起互动，你可以在这里找到你的最优质的粉丝团。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4620.html" title="克鲁">克鲁</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4620.html" title="克鲁" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160106094255275.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4620.html" title="克鲁" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">克鲁</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">克鲁手机版下载你无法想象这是一款怎样的社交应用，因为在遇见克鲁App之前，小编从来都没有见过这样的一种社交方式，“占地系统”、“印迹系统”、“组织系统”等等新奇又好玩，玩腻了微信和QQ的你我不妨来试试这个“克鲁”。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4617.html" title="美聊">美聊</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4617.html" title="美聊" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160510103551715.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4617.html" title="美聊" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">美聊</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">美聊app下载是网易出品的一款女神聊天应用。美聊有超过30万高情商的女神，都经过身份核实验证，一对一的陪伴，让你和女神一起尽享私密聊天乐趣。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<!--list.var5-->
+
+																						</ul>
+						</div>
+						<div class="fenye">
+							<ul class="fenye_ul"><a class="pre none" target="_self"><em>上一页</em></a><a class="zi none" target="_self"><em>首页</em></a><span>1</span><a href="/sjrj/txgl/index_2.html" target="_self">2</a><a href="/sjrj/txgl/index_3.html" target="_self">3</a><a href="/sjrj/txgl/index_4.html" target="_self">4</a><a href="/sjrj/txgl/index_5.html" target="_self">5</a><a href="/sjrj/txgl/index_6.html" target="_self">6</a><a href="/sjrj/txgl/index_7.html" target="_self">尾页</a><a href="/sjrj/txgl/index_2.html" class="next" target="_self"><em>下一页</em></a></ul>
+						</div>
+					</div>
+					<div class="main_rg search_main_rgs">
+						<script src="/d/js/acmsd/thea16.js"></script>
+						<div class="main_rg_yxtj">
+							<div class="yxtj_title"><span class="titles">热门推荐</span></div>
+							<div class="yxtj_list">
+								<ul class="search_yxtj_ul">
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="钉钉桌面版"><img src="/d/file/huoche/2016052111/20160422104006183.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="钉钉桌面版">钉钉桌面版</a></p>
+												<p class="li_rg_other">35.3MB&nbsp;|&nbsp;3次下载</p>
+												<p class="li_rg_other">通讯管理</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="is语音"><img src="/d/file/huoche/2016052111/20160328102459990.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="is语音">is语音</a></p>
+												<p class="li_rg_other">22MB&nbsp;|&nbsp;2次下载</p>
+												<p class="li_rg_other">通讯管理</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="合拍"><img src="/d/file/huoche/2016052111/20160427045604868.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="合拍">合拍</a></p>
+												<p class="li_rg_other">8.34 MB&nbsp;|&nbsp;1次下载</p>
+												<p class="li_rg_other">通讯管理</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="KIND"><img src="/d/file/huoche/2016052111/20160422102050337.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="KIND">KIND</a></p>
+												<p class="li_rg_other">26.87 MB&nbsp;|&nbsp;1次下载</p>
+												<p class="li_rg_other">通讯管理</p>
+											</div>
+										</li>
+																	
+								</ul>
+							</div>
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件专题</span></div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/minecraft/" class="rmzt_a" title="minecraft下载">
+									<img src="/d/file/p/2016-05-24/495c6d743bed4645b18edf9e114315c2.png" alt="minecraft下载">
+									<b>minecraft下载</b>	
+								</a>
+							</div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/yxlmfzdq/" class="rmzt_a" title="英雄联盟辅助大全">
+									<img src="/d/file/p/2016-05-25/1a5050ecad80a1413dd27821a14790ef.png" alt="英雄联盟辅助大全">
+									<b>英雄联盟辅助大全</b>	
+								</a>
+							</div>
+                    								
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件排行榜</span></div>
+								<div class="forth_rg_list">
+									<ul class="forth_ul">
+										<li class="forth_li w78">排名</li>
+										<li class="forth_li w91">软件</li>
+										<li class="forth_li w68">人气</li>
+										<li class="forth_li w30">下载</li>
+									</ul>
+								</div>
+								<div class="forth_rg_rank">
+									<ul class="forth_ul_main">
+									 							  									 							  
+	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">1</span>
+												<span class="rank_name"><a href="/phone/4850.html" title="双开大师">双开大师</a></span>
+												<span class="rank_renqi">41</span>
+												<span class="rank_download"><a href="/phone/4850.html" title="双开大师">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">2</span>
+												<span class="rank_name"><a href="/phone/4474.html" title="腾讯wifi管家">腾讯wifi管家</a></span>
+												<span class="rank_renqi">23</span>
+												<span class="rank_download"><a href="/phone/4474.html" title="腾讯wifi管家">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">3</span>
+												<span class="rank_name"><a href="/phone/6346.html" title="电视猫">电视猫</a></span>
+												<span class="rank_renqi">16</span>
+												<span class="rank_download"><a href="/phone/6346.html" title="电视猫">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">4</span>
+												<span class="rank_name"><a href="/phone/6340.html" title="快手">快手</a></span>
+												<span class="rank_renqi">9</span>
+												<span class="rank_download"><a href="/phone/6340.html" title="快手">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">5</span>
+												<span class="rank_name"><a href="/phone/6345.html" title="芒果TV">芒果TV</a></span>
+												<span class="rank_renqi">8</span>
+												<span class="rank_download"><a href="/phone/6345.html" title="芒果TV">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">6</span>
+												<span class="rank_name"><a href="/phone/4842.html" title="万能遥控">万能遥控</a></span>
+												<span class="rank_renqi">7</span>
+												<span class="rank_download"><a href="/phone/4842.html" title="万能遥控">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">7</span>
+												<span class="rank_name"><a href="/phone/3564.html" title="随笔记">随笔记</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/3564.html" title="随笔记">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">8</span>
+												<span class="rank_name"><a href="/phone/4812.html" title="百度地图导航">百度地图导航</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/4812.html" title="百度地图导航">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">9</span>
+												<span class="rank_name"><a href="/phone/6343.html" title="PPTV网络电视">PPTV网络电视</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/6343.html" title="PPTV网络电视">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">10</span>
+												<span class="rank_name"><a href="/phone/4644.html" title="百度一键ROOT">百度一键ROOT</a></span>
+												<span class="rank_renqi">5</span>
+												<span class="rank_download"><a href="/phone/4644.html" title="百度一键ROOT">下载</a></span>
+											</div>
+										</li>										                                                                           											    									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+			<p class="footer_top"><a href="/support/about.html">关于本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/help.html">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/advertise.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/rjfb.html">软件发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">下载声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemap.html">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemaps.xml">网站RSS</a></p>
+			<p class="footer_md">手机天堂是国内最专业的手机软件、手机游戏下载中心,手机天堂以服务用户为理念，努力打造成国内最大、最安全快速的手机软件、手机游戏下载平台。</p>
+		</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2016816'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D2016816%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>		</div>
+ 
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/script_index2.js"></script>
+	</body>
+</html>

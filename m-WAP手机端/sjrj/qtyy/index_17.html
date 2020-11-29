@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>其他应用 - 仿飞翔下载</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="/shouji/statics/skin_css/index.css?sd" />
+		<script  type="text/javascript" src="/shouji/statics/skin_js/jquery-1.8.3.min.js"></script>
+		<script  type="text/javascript" src="/shouji/statics/skin_js/searchword.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/jquery.global.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/tupqh.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<base target="_blank" />
+	</head>
+	<body>
+<div class="top_bj">
+  <div class="top">
+    <div class="top_lf">
+      <ul>
+        <li><a href="http://xpgod.zuseng.com" class="top_menu_a">首页</a></li>
+        <li onmouseover="show('quanzdh');" onmouseout="hide('quanzdh');" id="bj_hover" class=""> <a href="javascript:void(0)" target="_self" class="top_menu_a dh_bj">全站导航</a>
+          <div id="quanzdh" style="display: none;">
+            <div class="qh_top">
+              <div class="qh_top_title">下载专区</div>
+              <div class="qh_top_list"> <a href="/fjyx/" class="dh_a">游戏库</a> <a href="/sjrj/" class="dh_a">软件库</a> </div>
+              <div class="qh_top_title">资讯中心</div>
+              <div class="qh_top_list zx"> <a href="/news/gonglue/" class="dh_a">手游攻略</a> <a href="/news/yueyu/" class="dh_a">越狱教程</a> <a href="/news/shuaji/" class="dh_a">刷机教程</a> <a href="/news/video/" class="dh_a">精彩视频</a> <a href="/news/zixun/" class="dh_a">新闻资讯</a> </div>
+            </div>
+            <div class="qh_bottom">
+              <div class="qh_bottom_title">热门游戏</div>
+              <div class="qh_bottom_list">
+			  <a href="/phone/6337.html" class="qhbt_a">梦幻西游3</a> 
+			  <a href="/phone/5103.html" class="qhbt_a">御剑情缘</a> 
+			  <a href="/phone/5575.html" class="qhbt_a">斗犬OL</a> 
+			  <a href="/phone/6338.html" class="qhbt_a">天天打波利</a> 
+			  <a href="/phone/5561.html" class="qhbt_a">梦幻降魔录</a> 
+			  <a href="/phone/4902.html" class="qhbt_a">守望前线</a> 
+			  <a href="/phone/5109.html" class="qhbt_a">呆萌小怪物钻石版</a> 
+			  <a href="/phone/6331.html" class="qhbt_a">宁采臣</a> 
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="top_rg"> <a onclick="SetHome(this,window.location)" class="top_menu_a a_pad">设为首页</a> <a class="top_menu_a a_pad" onclick="shoucang(document.title,window.location)">收藏本站</a> </div>
+  </div>
+</div>
+<div class="daohang_bj">
+  <div class="daohang">
+    <div class="search-box">
+      <form class="search-form" action="/e/search/index.php" method="post" name="searchform" id="searchform" target="_blank">
+        <input class="search-text" type="text" name="keyboard" id="keyboard">
+        <input type="image" class="search-btn" src="/shouji/statics/skin_img/search-btn.png">
+        <div class="search-select">
+          <div class="search-type">
+            <select name="tbname">
+              <option value="news" class="sedsa">资讯</option>
+              <option value="soft" class="sedsa">软件</option>
+              <option value="phone" class="sedsa">手机</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+      </form>
+    </div>
+    <div class="dh_logo"><a href="/" target="_self"><img src="/shouji/statics/skin_img//logo.png" alt="logo" target="_self"></a></div>
+    <div class="dh_menu dh_menu_paih">
+      <ul>
+        <li class="paihb_menu_li"><a href="/fjyx/" class="d_manu_a">下游戏</a><a href="/fjyx/xxyz/" class="x_menu_a">休闲</a><a href="/fjyx/sjqz/" class="x_menu_a">射击</a><a href="/shouji/phb.html" class="x_menu_a">排行</a></li>
+        <li class="paihb_menu_li"><a href="/sjrj/" class="d_manu_a">装应用</a><a href="/sjrj/xtgj/" class="x_menu_a">系统</a><a href="/sjrj/sjdh/" class="x_menu_a">导航</a><a href="/sjrj/sjyd/" class="x_menu_a">阅读</a></li>
+        <li class="paihb_menu_li"><a href="/news/" class="d_manu_a">看资讯</a><a href="/news/gonglue/" class="x_menu_a">攻略</a><a href="/news/yueyu/" class="x_menu_a">越狱</a><a href="/news/zixun/" class="x_menu_a">新闻</a></li>
+        <li class="paihb_menu_li"><a href="/news/video/" class="d_manu_a">看视频</a><a href="/news/shuaji/" class="x_menu_a">刷机</a><a href="/article/hardware/" class="x_menu_a">硬件</a><a href="/article/wljs/" class="x_menu_a">技术</a></li>
+      </ul>
+    </div>
+    <div class="dh_rmss"> 热门搜索:<a href='/e/search/result/?searchid=9' target=_blank>qq2016</a>&nbsp;<a href='/e/search/result/?searchid=18' target=_blank>浏览器</a>&nbsp;<a href='/e/search/result/?searchid=19' target=_blank>腾讯</a>&nbsp;<a href='/e/search/result/?searchid=12' target=_blank>360杀毒</a>&nbsp;<a href='/e/search/result/?searchid=11' target=_blank>抢票软件</a>&nbsp;<a href='/e/search/result/?searchid=10' target=_blank>电脑管家</a><br> </div>
+  </div>
+</div>
+
+		<div class="main_bj main_bjs">
+			<div class="w1204">
+				<div class="main_bpic">
+					<div class="bpic1"><script src="/d/js/acmsd/thea1.js"></script></div>
+    				<div class="bpic2"><script src="/d/js/acmsd/thea2.js"></script></div>
+				</div>
+				<div class="search_bj">
+					<div class="main_lf search_main_lfs">
+						<div class="main_lf_weizhi">您的位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/sjrj/">软件库</a>&nbsp;>&nbsp;<a href="/sjrj/qtyy/">其他应用</a></div>
+						<div class="search_hd">
+							<div class="sliderbox">
+								<div class="btn_bj lfbd"><div id="btn-left" class="arrow-btn dasabled" style="cursor: auto;"></div></div>
+								<div class="slider">
+									<ul> 
+										<li>
+											<a href="/phone/4413.html" title="爱买车">
+												<img src="/d/file/huoche/2016052111/20160122012016202.png" alt="爱买车" />
+												<span></span>
+												<b class="slider_name">爱买车</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4409.html" title="微票儿">
+												<img src="/d/file/huoche/2016052111/20160122013924505.png" alt="微票儿" />
+												<span></span>
+												<b class="slider_name">微票儿</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4412.html" title="京东车管家">
+												<img src="/d/file/huoche/2016052111/20160122012745215.png" alt="京东车管家" />
+												<span></span>
+												<b class="slider_name">京东车管家</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4406.html" title="应试宝pc版">
+												<img src="/d/file/huoche/2016052111/20160125093603131.png" alt="应试宝pc版" />
+												<span></span>
+												<b class="slider_name">应试宝pc版</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4405.html" title="分期乐">
+												<img src="/d/file/huoche/2016052111/20160125083929573.png" alt="分期乐" />
+												<span></span>
+												<b class="slider_name">分期乐</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4407.html" title="OKcoin">
+												<img src="/d/file/huoche/2016052111/20160125095738101.png" alt="OKcoin" />
+												<span></span>
+												<b class="slider_name">OKcoin</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4399.html" title="作业盒子">
+												<img src="/d/file/huoche/2016052111/20160125104924669.png" alt="作业盒子" />
+												<span></span>
+												<b class="slider_name">作业盒子</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4402.html" title="淘宝彩票">
+												<img src="/d/file/huoche/2016052111/20160125090903695.png" alt="淘宝彩票" />
+												<span></span>
+												<b class="slider_name">淘宝彩票</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4403.html" title="华融证券">
+												<img src="/d/file/huoche/2016052111/20160125100217277.png" alt="华融证券" />
+												<span></span>
+												<b class="slider_name">华融证券</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4397.html" title="达令全球好货">
+												<img src="/d/file/huoche/2016052111/20160126085654127.png" alt="达令全球好货" />
+												<span></span>
+												<b class="slider_name">达令全球好货</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4396.html" title="美食菜谱">
+												<img src="/d/file/huoche/2016052111/20160126084640542.png" alt="美食菜谱" />
+												<span></span>
+												<b class="slider_name">美食菜谱</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4398.html" title="美团旅行">
+												<img src="/d/file/huoche/2016052111/20160126092656417.png" alt="美团旅行" />
+												<span></span>
+												<b class="slider_name">美团旅行</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4387.html" title="小马金融">
+												<img src="/d/file/huoche/2016052111/20160128101922711.png" alt="小马金融" />
+												<span></span>
+												<b class="slider_name">小马金融</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4385.html" title="苏宁云居">
+												<img src="/d/file/huoche/2016052111/20160129104056956.png" alt="苏宁云居" />
+												<span></span>
+												<b class="slider_name">苏宁云居</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4381.html" title="QQ微信抢红包模块">
+												<img src="/d/file/huoche/2016052111/20160129012342265.png" alt="QQ微信抢红包模块" />
+												<span></span>
+												<b class="slider_name">QQ微信抢红包模块</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4377.html" title="呱呱洗车">
+												<img src="/d/file/huoche/2016052111/20160131030535995.png" alt="呱呱洗车" />
+												<span></span>
+												<b class="slider_name">呱呱洗车</b>
+												<b class="slider_sort">其他应用</b>
+											</a>
+										</li>
+								</div>
+								<div class="btn_bj rgbd"><div id="btn-right" class="arrow-btn" style="cursor: pointer;"></div></div>
+							  </div>
+						</div>
+						<div class="search_title">
+							<span class="search_title_lf">分类筛选</span>
+							<span class="search_title_rg">共计<b>530</b>款游戏</span>
+						</div>
+						<div class="search_sort">
+							<div class="search_pingtai">
+								<span class="search_tips">类别：</span>
+								<ul class="search_sort_ul">
+								<li class="search_sort_li "><a href="/sjrj/" target="_self">全部<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/xtgj/" target="_self">系统工具<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/mtbf/" target="_self">媒体播放<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/tpcl/" target="_self">图片处理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/wlll/" target="_self">网络浏览<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/txgl/" target="_self">通讯管理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjdh/" target="_self">手机导航<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjyd/" target="_self">手机阅读<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/bjsh/" target="_self">便捷生活<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/spmh/" target="_self">锁屏美化<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/srf/" target="_self">输入法<span></span></a></li>
+													<li class="search_sort_li  searc_cur"><a href="/sjrj/qtyy/" target="_self">其他应用<span></span></a></li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="sort_list">
+							<ul class="sort_ul">
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3747.html" title="金融工场">金融工场</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3747.html" title="金融工场" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160413022018387.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3747.html" title="金融工场" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">金融工场</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">金融工场app下载是由北京凤凰信用管理股份有限公司(简称：凤凰信用)倾力打造的专注于小贷公司资产交易的P2P平台，目标是为全国8000余家小贷公司、资产管理公司及其他贷款机构等提供P2P解决方案及线上交易，为投资者提供精选的小贷公司优质信贷资产。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3749.html" title="皇室战争开箱助手">皇室战争开箱助手</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3749.html" title="皇室战争开箱助手" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160414021736763.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3749.html" title="皇室战争开箱助手" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">皇室战争开箱助手</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">皇室战争开箱助手apk下载是一款什么东东，听说过吗？皇室战争开箱助手是免root版的游戏辅助工具。如果你也玩 Supercell 新出的「部落冲突：皇室战争(Clash Royale)」，肯定对上面这句话有同感。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3750.html" title="华安招财宝">华安招财宝</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3750.html" title="华安招财宝" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160413021643469.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3750.html" title="华安招财宝" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">华安招财宝</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">华安证券官方下载是一款证券行情分析系统，行情交易一体化版。本版本支持灵活的定制版面，历史同步回忆、分时画线预警、交易系统指示、盯盘精灵、市场雷达、定制品种等行情特色功能。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3743.html" title="心米">心米</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3743.html" title="心米" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160415014245364.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3743.html" title="心米" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">心米</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">心米app下载是什么，心米app好不好用，心米app可以领取红包是不是真的？心米app是一款分享商家的广告，商家再把广告费用转换为红包发给你的一个手机赚钱软件。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3740.html" title="家长帮">家长帮</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3740.html" title="家长帮" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160415105153542.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3740.html" title="家长帮" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">家长帮</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供一款人气不错的教育教学软件家长帮app下载，让老师跟学生接触时间更长久，让家长跟孩子之间的沟通交流更方便，让孩子的学习更加稳定，小升初,中考,高考等升学择校必备，中小学家庭教育及家教一站式App。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3738.html" title="华为穿戴">华为穿戴</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3738.html" title="华为穿戴" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160415015236738.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3738.html" title="华为穿戴" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">华为穿戴</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供华为穿戴app下载，华为穿戴app是什么软件，怎么用，有什么用处？华为穿戴app是一款利用数据贴身跟踪你24小时，为你的身体健康，休闲，运动，生活习惯进行记录分析等等。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3731.html" title="空格">空格</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3731.html" title="空格" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160417113725161.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3731.html" title="空格" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">空格</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">空格app下载是一款生活服务领域app，空格app秀出你的技能：烘培、插花、调酒、茶艺；代写PPT、剪视频、写文案、面试培训；陪老人孩子、代跑腿、做家教、帮遛狗；家政、美甲、按摩服务，私厨上门。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3733.html" title="银华基金">银华基金</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3733.html" title="银华基金" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160417093947944.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3733.html" title="银华基金" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">银华基金</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">银华基金app下载 (银华生利宝app是一款一款移动理财应用。银华基金支持充值、提现、快速提现、转换、定投等多项操作。通过手机就可以轻松的进行现金管理。提供全面的基金净值、资产、交易查询功能。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3730.html" title="作业通">作业通</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3730.html" title="作业通" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418011751841.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3730.html" title="作业通" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">作业通</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">作业通app下载是一款小学生做作业的管理好帮手。作业通app主要针对的是小学生的群体，那它倒是在什么地方帮助我们呢？为什么现在的小学生学习要依赖这些软件呢？欢迎下载作业通ios版。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3725.html" title="零零期分期">零零期分期</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3725.html" title="零零期分期" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160421093642897.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3725.html" title="零零期分期" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">零零期分期</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供零零期分期app下载，这是一款可以分期付款购物贷款的app平台。主要针对额的还是在校的大学生，画个饼，给大学生带个套，好下蛋，用着确实是方便，单身不明就里的大学生往往是最大的受害者，只顾着纸醉金迷，确没有更深层次的想想后果....</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3723.html" title="华商基金">华商基金</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3723.html" title="华商基金" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160421094537285.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3723.html" title="华商基金" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">华商基金</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂官网提供华商基金手机客户端下载，这是一款什么样的基金app平台呢？这是一款专业的金融投资理财管理软件。涵盖证券、期货、石油、贵金属等领域。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3724.html" title="土罗罗">土罗罗</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3724.html" title="土罗罗" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160420095906595.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3724.html" title="土罗罗" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">土罗罗</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">土罗罗app下载是什么软件应用，这是一款可以在线剧本创作编辑应用软件。用于剧本的管理，和相关专业信息，软件具有多种创作模式，可以任意选择。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3713.html" title="中泰证券">中泰证券</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3713.html" title="中泰证券" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160417094638654.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3713.html" title="中泰证券" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">中泰证券</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">中泰证券官网app下载(专业版)是中泰证券推出的【融易汇】手机版升级版本，在优化融易汇既有功能的基础上，增加齐富通答和业务办理功能，强化服务功能，同时带来全新的交互体验。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3715.html" title="倒数日">倒数日</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3715.html" title="倒数日" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160415022652994.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3715.html" title="倒数日" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">倒数日</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">什么是倒数日，用来干什么呢？原来这是一款时间提醒软件，用来提醒用户，时间快到了，不要忘记了重要的日子，还可以定时提醒哦，不用再怕了，忘记重要的日，重要的会议，重要的....</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3708.html" title="财达证券">财达证券</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3708.html" title="财达证券" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160416101014262.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3708.html" title="财达证券" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">财达证券</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">财达证券app下载是一款进入服务软件，那这款软件真的能够帮你达到你想要的金融理财目的么，财达证券有没有什么特殊的地方值得我们去相信呢？你敢不敢把钱投资在里面呢？</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3710.html" title="表情豆豆ios版">表情豆豆ios版</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3710.html" title="表情豆豆ios版" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418013208848.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3710.html" title="表情豆豆ios版" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">表情豆豆ios版</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供表情豆豆官网下载，这是一款微信qq聊天的时候必备表情应用，全网最全，卖萌，搞笑，一网打尽。表情豆豆ios版拥有文字表情，图片表情，动态表情，搞笑表情，卖萌表情，祝福表情等等，为你的聊天增加乐趣。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3712.html" title="小尾巴翻译">小尾巴翻译</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3712.html" title="小尾巴翻译" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160416101605641.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3712.html" title="小尾巴翻译" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">小尾巴翻译</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供小尾巴翻译app下载，这是一款手机翻译软件。函盖三十多个语种，实现多种语言之间互译，可以快速翻译词语或者整段句子，还可以进行图片翻译，哪里不懂拍下后即可翻译，彻底为您解决出国旅游翻译难题。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3704.html" title="去家玩">去家玩</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3704.html" title="去家玩" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418042736642.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3704.html" title="去家玩" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">去家玩</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">去家玩app下载，去家玩ios版官方下载，这是一款为孩子提供一个儿童玩耍的乐趣天堂，增加孩子与亲人之间的近距离，让宝宝的成长留下一个美好的回忆。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3706.html" title="小美纪">小美纪</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3706.html" title="小美纪" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418084055138.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3706.html" title="小美纪" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">小美纪</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂官网提供小美纪app下载，这是一款人们生活当中需要的app平台，可以用来干嘛呢？有什么特色的功能呢？原来这是一款减肥瘦身的全球最in的时尚视频社区，一线网红在线直播。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3699.html" title="小米商城">小米商城</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3699.html" title="小米商城" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418040012521.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3699.html" title="小米商城" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">小米商城</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">小米商城app下载是由小米公司推出的一款手机移动客户端购物商城软件。小米手机用户只想要下载小米商城安卓客户端就可以直接登入购买小米商城的商品。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3702.html" title="平安校园">平安校园</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3702.html" title="平安校园" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418024725341.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3702.html" title="平安校园" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">平安校园</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">平安校园app下载是一款中小学学校管理平台，监控孩子在学校的情况。为家长和学校建立一个交流沟通的平台。还提供了一些学习素材，方便学生功课复习。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3703.html" title="铜板街">铜板街</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3703.html" title="铜板街" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160418012329525.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3703.html" title="铜板街" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">铜板街</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">铜板街官网下载是什么？原来铜板街app是一款手机进入理财交易操作app应用软件。用铜板街手机版在手机就可以给自己开户，给自己的零用钱进行理财投资交易。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3695.html" title="燃健身">燃健身</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3695.html" title="燃健身" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160419110628606.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3695.html" title="燃健身" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">燃健身</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">燃健身app下载是一款健身消费平台，专业的提供个人身体健身房消费服务，不受vip捆绑，不受教练影响，不受年费约束，健身一次缴费一次，好用又不浪费，合理节约是一种美德哦。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3690.html" title="微信自动抢红包ios版">微信自动抢红包ios版</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3690.html" title="微信自动抢红包ios版" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160420023403214.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3690.html" title="微信自动抢红包ios版" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">微信自动抢红包ios版</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">有没有一款可以自动抢红包的外挂软件，而且是iPhone苹果手机版的。有没有可以设置额度的微信抢红包外挂软件，今天手机天堂小编就给大家推荐这款iPhone版的微信自动抢红包外挂软件下载。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<!--list.var5-->
+
+																						</ul>
+						</div>
+						<div class="fenye">
+							<ul class="fenye_ul"><a href="/sjrj/qtyy/index_16.html" class="pre" target="_self"><em></em></a><span><a href="/sjrj/qtyy/index_15.html" target="_self">15</a></span><span><a href="/sjrj/qtyy/index_16.html" target="_self">16</a></span><span>17</span><span><a href="/sjrj/qtyy/index_18.html" target="_self">18</a></span><span><a href="/sjrj/qtyy/index_19.html" target="_self">19</a></span><span><a href="/sjrj/qtyy/index_20.html" target="_self">20</a></span><a href="/sjrj/qtyy/index_18.html" class="next" target="_self"><em></em></a></ul>
+						</div>
+					</div>
+					<div class="main_rg search_main_rgs">
+						<script src="/d/js/acmsd/thea16.js"></script>
+						<div class="main_rg_yxtj">
+							<div class="yxtj_title"><span class="titles">热门推荐</span></div>
+							<div class="yxtj_list">
+								<ul class="search_yxtj_ul">
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="爱买车"><img src="/d/file/huoche/2016052111/20160122012016202.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="爱买车">爱买车</a></p>
+												<p class="li_rg_other">20.5MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">其他应用</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="京东车管家"><img src="/d/file/huoche/2016052111/20160122012745215.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="京东车管家">京东车管家</a></p>
+												<p class="li_rg_other">12.66 MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">其他应用</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="微票儿"><img src="/d/file/huoche/2016052111/20160122013924505.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="微票儿">微票儿</a></p>
+												<p class="li_rg_other">12.60 MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">其他应用</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="OKcoin"><img src="/d/file/huoche/2016052111/20160125095738101.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="OKcoin">OKcoin</a></p>
+												<p class="li_rg_other">5.8MB&nbsp;|&nbsp;0次下载</p>
+												<p class="li_rg_other">其他应用</p>
+											</div>
+										</li>
+																	
+								</ul>
+							</div>
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件专题</span></div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/minecraft/" class="rmzt_a" title="minecraft下载">
+									<img src="/d/file/p/2016-05-24/495c6d743bed4645b18edf9e114315c2.png" alt="minecraft下载">
+									<b>minecraft下载</b>	
+								</a>
+							</div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/yxlmfzdq/" class="rmzt_a" title="英雄联盟辅助大全">
+									<img src="/d/file/p/2016-05-25/1a5050ecad80a1413dd27821a14790ef.png" alt="英雄联盟辅助大全">
+									<b>英雄联盟辅助大全</b>	
+								</a>
+							</div>
+                    								
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件排行榜</span></div>
+								<div class="forth_rg_list">
+									<ul class="forth_ul">
+										<li class="forth_li w78">排名</li>
+										<li class="forth_li w91">软件</li>
+										<li class="forth_li w68">人气</li>
+										<li class="forth_li w30">下载</li>
+									</ul>
+								</div>
+								<div class="forth_rg_rank">
+									<ul class="forth_ul_main">
+									 							  									 							  
+	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">1</span>
+												<span class="rank_name"><a href="/phone/4850.html" title="双开大师">双开大师</a></span>
+												<span class="rank_renqi">32</span>
+												<span class="rank_download"><a href="/phone/4850.html" title="双开大师">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">2</span>
+												<span class="rank_name"><a href="/phone/4474.html" title="腾讯wifi管家">腾讯wifi管家</a></span>
+												<span class="rank_renqi">21</span>
+												<span class="rank_download"><a href="/phone/4474.html" title="腾讯wifi管家">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">3</span>
+												<span class="rank_name"><a href="/phone/4812.html" title="百度地图导航">百度地图导航</a></span>
+												<span class="rank_renqi">5</span>
+												<span class="rank_download"><a href="/phone/4812.html" title="百度地图导航">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">4</span>
+												<span class="rank_name"><a href="/phone/4642.html" title="360手机急救箱">360手机急救箱</a></span>
+												<span class="rank_renqi">4</span>
+												<span class="rank_download"><a href="/phone/4642.html" title="360手机急救箱">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">5</span>
+												<span class="rank_name"><a href="/phone/4731.html" title="水星路由">水星路由</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4731.html" title="水星路由">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">6</span>
+												<span class="rank_name"><a href="/phone/4681.html" title="360安全换机">360安全换机</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4681.html" title="360安全换机">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">7</span>
+												<span class="rank_name"><a href="/phone/4649.html" title="Adobe Air">Adobe Air</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4649.html" title="Adobe Air">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">8</span>
+												<span class="rank_name"><a href="/phone/4625.html" title="掌心管家">掌心管家</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4625.html" title="掌心管家">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">9</span>
+												<span class="rank_name"><a href="/phone/4842.html" title="万能遥控">万能遥控</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4842.html" title="万能遥控">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">10</span>
+												<span class="rank_name"><a href="/phone/4852.html" title="百度传课">百度传课</a></span>
+												<span class="rank_renqi">3</span>
+												<span class="rank_download"><a href="/phone/4852.html" title="百度传课">下载</a></span>
+											</div>
+										</li>										                                                                           											    									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+			<p class="footer_top"><a href="/support/about.html">关于本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/help.html">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/advertise.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/rjfb.html">软件发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">下载声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemap.html">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemaps.xml">网站RSS</a></p>
+			<p class="footer_md">手机天堂是国内最专业的手机软件、手机游戏下载中心,手机天堂以服务用户为理念，努力打造成国内最大、最安全快速的手机软件、手机游戏下载平台。</p>
+		</div>
+		</div>
+ 
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/script_index2.js"></script>
+	</body>
+</html>

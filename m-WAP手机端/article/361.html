@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+<title>Autorun.inf怎么删除-仿飞翔下载</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Autorun.inf怎么删除" />
+<link href="/statics/m_v2/skin_css/m_xpgod.css" type="text/css" rel="stylesheet">
+<script>
+window.onload = function(){
+    document.getElementById("contentTextsss").innerHTML = document.getElementById("contentTextsss").innerHTML.replace(/src=\"\/d\/file\//g,"src=\"http:\/\/xpgod.zuseng.com\/d\/file\/");
+}
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="/"><img src="/statics/m_v2/skin_img/logo.png" alt="仿飞翔下载" /></a></div>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/fjyx/">游戏</a></li>
+    <li><a href="/sjrj/">软件</a></li>
+    <li><a href="/news/" class="last">资讯</a></li>
+  </ul>
+</div>
+<div class="article_title">
+  <div class="title">Autorun.inf怎么删除</div>
+  <div class="au_time">
+    <span class="span_auti"><span class="author"></span><em>作者：佚名</em></span>
+    <span class="span_auti ml55"><span class="time"></span><em>时间：2016-05-16</em></span>
+  </div>
+</div>
+<div class="intro_txt" id="contentTextsss"><p><strong>autorun.inf怎么删除？是什么文件？autorun.inf</strong>是我们电脑使用中比较常见的文件之一 ，其作用是允许在双击磁盘时自动运行指定的某个文件。但是近几年出现了用<strong>autorun.inf</strong>文件传播木马或病毒，它通过使用者的误操作让目标程序执行，达到侵入电脑的目的，带来了很大的负面影响。</p>
+<p>问题病种1：U盘一插入电脑打开就能看到一个名叫autorun.inf的文件。这是什么?为什么删除掉以后，还会出现呢?</p>
+<p>解决方法：这是我们电脑使用中比较常见的文件之一 ，其作用是允许在双击磁盘时自动运行指定的某个文件。但是近几年出现 了用autorun.inf文件传播木马或病毒，它通过使用者的误操作让目标程序执行，达到侵入电脑的目的，带来了很大的负面影响。</p>
+<p>问题病种2：U盘中存在autorun.inf文件夹、RECYCLER等文件夹，请问这些又有什么作用呢?是U盘病毒将我的电脑感染了么?</p>
+<p>解决方法：autorun.inf文件夹、RECYCLER文件夹等有可能是病毒建立的，也有可能是您系统中安装的安全软件为了达到免疫U盘的目的而自行创建的。</p>
+<p>　<strong>　删除Autorun.inf的有效方法</strong></p>
+<p>在您的电脑的每个分区根目录都有一个autorun.inf的文件夹，查看属性是只读+隐藏，且无法删除、无法取得权限!点进去，却显示的是控制面板的内容?</p>
+<p></p>
+<center>
+	<img alt="" height="181" src="/article/UploadPic/2012-4/20124129646815.jpg" width="415" /></center>
+<p>、</p>
+<center>
+	<img alt="" height="419" src="/article/UploadPic/2012-4/20124129646177.jpg" width="367" /></center>
+<p></p>
+<center>
+	<img alt="" height="364" src="/article/UploadPic/2012-4/20124129646147.jpg" width="580" /></center>
+<p>其实这个不是病毒，而是用来防病毒，一些系统封装工具本身就自带。下面教你删除的方法：</p>
+<p>建立一个批处理文件，代码如下：</p>
+<p>cacls?%1/g everyone:f</p>
+<p>Rd /S/Q?%1</p>
+<p>文件名：删除免疫.bat，放到桌面，备用。</p>
+<p></p>
+<center>
+	<img alt="" height="340" src="/article/UploadPic/2012-4/20124129646727.jpg" width="174" /></center>
+<p>拖动autorun.inf到桌面上的bat图标上就行了，怎么样，没有了这个文件夹了吧!</p>
+<p></p>
+<center>
+	<img alt="" height="375" src="/article/UploadPic/2012-4/20124129646728.jpg" width="436" /></center>
+<p>上面的批处理代码转换成dos命令就是(删除G盘上的autorun.inf文件，红色的路径随着盘符的不同需要改变，其它的不要改动)：</p>
+<p>cacls G:autorun.inf /g everyone:f</p>
+<p>Rd /S/Q G:autorun.inf</p>
+<p>auturun.inf无法删除的原因</p>
+<p>当网民并没有在电脑上安装U盘免疫程序时，auturun.inf无法删除通常是病毒造成的，删除失败可能是病毒正在运行，或者病毒感染时创建的auturun.inf文件访问权限被修改。</p>
+<p>当电脑被U盘病毒入侵时，除了在磁盘生成的auturun.inf不可删除，还可能发现大量文件夹变成了.exe图标，这是病毒将原来正常的文件夹隐藏，然后在同一目录下创建很多病毒副本，文件名和正常文件名一样，不同之处是加上了exe扩展名。windows默认情况下不会显示隐藏文件和文件扩展名。</p>
+<p>需要修改文件夹选项之后才可以看到真相。</p>
+<p></p>
+<center>
+	<img alt="" height="403" src="/article/UploadPic/2012-4/20124129646737.jpg" width="395" /></center>
+<p>些目录在Windows里删不掉，是因为在Windows里看上去它的文件名是XXX，实际它的文件名是&ldquo;xxx..&rdquo;之类的。要想删除这些目录，可以单击&ldquo;开始&rarr;运行&rdquo;，输入&ldquo;CMD&rdquo;启动&ldquo;命令提示符&rdquo;，使用rd命令删除。比如删除D盘的autorun.inf文件夹，先输入&ldquo;D：&rdquo;并回车切换到D盘，然后输入&ldquo;DIR&rdquo;并回车列出当前的目录，查看你无法删除的目录全名是什么，最后输入&ldquo;rd /s autorun. inf&rdquo;并回车，当出现提示时，按&ldquo;Y&rdquo;键并回车即删除。</p>
+<p>方法如下：</p>
+<p>1、打开&ldquo;开始&rdquo;，选择&ldquo;运行&rdquo;，输入&ldquo;CMD&rdquo;，打开命令行窗口</p>
+<p>2、输入X: 然后回车</p>
+<p>3、输入rmdir /s autorun.inf 然后回车</p>
+<p>4、当出现提示时，按&ldquo;Y&rdquo;，并回车</p>
+<p>X:代表autorun.inf 文件夹出现在哪个盘目录下，如C盘、D盘、e盘、f盘、H盘等。。</p>
+<p>比如说E盘里面有autorun.inf文件夹无法删除，那么就在dos命令框下输入：</p>
+<p>1、输入E: 然后回车(注意有冒号的哦)</p>
+<p>2、输入rmdir /s autorun.inf 然后回车</p>
+<p>3、当出现提示时：autorun.inf, 是否确认(Y/N)?按 &ldquo;Y&rdquo;，并回车</p>
+<p>去看看E盘下面的文件夹是否已经删除?恩，确实已经删除了。 这个方法是最简便的。</p>
+<p>在doc下删除</p>
+<p>运行 cmd</p>
+<p>d:</p>
+<p>attrib -s -h autorun.inf</p>
+<p>del autorun.inf</p>
+<p>attrib -s -h auto.exe</p>
+<p>del auto.exe</p>
+<p>其它的盘一样!</p>
+<p>肯定删除得了</p>
+<p>桌面上新建一个文本文档，然后输入：</p>
+<p>attrib C:autorun.inf -a -s -r -h</p>
+<p>attrib D:autorun.inf -a -s -r -h</p>
+<p>attrib E:autorun.inf -a -s -r -h</p>
+<p>attrib F:autorun.inf -a -s -r -h</p>
+<p>attrib I:autorun.inf -a -s -r -h</p>
+<p>ren C:autorun.inf autorun.inf</p>
+<p>ren D:autorun.inf autorun.inf</p>
+<p>ren E:autorun.inf autorun.inf</p>
+<p>ren F:autorun.inf autorun.inf</p>
+<p>ren I:autorun.inf autorun.inf</p>
+<p>del C:autorun.inf</p>
+<p>del D:autorun.inf</p>
+<p>del E:autorun.inf</p>
+<p>del F:autorun.inf</p>
+<p>del I:autorun.inf</p>
+<p>保存为后缀是bat的文件，双击此文件，确定删除autorun.inf，然后立即重启电脑就行了，若不行，重启点脑进入安全模式删除，或者用WindowsPE系统删除，在删除不了除非是WIN7的加密文件。</p></div>
+<div class="pagesss"></div>
+<div class="line"></div>
+<div class="main_xgyx">
+  <div class="xgyx_title">相关资讯</div>
+  <div class="xgyx_list">
+    <ul class="clearfix">
+            <li><a href="/article/315.html"><span></span>微信聊天记录删除了怎么恢复</a></li>
+            <li><a href="/article/318.html"><span></span>金山毒霸卸载不了怎么办 金山毒霸卸载不干净解决办法</a></li>
+            <li><a href="/article/320.html"><span></span>360安全卫士和qq电脑管家哪个好用</a></li>
+            <li><a href="/article/323.html"><span></span>360安全卫士下载功能大全介绍</a></li>
+            <li><a href="/article/326.html"><span></span>2016电脑安全卫士排行榜？360安全卫士下载排行第几呢</a></li>
+	
+          </ul>
+  </div>
+</div>
+<div id="SOHUCS"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrbiKxmG&conf=prod_8e11cfb50c20f2a0b31d59926e9e42c7">
+</script>
+<div class="footer">
+  <a href="javascript:void(0);" class="back_top"><span><img src="/statics/m_v2/skin_img/top.png" alt="" /></span><em>返回顶部</em></a>
+</div>
+<div class="fade"></div>
+<script src="/statics/m_v2/skin_js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<div style="display: none">
+  <script>
+$(function(){
+	$('.game_list .list_div:last,.rank_list .list_div:last,.zx_list .list_div').css('border-bottom-width',0);
+	$(".back_top").click(function(){
+		$('body,html').animate({scrollTop:0},100);
+		return false;
+	});
+	$('.paih_list').each(function(index, element) {
+		$(this).find('.list_div:last').css('border-bottom-width',0);
+	});
+	/*var imhwd=$('.mrd_pic').width();
+	$('.mrd_pic ul li').css('width',imhwd);
+	var imght=$('.mrd_pic li img').height();
+	$('.mrd_pic').css('height',imght);*/	
+	
+	$('.az_ios:last,.news_list dl:last').addClass('last');
+	
+	/*$('.zx_list .list_div_rg a').click(function() {
+		$('.fade').show();
+		$('.login_box').show();
+	});*/
+	$('.close').live('click',function() {
+		$('.fade').hide();
+		$('.login_box').hide();
+	});
+	
+	//
+	$('.span_close').click(function() {
+		$('.bt_gg').hide();
+		$('.footer').css('margin-bottom',0);
+	});
+})
+  </script>
+</div>
+</body>
+</html>

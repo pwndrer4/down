@@ -1,0 +1,943 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>棋牌卡牌 - 1000s分享站</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="/shouji/statics/skin_css/index.css?sd" />
+		<script  type="text/javascript" src="/shouji/statics/skin_js/jquery-1.8.3.min.js"></script>
+		<script  type="text/javascript" src="/shouji/statics/skin_js/searchword.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/jquery.global.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/tupqh.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<base target="_blank" />
+	</head>
+	<body>
+<div class="top_bj">
+  <div class="top">
+    <div class="top_lf">
+      <ul>
+        <li><a href="http://www.1000s.cc" class="top_menu_a">首页</a></li>
+        <li onmouseover="show('quanzdh');" onmouseout="hide('quanzdh');" id="bj_hover" class=""> <a href="javascript:void(0)" target="_self" class="top_menu_a dh_bj">全站导航</a>
+          <div id="quanzdh" style="display: none;">
+            <div class="qh_top">
+              <div class="qh_top_title">下载专区</div>
+              <div class="qh_top_list"> <a href="/fjyx/" class="dh_a">游戏库</a> <a href="/sjrj/" class="dh_a">软件库</a> </div>
+              <div class="qh_top_title">资讯中心</div>
+              <div class="qh_top_list zx"> <a href="/news/gonglue/" class="dh_a">手游攻略</a> <a href="/news/yueyu/" class="dh_a">越狱教程</a> <a href="/news/shuaji/" class="dh_a">刷机教程</a> <a href="/news/video/" class="dh_a">精彩视频</a> <a href="/news/zixun/" class="dh_a">新闻资讯</a> </div>
+            </div>
+            <div class="qh_bottom">
+              <div class="qh_bottom_title">热门游戏</div>
+              <div class="qh_bottom_list">
+			  <a href="/phone/6337.html" class="qhbt_a">梦幻西游3</a> 
+			  <a href="/phone/5575.html" class="qhbt_a">斗犬OL</a> 
+			  <a href="/phone/5103.html" class="qhbt_a">御剑情缘</a> 
+			  <a href="/phone/6339.html" class="qhbt_a">决斗英雄</a> 
+			  <a href="/phone/6338.html" class="qhbt_a">天天打波利</a> 
+			  <a href="/phone/4902.html" class="qhbt_a">守望前线</a> 
+			  <a href="/phone/5335.html" class="qhbt_a">开心农场2:乡村度假无限钥匙版</a> 
+			  <a href="/phone/5561.html" class="qhbt_a">梦幻降魔录</a> 
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="top_rg"> <a onclick="SetHome(this,window.location)" class="top_menu_a a_pad">设为首页</a> <a class="top_menu_a a_pad" onclick="shoucang(document.title,window.location)">收藏本站</a> </div>
+  </div>
+</div>
+<div class="daohang_bj">
+  <div class="daohang">
+    <div class="search-box">
+      <form class="search-form" action="/e/search/index.php" method="post" name="searchform" id="searchform" target="_blank">
+        <input class="search-text" type="text" name="keyboard" id="keyboard">
+        <input type="image" class="search-btn" src="/shouji/statics/skin_img/search-btn.png">
+        <div class="search-select">
+          <div class="search-type">
+            <select name="tbname">
+              <option value="news" class="sedsa">资讯</option>
+              <option value="soft" class="sedsa">软件</option>
+              <option value="phone" class="sedsa">手机</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+      </form>
+    </div>
+    <div class="dh_logo"><a href="/" target="_self"><img src="/shouji/statics/skin_img//logo.png" alt="logo" target="_self"></a></div>
+    <div class="dh_menu dh_menu_paih">
+      <ul>
+        <li class="paihb_menu_li"><a href="/fjyx/" class="d_manu_a">下游戏</a><a href="/fjyx/xxyz/" class="x_menu_a">休闲</a><a href="/fjyx/sjqz/" class="x_menu_a">射击</a><a href="/shouji/phb.html" class="x_menu_a">排行</a></li>
+        <li class="paihb_menu_li"><a href="/sjrj/" class="d_manu_a">装应用</a><a href="/sjrj/xtgj/" class="x_menu_a">系统</a><a href="/sjrj/sjdh/" class="x_menu_a">导航</a><a href="/sjrj/sjyd/" class="x_menu_a">阅读</a></li>
+        <li class="paihb_menu_li"><a href="/news/" class="d_manu_a">看资讯</a><a href="/news/gonglue/" class="x_menu_a">攻略</a><a href="/news/yueyu/" class="x_menu_a">越狱</a><a href="/news/zixun/" class="x_menu_a">新闻</a></li>
+        <li class="paihb_menu_li"><a href="/news/video/" class="d_manu_a">看视频</a><a href="/news/shuaji/" class="x_menu_a">刷机</a><a href="/article/hardware/" class="x_menu_a">硬件</a><a href="/article/wljs/" class="x_menu_a">技术</a></li>
+      </ul>
+    </div>
+    <div class="dh_rmss"> 热门搜索:<a href='/e/search/result/?searchid=21' target=_blank>梦幻西游</a>&nbsp;<a href='/e/search/result/?searchid=23' target=_blank>qq</a>&nbsp;<a href='/e/search/result/?searchid=9' target=_blank>qq2016</a>&nbsp;<a href='/e/search/result/?searchid=22' target=_blank>360</a>&nbsp;<a href='/e/search/result/?searchid=29' target=_blank>2016</a>&nbsp;<a href='/e/search/result/?searchid=28' target=_blank>西游</a><br> </div>
+  </div>
+</div>
+
+		<div class="main_bj main_bjs">
+			<div class="w1204">
+				<div class="main_bpic">
+					<div class="bpic1"><script src="/d/js/acmsd/thea1.js"></script></div>
+    				<div class="bpic2"><script src="/d/js/acmsd/thea2.js"></script></div>
+				</div>
+				<div class="search_bj">
+					<div class="main_lf search_main_lfs">
+						<div class="main_lf_weizhi">您的位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/fjyx/">游戏库</a>&nbsp;>&nbsp;<a href="/fjyx/qpkp/">棋牌卡牌</a></div>
+						<div class="search_hd">
+							<div class="sliderbox">
+								<div class="btn_bj lfbd"><div id="btn-left" class="arrow-btn dasabled" style="cursor: auto;"></div></div>
+								<div class="slider">
+									<ul> 
+										<li>
+											<a href="/phone/5152.html" title="正版长沙麻将官网">
+												<img src="/d/file/huoche/2016052117/20160503041945864.png" alt="正版长沙麻将官网" />
+												<span></span>
+												<b class="slider_name">正版长沙麻将官网</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5151.html" title="正版字牌官网">
+												<img src="/d/file/huoche/2016052117/20160503041614637.png" alt="正版字牌官网" />
+												<span></span>
+												<b class="slider_name">正版字牌官网</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5149.html" title="正版跑得快官网">
+												<img src="/d/file/huoche/2016052117/20160503042442597.png" alt="正版跑得快官网" />
+												<span></span>
+												<b class="slider_name">正版跑得快官网</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5147.html" title="正版跑胡子官网">
+												<img src="/d/file/huoche/2016052117/20160503030043324.png" alt="正版跑胡子官网" />
+												<span></span>
+												<b class="slider_name">正版跑胡子官网</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5144.html" title="正版三打哈官网">
+												<img src="/d/file/huoche/2016052117/20160503042818604.png" alt="正版三打哈官网" />
+												<span></span>
+												<b class="slider_name">正版三打哈官网</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5132.html" title="忍者太嚣张">
+												<img src="/d/file/huoche/2016052117/20160504093443290.png" alt="忍者太嚣张" />
+												<span></span>
+												<b class="slider_name">忍者太嚣张</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5116.html" title="乌鸦嘴妙女郎">
+												<img src="/d/file/huoche/2016052117/20160505015105259.png" alt="乌鸦嘴妙女郎" />
+												<span></span>
+												<b class="slider_name">乌鸦嘴妙女郎</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5100.html" title="疾跑三国">
+												<img src="/d/file/huoche/2016052117/20160505100024211.png" alt="疾跑三国" />
+												<span></span>
+												<b class="slider_name">疾跑三国</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5096.html" title="战之海贼">
+												<img src="/d/file/huoche/2016052116/20160506084255996.png" alt="战之海贼" />
+												<span></span>
+												<b class="slider_name">战之海贼</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5072.html" title="三国大爆炸">
+												<img src="/d/file/huoche/2016052116/20160509034839302.png" alt="三国大爆炸" />
+												<span></span>
+												<b class="slider_name">三国大爆炸</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5054.html" title="新欢乐麻将">
+												<img src="/d/file/huoche/2016052116/20160509021125840.png" alt="新欢乐麻将" />
+												<span></span>
+												<b class="slider_name">新欢乐麻将</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5047.html" title="途游保皇">
+												<img src="/d/file/huoche/2016052116/20160509015819778.png" alt="途游保皇" />
+												<span></span>
+												<b class="slider_name">途游保皇</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5038.html" title="无双飞将">
+												<img src="/d/file/huoche/2016052116/20160510035028667.jpg" alt="无双飞将" />
+												<span></span>
+												<b class="slider_name">无双飞将</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5035.html" title="净化">
+												<img src="/d/file/huoche/2016052116/20160510035453765.png" alt="净化" />
+												<span></span>
+												<b class="slider_name">净化</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5033.html" title="萌漫大乱斗">
+												<img src="/d/file/huoche/2016052116/20160511095245429.png" alt="萌漫大乱斗" />
+												<span></span>
+												<b class="slider_name">萌漫大乱斗</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/5022.html" title="魔界统一战">
+												<img src="/d/file/huoche/2016052116/20160512084042969.png" alt="魔界统一战" />
+												<span></span>
+												<b class="slider_name">魔界统一战</b>
+												<b class="slider_sort">棋牌卡牌</b>
+											</a>
+										</li>
+								</div>
+								<div class="btn_bj rgbd"><div id="btn-right" class="arrow-btn" style="cursor: pointer;"></div></div>
+							  </div>
+						</div>
+						<div class="search_title">
+							<span class="search_title_lf">分类筛选</span>
+							<span class="search_title_rg">共计<b>213</b>款游戏</span>
+						</div>
+						<div class="search_sort">
+							<div class="search_pingtai">
+								<span class="search_tips">类别：</span>
+								<ul class="search_sort_ul">
+								<li class="search_sort_li "><a href="/fjyx/" target="_self">全部<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/jsby/" target="_self">角色扮演<span></span></a></li>
+													<li class="search_sort_li  searc_cur"><a href="/fjyx/qpkp/" target="_self">棋牌卡牌<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/xxyz/" target="_self">休闲益智<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/dzgd/" target="_self">动作格斗<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/cltf/" target="_self">策略塔防<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/scjj/" target="_self">赛车竞速<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/tyjj/" target="_self">体育竞技<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/sjqz/" target="_self">射击枪战<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/mnjy/" target="_self">模拟经营<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/dnb/" target="_self">电脑版<span></span></a></li>
+													<li class="search_sort_li  "><a href="/fjyx/qtsy/" target="_self">其他手游<span></span></a></li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="sort_list">
+							<ul class="sort_ul">
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5231.html" title="魔兽资料片">魔兽资料片</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5231.html" title="魔兽资料片" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160427013926311.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5231.html" title="魔兽资料片" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">魔兽资料片</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供魔兽世界资料片下载，魔兽资料片视频，魔兽世界资料片全集，魔兽争霸资料片。战士、法师、盗贼，多种各具特性的职业任你选择。 英雄升级、英雄突破，装备打造，技能升级，多种培养助你决胜千里。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5229.html" title="进击吧巨人">进击吧巨人</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5229.html" title="进击吧巨人" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160427023246453.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5229.html" title="进击吧巨人" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">进击吧巨人</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供进击吧巨人手游下载，进击吧巨人手游ios版下载，进击吧巨人手游安卓版下载。本站还有最新的游戏攻略，游戏资讯，游戏秘籍跟游戏礼包分享。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5213.html" title="万人炸金花">万人炸金花</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5213.html" title="万人炸金花" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160429104301107.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5213.html" title="万人炸金花" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">万人炸金花</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供万人炸金花安卓版下载，万人炸金花手游ios版下载，这是一款民间扑克牌的休闲娱乐改编的扎金花棋牌手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5208.html" title="无锡麻将">无锡麻将</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5208.html" title="无锡麻将" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160429023647379.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5208.html" title="无锡麻将" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">无锡麻将</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供无锡麻将安卓版下载，这是一款与民间休闲游戏改编的棋牌麻将手游。麻将高手尽在民间，一将难求，寂寞孤独，只求一败。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5189.html" title="无双乱舞">无双乱舞</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5189.html" title="无双乱舞" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160429021935787.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5189.html" title="无双乱舞" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">无双乱舞</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供无双乱舞安卓版下载，无双乱舞是一款集休闲点击与卡牌为一体的三国题材手游，Q版中国画风，再现经典人物;双线养成结合卡牌挂机。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5184.html" title="三国的后裔">三国的后裔</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5184.html" title="三国的后裔" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160429022611666.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5184.html" title="三国的后裔" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">三国的后裔</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供三国的后裔安卓版下载，三国的后裔手游官网ios版下载，这是一款2D卡牌手游。本站还提供最新的游戏资讯，游戏攻略，游戏秘籍跟游戏礼包。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5180.html" title="魔兽X魔兽">魔兽X魔兽</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;0人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5180.html" title="魔兽X魔兽" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503085423636.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5180.html" title="魔兽X魔兽" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">魔兽X魔兽</p>
+											<p class="hover_top_others">0人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供魔兽X魔兽安卓版下载，魔兽X魔兽手游ios版下载，这是一款3D策略卡牌战略手游，游戏的只要模式是卡牌跟战争元素组合的一款卡牌战略手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5174.html" title="有乐赢三张">有乐赢三张</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5174.html" title="有乐赢三张" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503032643835.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5174.html" title="有乐赢三张" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">有乐赢三张</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供有乐赢三张安卓版下载，最新的有乐赢三张官方手游安卓版下载，这是一款很简单的扑克牌三张手游，玩法简单，容易上手，是大家都喜欢的一种休闲手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5169.html" title="正版二七王官网">正版二七王官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5169.html" title="正版二七王官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503025413688.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5169.html" title="正版二七王官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">正版二七王官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供正版二七王安卓版下载，正版二七王手游ios版下载，这是一款非常不错的棋牌类手机游戏，可以让你放松心情，打发无聊时光的手机游戏。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5167.html" title="K3K三丁拐官网">K3K三丁拐官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5167.html" title="K3K三丁拐官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503031723447.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5167.html" title="K3K三丁拐官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">K3K三丁拐官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供K3K三丁拐安卓版下载，这是一款麻将手机游戏，K3K三丁拐是一款不错的休闲娱乐的卡牌棋牌手游。让虚拟的美女陪你一站到底吧。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5164.html" title="口袋宠物世界">口袋宠物世界</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5164.html" title="口袋宠物世界" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160504092436702.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5164.html" title="口袋宠物世界" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">口袋宠物世界</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供口袋宠物世界安卓版下载，这是一款以宠物为主题的养成类SNS卡牌手游。一边玩游戏还可以一边交朋友。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5156.html" title="典游斗地主">典游斗地主</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5156.html" title="典游斗地主" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503094201713.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5156.html" title="典游斗地主" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">典游斗地主</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供典游斗地主手游安卓版下载，典游斗地主官方ios版下载，这是一款非常好玩又非常休闲放松的手机单机扑克牌棋牌手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5149.html" title="正版跑得快官网">正版跑得快官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5149.html" title="正版跑得快官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503042442597.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5149.html" title="正版跑得快官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">正版跑得快官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供正版跑得快安卓版下载，这是一款比较休闲娱乐的卡牌类手机游戏，不管是老人，还是社会青年都比较喜欢玩的一款休闲手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5151.html" title="正版字牌官网">正版字牌官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5151.html" title="正版字牌官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503041614637.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5151.html" title="正版字牌官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">正版字牌官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供正版字牌安卓版下载，这是一款万人在线同台竞技的麻将手机游戏。玩法混合多种模式，新鲜，容易上手，是一款不错的手机休闲娱乐卡牌手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5152.html" title="正版长沙麻将官网">正版长沙麻将官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5152.html" title="正版长沙麻将官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503041945864.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5152.html" title="正版长沙麻将官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">正版长沙麻将官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供正版长沙麻将安卓版下载，这是一款麻将类的手机游戏，打法简单、节奏快速，极易胡牌。一共一百零八张牌：只有筒、索、万牌,和其他地方麻将相比增加了四喜、板板胡、六六顺、缺一色等牌型摸起来就可以胡牌。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5144.html" title="正版三打哈官网">正版三打哈官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5144.html" title="正版三打哈官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503042818604.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5144.html" title="正版三打哈官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">正版三打哈官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供正版三打哈安卓版下载，这是一款免费的扑克牌手机棋牌手游。游戏主要玩法是120分.80分，拖拉机玩法，简单易懂，时候上班族耍够哦。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5147.html" title="正版跑胡子官网">正版跑胡子官网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5147.html" title="正版跑胡子官网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160503030043324.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5147.html" title="正版跑胡子官网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">正版跑胡子官网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供正版跑胡子安卓版下载，正版跑胡子安卓版下载让你在工作的闲余时间放松，解放你的工作烦恼，劳逸结合，玩乐不可缺少的一款手机游戏。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5132.html" title="忍者太嚣张">忍者太嚣张</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5132.html" title="忍者太嚣张" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160504093443290.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5132.html" title="忍者太嚣张" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">忍者太嚣张</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供忍者太嚣张破解版下载，这是一款忍者大战题材的卡牌对战剧情游戏。这是一款日系的动漫风格手游，作为炎黄子孙要把小日本孙子给全部灭掉。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5116.html" title="乌鸦嘴妙女郎">乌鸦嘴妙女郎</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5116.html" title="乌鸦嘴妙女郎" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160505015105259.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5116.html" title="乌鸦嘴妙女郎" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">乌鸦嘴妙女郎</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供乌鸦嘴妙女郎手游下载，乌鸦嘴在民间的意思就是嘴巴很臭，说的坏话都会实现，所以现实生活的乌鸦嘴很不受人欢迎，这款游戏呢？是不是也一样呢？</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5100.html" title="疾跑三国">疾跑三国</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5100.html" title="疾跑三国" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052117/20160505100024211.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5100.html" title="疾跑三国" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">疾跑三国</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供主公哪里跑手游下载，这是一个三国时期的传奇故事，游戏主要讲述的是三国时期的群雄逐鹿，卡牌，跑酷，动作等元素的多元轻炫跑动作手游。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5096.html" title="战之海贼">战之海贼</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5096.html" title="战之海贼" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052116/20160506084255996.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5096.html" title="战之海贼" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">战之海贼</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供战之海贼手游下载，游戏主要以海战为背景题材，打造一款海洋冒险的策略卡牌战斗手机游戏。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5072.html" title="三国大爆炸">三国大爆炸</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5072.html" title="三国大爆炸" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052116/20160509034839302.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5072.html" title="三国大爆炸" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">三国大爆炸</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">三国大爆炸手游下载这是一款集消除玩法和策略卡牌玩法为一体的游戏，游戏的故事背景发生在三国时代。让你在享受消除玩法之余也不失策略性！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5054.html" title="新欢乐麻将">新欢乐麻将</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5054.html" title="新欢乐麻将" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052116/20160509021125840.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5054.html" title="新欢乐麻将" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">新欢乐麻将</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供新欢乐麻将手游下载，这是一款休闲娱乐的棋牌手机游戏，游戏的玩法跟民间的真实玩法一样，让玩家不出门就可以畅玩。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/5047.html" title="途游保皇">途游保皇</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/5047.html" title="途游保皇" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052116/20160509015819778.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/5047.html" title="途游保皇" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">途游保皇</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手游官网提供途游保皇手游下载，</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<!--list.var5-->
+
+																						</ul>
+						</div>
+						<div class="fenye">
+							<ul class="fenye_ul"><a href="/fjyx/qpkp/index_7.html" class="pre" target="_self"><em>上一页</em></a><a href="/fjyx/qpkp/index.html" target="_self">首页</a><a href="/fjyx/qpkp/index_6.html" target="_self">6</a><a href="/fjyx/qpkp/index_7.html" target="_self">7</a><span>8</span><a href="/fjyx/qpkp/index_9.html" target="_self">9</a><a href="/fjyx/qpkp/index_9.html" target="_self">尾页</a><a href="/fjyx/qpkp/index_9.html" class="next" target="_self"><em>下一页</em></a></ul>
+						</div>
+					</div>
+					<div class="main_rg search_main_rgs">
+						<script src="/d/js/acmsd/thea16.js"></script>
+						<div class="main_rg_yxtj">
+							<div class="yxtj_title"><span class="titles">热门推荐</span></div>
+							<div class="yxtj_list">
+								<ul class="search_yxtj_ul">
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="无限纷争"><img src="/d/file/huoche/2016052116/20160517093532809.jpg" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="无限纷争">无限纷争</a></p>
+												<p class="li_rg_other">未知&nbsp;|&nbsp;5次下载</p>
+												<p class="li_rg_other">棋牌卡牌</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="大家乐斗地主"><img src="/d/file/huoche/2016052116/20160518095914514.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="大家乐斗地主">大家乐斗地主</a></p>
+												<p class="li_rg_other">30MB&nbsp;|&nbsp;3次下载</p>
+												<p class="li_rg_other">棋牌卡牌</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="巫喵王3D"><img src="/d/file/huoche/2016052116/20160517092319972.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="巫喵王3D">巫喵王3D</a></p>
+												<p class="li_rg_other">214.5MB&nbsp;|&nbsp;2次下载</p>
+												<p class="li_rg_other">棋牌卡牌</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="妖姬与少年"><img src="/d/file/huoche/2016052116/20160516011713369.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="妖姬与少年">妖姬与少年</a></p>
+												<p class="li_rg_other">138MB&nbsp;|&nbsp;1次下载</p>
+												<p class="li_rg_other">棋牌卡牌</p>
+											</div>
+										</li>
+																	
+								</ul>
+							</div>
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件专题</span></div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/minecraft/" class="rmzt_a" title="minecraft下载">
+									<img src="/d/file/p/2016-05-24/495c6d743bed4645b18edf9e114315c2.png" alt="minecraft下载">
+									<b>minecraft下载</b>	
+								</a>
+							</div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/yxlmfzdq/" class="rmzt_a" title="英雄联盟辅助大全">
+									<img src="/d/file/p/2016-05-25/1a5050ecad80a1413dd27821a14790ef.png" alt="英雄联盟辅助大全">
+									<b>英雄联盟辅助大全</b>	
+								</a>
+							</div>
+                    								
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">游戏排行榜</span></div>
+								<div class="forth_rg_list">
+									<ul class="forth_ul">
+										<li class="forth_li w78">排名</li>
+										<li class="forth_li w91">软件</li>
+										<li class="forth_li w68">人气</li>
+										<li class="forth_li w30">下载</li>
+									</ul>
+								</div>
+								<div class="forth_rg_rank">
+									<ul class="forth_ul_main">
+	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">1</span>
+												<span class="rank_name"><a href="/phone/6337.html" title="梦幻西游3">梦幻西游3</a></span>
+												<span class="rank_renqi">49</span>
+												<span class="rank_download"><a href="/phone/6337.html" title="梦幻西游3">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">2</span>
+												<span class="rank_name"><a href="/phone/5575.html" title="斗犬OL">斗犬OL</a></span>
+												<span class="rank_renqi">29</span>
+												<span class="rank_download"><a href="/phone/5575.html" title="斗犬OL">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">3</span>
+												<span class="rank_name"><a href="/phone/5103.html" title="御剑情缘">御剑情缘</a></span>
+												<span class="rank_renqi">21</span>
+												<span class="rank_download"><a href="/phone/5103.html" title="御剑情缘">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">4</span>
+												<span class="rank_name"><a href="/phone/6339.html" title="决斗英雄">决斗英雄</a></span>
+												<span class="rank_renqi">14</span>
+												<span class="rank_download"><a href="/phone/6339.html" title="决斗英雄">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">5</span>
+												<span class="rank_name"><a href="/phone/6338.html" title="天天打波利">天天打波利</a></span>
+												<span class="rank_renqi">11</span>
+												<span class="rank_download"><a href="/phone/6338.html" title="天天打波利">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">6</span>
+												<span class="rank_name"><a href="/phone/4902.html" title="守望前线">守望前线</a></span>
+												<span class="rank_renqi">10</span>
+												<span class="rank_download"><a href="/phone/4902.html" title="守望前线">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">7</span>
+												<span class="rank_name"><a href="/phone/5335.html" title="开心农场2:乡村度假无限钥匙版">开心农场2:乡村度假无限钥匙版</a></span>
+												<span class="rank_renqi">9</span>
+												<span class="rank_download"><a href="/phone/5335.html" title="开心农场2:乡村度假无限钥匙版">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">8</span>
+												<span class="rank_name"><a href="/phone/5561.html" title="梦幻降魔录">梦幻降魔录</a></span>
+												<span class="rank_renqi">8</span>
+												<span class="rank_download"><a href="/phone/5561.html" title="梦幻降魔录">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">9</span>
+												<span class="rank_name"><a href="/phone/5567.html" title="仙侠遮天">仙侠遮天</a></span>
+												<span class="rank_renqi">8</span>
+												<span class="rank_download"><a href="/phone/5567.html" title="仙侠遮天">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">10</span>
+												<span class="rank_name"><a href="/phone/6251.html" title="天天背单词电脑版">天天背单词电脑版</a></span>
+												<span class="rank_renqi">8</span>
+												<span class="rank_download"><a href="/phone/6251.html" title="天天背单词电脑版">下载</a></span>
+											</div>
+										</li>                                                                   											    									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+			<p class="footer_top"><a href="/support/about.html">关于本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/help.html">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/advertise.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/rjfb.html">软件发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">下载声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemap.html">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemaps.xml">网站RSS</a></p>
+			<p class="footer_md">手机天堂是国内最专业的手机软件、手机游戏下载中心,手机天堂以服务用户为理念，努力打造成国内最大、最安全快速的手机软件、手机游戏下载平台。</p>
+		</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2016816'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D2016816%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>		</div>
+ 
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/script_index2.js"></script>
+	</body>
+</html>

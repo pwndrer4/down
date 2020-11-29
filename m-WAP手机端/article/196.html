@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+<title>win10预览版14295已知问题汇总-仿飞翔下载</title>
+<meta name="keywords" content="" />
+<meta name="description" content="win10预览版14295已知问题汇总" />
+<link href="/statics/m_v2/skin_css/m_xpgod.css" type="text/css" rel="stylesheet">
+<script>
+window.onload = function(){
+    document.getElementById("contentTextsss").innerHTML = document.getElementById("contentTextsss").innerHTML.replace(/src=\"\/d\/file\//g,"src=\"http:\/\/xpgod.zuseng.com\/d\/file\/");
+}
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="/"><img src="/statics/m_v2/skin_img/logo.png" alt="仿飞翔下载" /></a></div>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/fjyx/">游戏</a></li>
+    <li><a href="/sjrj/">软件</a></li>
+    <li><a href="/news/" class="last">资讯</a></li>
+  </ul>
+</div>
+<div class="article_title">
+  <div class="title">win10预览版14295已知问题汇总</div>
+  <div class="au_time">
+    <span class="span_auti"><span class="author"></span><em>作者：佚名</em></span>
+    <span class="span_auti ml55"><span class="time"></span><em>时间：2016-05-16</em></span>
+  </div>
+</div>
+<div class="intro_txt" id="contentTextsss">win10预览版14295已知问题汇总(更新必读)。相信不少朋友在更新前都想知道系统是否存在什么问题吧，下文小编就为大家带来win10预览版14295已知问题汇总，要更新的小伙伴不妨先来了解一下吧。
+<p><strong>已知的问题：</strong></p>
+<p>我们已经证实Narrator和其他屏幕阅读器应用程序可能无法在Feedback Hub中读取菜单选项的情况，且Narraator无法在Feedback Hub、Cortana和其他应用中读取已经选定的文本。我们将会尽快修复这个问题，对于给Insider用户造成的影响我们深表歉意。</p>
+<p>如果你使用Hyper-V且在网络设配器上进行了虚拟网关的设置，那么你可能在任务栏的通知区域出现错误标识(红色的&ldquo;X&rdquo;)，这个错误指示器是并不正确的，但是你的网络适配器依然能够正常工作。</p>
+<p>在部分使用TPM芯片的PC设备上，例如华硕的Zenbook UX31，在使用触控板的时候 可能会经历音频故障和音频跳动的情况。这些因为&ldquo;tpm-maintenance&rdquo;会在后台不断的运行而不是一次重启就可以了。临时解决方案是，在Task Scheduler中关闭tpm-maintenance进程。</p>
+<p>激活Windows Hello或者PIN的PC设备在登录系统之后可能会触发微软Passport服务。在新版本中打开这项服务之后，系统就会启动蓝牙功能来扫描设备。这可能会对PC造成包括续航减少、音频故障、蓝牙键盘/鼠标的响应问题、在WiFi/蓝牙整合芯片中可能会减少WiFi的吞吐量，并降低蓝牙文件传输过程中的速度。目前临时的解决方案是关闭微软Passport服务(NgcSvc)，打开运行终端，输入&ldquo;reg add HKLMSystemCurrentControlSetServicesNgcSvc /v Start /t REG_DWORD /d 0x4 /f&rdquo;然后进行重启。不过关闭该项服务之后无法使用Windows Hello或者PIN码来登录设备。在下个版本中将会修复这个问题。</p>
+<p>在从Build 14291升级到这个版本之后，尝试连接到Miracast接收器会出现连接失败的问题。解决方案是脱离这种状态之后，然后访问注册表项&ldquo;HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Services/SharedAccess/Parameters&rdquo;，然后选择&ldquo;StandaloneDhcpAddress&rdquo;将值从&ldquo;192.168.173.1&rdquo;修改为&ldquo;192.168.137.1&rdquo;(类型为REG_SZ)。然后重新尝试和Miracast设备的连接。</p>
+<p style="text-align: center;"><img alt="win10预览版14295已知问题汇总" src="/d/file/huoche/201605221622/20160328104949994.png" /></p>
+<p>我们已经收到部分报告称包括QQ在内的应用程序会出现崩溃的情况。目前我们正在积极的调查，同时这个问题也会对Windows Live Mail和Expression Encoder 4等老应用产生影响。</p></div>
+<div class="pagesss"></div>
+<div class="line"></div>
+<div class="main_xgyx">
+  <div class="xgyx_title">相关资讯</div>
+  <div class="xgyx_list">
+    <ul class="clearfix">
+            <li><a href="/article/140.html"><span></span>win10预览版14342更新内容汇总</a></li>
+            <li><a href="/article/142.html"><span></span>win10如何关闭windows安全警报</a></li>
+            <li><a href="/article/143.html"><span></span>怎么使用dism命令修复win10系统</a></li>
+            <li><a href="/article/145.html"><span></span>win10build14328应用列表空白bug怎么办</a></li>
+            <li><a href="/article/146.html"><span></span>win10预览版10586更新内容汇总</a></li>
+	
+          </ul>
+  </div>
+</div>
+<div id="SOHUCS"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrbiKxmG&conf=prod_8e11cfb50c20f2a0b31d59926e9e42c7">
+</script>
+<div class="footer">
+  <a href="javascript:void(0);" class="back_top"><span><img src="/statics/m_v2/skin_img/top.png" alt="" /></span><em>返回顶部</em></a>
+</div>
+<div class="fade"></div>
+<script src="/statics/m_v2/skin_js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<div style="display: none">
+  <script>
+$(function(){
+	$('.game_list .list_div:last,.rank_list .list_div:last,.zx_list .list_div').css('border-bottom-width',0);
+	$(".back_top").click(function(){
+		$('body,html').animate({scrollTop:0},100);
+		return false;
+	});
+	$('.paih_list').each(function(index, element) {
+		$(this).find('.list_div:last').css('border-bottom-width',0);
+	});
+	/*var imhwd=$('.mrd_pic').width();
+	$('.mrd_pic ul li').css('width',imhwd);
+	var imght=$('.mrd_pic li img').height();
+	$('.mrd_pic').css('height',imght);*/	
+	
+	$('.az_ios:last,.news_list dl:last').addClass('last');
+	
+	/*$('.zx_list .list_div_rg a').click(function() {
+		$('.fade').show();
+		$('.login_box').show();
+	});*/
+	$('.close').live('click',function() {
+		$('.fade').hide();
+		$('.login_box').hide();
+	});
+	
+	//
+	$('.span_close').click(function() {
+		$('.bt_gg').hide();
+		$('.footer').css('margin-bottom',0);
+	});
+})
+  </script>
+</div>
+</body>
+</html>

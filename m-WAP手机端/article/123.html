@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no;">
+<title>WinPE安装XP SP3 2011系统教程-仿飞翔下载</title>
+<meta name="keywords" content="" />
+<meta name="description" content="WinPE安装XP SP3 2011系统教程" />
+<link href="/statics/m_v2/skin_css/m_xpgod.css" type="text/css" rel="stylesheet">
+<script>
+window.onload = function(){
+    document.getElementById("contentTextsss").innerHTML = document.getElementById("contentTextsss").innerHTML.replace(/src=\"\/d\/file\//g,"src=\"http:\/\/xpgod.zuseng.com\/d\/file\/");
+}
+</script>
+</head>
+<body>
+<div class="top">
+  <div class="logo"><a href="/"><img src="/statics/m_v2/skin_img/logo.png" alt="仿飞翔下载" /></a></div>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/fjyx/">游戏</a></li>
+    <li><a href="/sjrj/">软件</a></li>
+    <li><a href="/news/" class="last">资讯</a></li>
+  </ul>
+</div>
+<div class="article_title">
+  <div class="title">WinPE安装XP SP3 2011系统教程</div>
+  <div class="au_time">
+    <span class="span_auti"><span class="author"></span><em>作者：佚名</em></span>
+    <span class="span_auti ml55"><span class="time"></span><em>时间：2016-05-16</em></span>
+  </div>
+</div>
+<div class="intro_txt" id="contentTextsss"><p><strong><font color="#0000ff" size="4">用WinPE全新安装XP <span   href="tag.php?name=SP3">SP3</span><span   href="tag.php?name=%CF%B5%CD%B3">系统</span><br />
+<br />
+</font></strong>&nbsp; &nbsp; 十几天前新装了一台HTPC，配无线键鼠，用于在电视上看看大片，玩玩游戏。<br />
+&nbsp; &nbsp; 顺便先亮一下配置：AMD 速龙 BE-2450 CPU（散）；映泰 A780G M2+ SE&nbsp;&nbsp;主板； 创见 DDR2 800 2G 内存 ；西部数据 320G SATAII 8M&nbsp;&nbsp;盒装硬盘；雷柏（Rapoo）1800无线键鼠套装；XQBOX HTPC501机箱；航嘉 冷静王标准版（2.3 版）电源； 酷冷至尊 白骑士II 08珍藏版CPU风扇，共花了1600大洋。将机箱上部面板正对CPU的部分板掏了一个直径10cm的圆孔，加了两层30-40目（记不清了）的不锈钢滤尘网，用来加强散热和减少噪音。<br />
+&nbsp; &nbsp; 为了省钱，光驱用几年前的旧机拆下来的CDROM，但问题就出在它身上。<br />
+&nbsp; &nbsp; 新装好机子后安装了原版XP SP3系统，因为没上网，在试用阶段为速度快，杀软也没装。<br />
+&nbsp; &nbsp; 这几天准备两机共享上网，决定重装新机系统和安全软件，并做个备份。使用光驱时才发觉它已经不能正常读盘，只好拆下扔掉了。<br />
+<br />
+&nbsp; &nbsp; 没办法，被迫边学边试验无光驱硬盘安装原版XP系统的方法，走了不少弯路，终于安装成功。现将本人安装经历拿出来与大家共享：<br />
+<br />
+<font color="#0000ff"><strong>&nbsp; &nbsp;一、将存储卡制作成可启动盘：</strong></font><br />
+<br />
+&nbsp; &nbsp; 有一块2G的MICRO SD卡，配上读卡器作为可启动盘。(为写着方便，以下以&ldquo;U盘&rdquo;两字代替)<br />
+<br />
+&nbsp; &nbsp; <strong>（一）、首先试用USBoot 制作可启动盘，准备直接启动到DOS下硬盘安装XP系统。</strong><br />
+<br />
+&nbsp; &nbsp; 1、从华军软件园<span   href="tag.php?name=%CF%C2%D4%D8">下载</span>USBoot 1.70 简体中文版，解压后运行&ldquo;Usboot170.exe&rdquo;，出现Usboot1.70中文界面，程序简单明了，一步步进行即可完成。几点说明：一是在窗口上边菜单栏中可选择引导模式：有HDD、ZIP、FDD等；二是该启动盘的<span   href="tag.php?name=%CE%C4%BC%FE">文件</span>系统只能选FAT格式；三是制作中需拔插U盘一次。<br />
+&nbsp; &nbsp; 2、重点注意：因为要在DOS硬盘安装XP系统，需要先运行smartdrv.exe以加快安装速度，所以该启动盘中须有smartdrv.exe 和相应的himem.sys、CONFIG.SYS文件。在USBoot1.70安装界面中，点击右下角的狮子图标，将smartdrv.exe、himem.sys文件和已修改好的CONFIG.SYS文件添加进U盘中。<br />
+&nbsp; &nbsp; 3、本人先后选择了USB-FDD、USB-ZIP方式和USB-HDD方式制作启动盘。在BIOS中均作了相应设置后，重启使用U盘启动，纯粹黑屏一个，<span   href="tag.php?name=%B5%E7%C4%D4">电脑</span>无反应，在两台机子上试过，都这样。原因没有找到，干脆放弃了使用该方法。<br />
+<br />
+<strong>&nbsp; &nbsp;（二）、放弃USBoot，改为制作PE启动盘。</strong><br />
+<br />
+&nbsp; &nbsp; 从网上下载了老毛桃WINPE： BootCD_070911.ISO（文件大小108.59MB；MD5: 9354b013057548d1282451008309b7e9；SHA-1: 5430ea37f33da06e0f2447f17d505eac3185558c），安装成功后经试验可启动到PE系统下。步骤见下：<br />
+&nbsp; &nbsp; 1、用WinRAR将BootCD_070911.ISO解压，得到三个文件夹和两个文件，解压中 AVAST4.8专业版对其中三个文件报毒：分别是SETUP文件夹下的PESETUP.EXE文件、MINIPE文件夹下的OP.WIM、SETUPMYING文件夹下的MYINS.EXE文件。经上网询问，一般认为是小A过于敏感误杀的，也就没有理会，加入小A的除外程序以便于下步操作。<br />
+&nbsp; &nbsp; 2、将存储卡+读卡器插在电脑上。（注：在上步用USBoot1.70制作USB可启动盘时已经设置为USB-HDD启动方式，就不用再重新制作了。文件格式本人在下步的制作PE启动盘时格式化为FAT32格式，见第5步）。<br />
+&nbsp; &nbsp; 3、运行BootCD_070911.ISO解压后得到的SETUP文件夹中的&ldquo;PESETUP.EXE&rdquo;文件，出现PE安装界面。在&ldquo;选择安装方式&rdquo;窗口中，选择&lt;4&gt; Grub安装/启动U盘、移动硬盘安装。注意：如选择&lt;1&gt;,则是直接将PE系统安装在了电脑硬盘中了。<br />
+&nbsp; &nbsp; 4、输入U盘的盘符，回车。该步还可手动指定U盘的卷标，也可以不管它，本人输入的是PE。<br />
+&nbsp; &nbsp; 5、到了格式化步骤，按默认设置就行，点击&ldquo;开始&rdquo;进行格式化。（默认的&ldquo;文件系统&rdquo;格式为FAT32，保持不动即可）<br />
+&nbsp; &nbsp; 6、等到出现又一个&ldquo;格式化报告&rdquo;窗口，点&ldquo;确定&rdquo;完成。关闭窗口。<br />
+&nbsp; &nbsp; 7、接着出现新窗口&ldquo;Grub2引导.....&rdquo;。注意在&ldquo;设置&rdquo;一栏中磁盘处有两个选项，一个是电脑的硬盘，一个是U盘，看容量大小即可分辨，要选择U盘引导。下面的&ldquo;选项&rdquo;栏中均不勾选，点击&ldquo;安装&rdquo;进入下一步。<br />
+&nbsp; &nbsp; 8、写入引导完成后，按提示点击任意键继续。<br />
+&nbsp; &nbsp; 9、在此处给该启动U盘设密码，想不设都不行。我设的是123。要记住该密码，进入PE系统前要输入的。再次输入该密码，确定。<br />
+&nbsp; &nbsp; 10、继续下一步，点任意键退出。就完成了可启动PE系统U盘的制作。<br />
+&nbsp; &nbsp; 11、将XP 系统镜像文件复制到U盘中，以便下一步安装。我用的是<span   href="tag.php?name=Windows">Windows</span> XP Professional with SP3 MSDN 简体中文原版ISO镜像（601.04MB；MD5: E74D72F3D90456003E9E02BA0FB7DA61；SHA1: D142469D0C3953D8E4A6A490A58052EF52837F0F）<br />
+&nbsp; &nbsp; 至此前期准备工作结束，下步就是进入PE系统操作了。<br />
+<br />
+<strong><font color="#0000ff">&nbsp; &nbsp;二、用U盘启动进入PE系统，开始为电脑全新安装XP SP3系统。</font></strong><br />
+<br />
+&nbsp;&nbsp;<strong>&nbsp;&nbsp;（一）、U盘启动进入PE及安装前期步骤：</strong><br />
+<br />
+&nbsp; &nbsp; 1、插上刚制作的可启动U盘，重启电脑，按Detele键进入BIOS设置（不同主板进入BIOS的按键有所不同，按主板说明操作）。我的映泰A780G主板用的是AMI BIOS，在&ldquo;Boot&rdquo;项下的&ldquo;Hard Disk Drives&rdquo;项中有两个子项，1st为硬盘，2nd显示为&quot;USB MMC...&quot;，即是U盘了，将1st改为U盘，则2nd自动变为硬盘，点&ldquo;F10&rdquo;-&ldquo;Y&rdquo;保存设置退出重启。<br />
+&nbsp; &nbsp; 2、开始进入PE系统，在&ldquo;Password:_&rdquo;处输入U盘密码（制作可启动PE时设定的密码这里就用到了），本人输入123, 出现选择菜单，选&ldquo;WinPE By: MAOTAO&rdquo;，进入。<br />
+&nbsp; &nbsp; 3、进入了WinPE系统桌面。看上去与平时的Windows系统没什么两样。<br />
+&nbsp; &nbsp; 4、先打开&ldquo;我的电脑&rdquo;，看一下各分区盘符。本人在制作可启动U盘时选择的是USB-HDD，此时&ldquo;我的电脑&rdquo;中出现了B盘，容量为0.98MB，它是靠消耗一部分内存而模拟出来的一个临时分区；C盘没动，还是原来的系统分区；（没有D盘盘符，D盘由于启用了 FBWF 组件，也成了可写分区。但是重新启动后，B:、D:这两个分区中所有数据均会全部丢失）而原来的硬盘盘符依次后移了，即D盘变成了E盘，E盘变成了F盘...。<br />
+&nbsp; &nbsp; （网上经验，如U盘设为USB-ZIP 或 USB-FDD 时，其在PE系统中显示为A盘。本人用的是USB-HDD，则占用了B盘和D盘盘符）<br />
+&nbsp; &nbsp; （PS：如为新硬盘没有格式化和分区，则可用PE系统中的分区软件进行分区、激活为<span   href="tag.php?name=%BB%EE%B6%AF">活动</span>分区、格式化等等。同时硬盘未分区格式化的话在BIOS中出现的启动顺序设置项也会有不同，不过本人没试过）<br />
+&nbsp; &nbsp; 5、右键单击C盘盘符（即原来的系统分区），在出现的右键落单中选&ldquo;格式化&rdquo;，文件系统本人选的是FAT32。注意：要选对盘符，可从各分区容量上鉴别。因为在PE系统中各机出现的情况有所不同，留神别把其它非系统分区中有用的资料格式化了。<br />
+&nbsp; &nbsp; 6、将U盘中的XP镜像文件（600多M）复制到硬盘非系统分区的根目录下，为保险起见我选的是H盘（即原来的G盘），因为该分区是FAT32格式。至于复制到NTFS格式的分区中是否可正常安装，我没试过。<br />
+&nbsp; &nbsp; 前期工作完成。到下步全新安装XP系统时又有不同方法：<br />
+<br />
+&nbsp;&nbsp;<strong>&nbsp;&nbsp;（二）、第一种方法：用PE系统中<span   href="tag.php?name=%BC%D3%D4%D8">加载</span>虚拟光驱进行XP系统安装：</strong><br />
+<br />
+&nbsp; &nbsp; （注：按以下方法我没安装成功，写出来是为了让<span   href="tag.php?name=%B8%DF%CA%D6">高手</span>分析一下操作错误）<br />
+&nbsp; &nbsp; [1]、在PE中，&ldquo;开始&rdquo;-&ldquo;程序&rdquo;-&ldquo;磁盘光盘工具&rdquo;-点击 Virtual Driver Manger；<br />
+&nbsp; &nbsp; [2]、在窗口中，&ldquo;装载&rdquo;-&ldquo;浏览&rdquo;-选中那个600多M的XP系统镜像文件-&ldquo;打开&rdquo;-&ldquo;确定&rdquo;；<br />
+&nbsp; &nbsp; [3]、此时不要关闭Virtual Driver Manger窗口，再次打开&ldquo;我的电脑&rdquo;，在&ldquo;有移动可存储的设备&rdquo;下，多出了一个CD驱动器，虚拟光驱成功。<br />
+&nbsp; &nbsp; [4]、双击该CD驱动器盘符，打开后看到的是XP系统的安装文件夹和文件，运行其中的SETUP.EXE, 进行系统安装。<br />
+&nbsp; &nbsp; [5]、出现XP系统安装界面，与我们平时在Windows系统中重装XP系统的界面一样。选择第一项；安装Windows XP，再选择&ldquo;全新安装&rdquo;，下一步。<br />
+&nbsp; &nbsp; [6]、输入XP的安装序列号，点下一步。<br />
+&nbsp; &nbsp; [7]、这步非常关键，要点击&ldquo;高级选项&rdquo;从中进行设置，下一步。<br />
+&nbsp; &nbsp; [8]、在&ldquo;安装&rdquo;选项中一定要选中&ldquo;从安装CD复制所有安装文件&rdquo;和&ldquo;我想在安装过程中选择驱动器号和磁盘分区&rdquo;，别的保持默认。<br />
+&nbsp; &nbsp; [9]、直接拔掉U盘。（原因出自别人经验：不拔掉的话下步的复制安装文件是复制到U盘上而不是复制到了C盘中。）U盘不能正常退出，只能强行拔出；拔掉后不影响PE系统和虚拟光驱的运行。<br />
+&nbsp; &nbsp; [10]、点击下一步。&ldquo;获得<span   href="tag.php?name=%B8%FC%D0%C2">更新</span>的安装文件&rdquo;，否，点击下一步。<br />
+&nbsp; &nbsp; [11]、开始向C盘复制文件。本人就是在此步出现问题。提示为：&ldquo;应用程序或DLL，B:外置程序INTERNET EXPLORERurlmon.dll 为无效的windows映像，请再次检测一遍您的安装盘。&rdquo;点击确定后则退出安装。<br />
+&nbsp; &nbsp; 经多次试验都这样。网上寻求解决方法未果，干脆放弃了用虚拟光驱加载安装系统的方法。<br />
+<br />
+&nbsp; &nbsp; <strong>（三）、第二种方法：直接运行Winnt32程序进行XP原版系统安装。</strong><br />
+&nbsp; &nbsp; （本人用此法安装成功）<br />
+<br />
+&nbsp; &nbsp; [1]、在PE系统中将XP SP3系统镜像ISO文件从U盘上复制到硬盘的非系统分区后，用PE所带WinRAR程序将该ISO镜像中的I386文件夹解压到该分区的根目录下，我选的是 H：I386。<br />
+&nbsp; &nbsp; [2]、直接拔出U盘。原因：不拔掉的话下步的复制安装文件是复制到U盘上而不是复制到了C盘中。因PE系统实际是运行在内存中，拔出U盘不影响PE系统和程序的运行。<br />
+&nbsp; &nbsp; [3]、进入I386文件夹，双击运行其中的Winnt32.exe，出现XP系统安装界面。该界面与我们平时在Windows系统中重装XP系统的界面一样。<br />
+&nbsp; &nbsp; [4]、选择第一项；安装Windows XP，再选择&ldquo;全新安装&rdquo;，下一步。<br />
+&nbsp; &nbsp; [5]、输入XP的安装序列号，点下一步。<br />
+&nbsp; &nbsp; [6]、这步非常关键，要点击&ldquo;高级选项&rdquo;，从中进行设置。下一步。<br />
+&nbsp; &nbsp; [7]、在&ldquo;安装&rdquo;选项中要选中&ldquo;我想在安装过程中选择驱动器号和磁盘分区&rdquo;，别的保持默认。<br />
+&nbsp; &nbsp; [8]、点击下一步。&ldquo;获得更新的安装文件&rdquo;，否，点击下一步。<br />
+&nbsp; &nbsp; [9]、开始向C盘复制文件。复制非常快，仅几秒钟，呵呵。（本人也未在DOS下或PE系统中运行smartdrv.exe程序，非常怀疑是否真的向C盘复制了全部安装文件，因重启后出现了像光盘安装XP一样的界面，又自动进行了全部安装文件的复制）<br />
+&nbsp; &nbsp; [10]、然后安装程序提示..秒后重启系统，但那个倒计时红条充满后电脑并未重启。为此本人考虑是否在此时需点击Enter进行手动重启呢？故又从步骤第[3]项开始重新安装。直到此步，在提示重启的红条未满时立即点击Enter键，结果电脑仍未重启。<br />
+&nbsp; &nbsp; [11]、试着手动关机重启：此时关掉PE系统中打开的所有窗口，点击PE系统的开始菜单-关机-重启。<br />
+&nbsp; &nbsp; [12]、令人惊喜的一幕出现了：电脑重启后，直接进入了XP系统的安装界面，和用XP系统安装光盘安装操作系统时一模一样。其中也包括了向硬盘中复制安装文件这一步。呵呵。<br />
+&nbsp; &nbsp; [13]、所有安装步骤都与光盘安装XP系统相同，此处就不啰嗦了。完成安装后进入新的Windows xp桌面，安装驱动、<span   href="tag.php?name=%B7%C0%BB%F0%C7%BD">防火墙</span>、自定义<span   href="tag.php?name=%B9%E6%D4%F2">规则</span>、杀软等等。<br />
+&nbsp; &nbsp; [14]、在计算机管理-磁盘管理中，将E、F、G、H盘盘符分别改回为D、E、F、G盘。<br />
+<br />
+<strong><font color="#0000ff">&nbsp; &nbsp;三、在PE系统中进行GHOST系统备份：</font></strong><br />
+<br />
+&nbsp; &nbsp; 1、插上U盘，重启电脑。<br />
+&nbsp; &nbsp; 2、进入PE系统。<br />
+&nbsp; &nbsp; 3、程序&mdash;克隆工具&mdash;GHOST32 11.0，启动PE系统中的GHOST程序；<br />
+&nbsp; &nbsp; 4、出现在PE桌面中的GHOST窗口，界面与DOS下GHOST操作界面完全一致。<br />
+&nbsp; &nbsp; 5、其它操作就不用说了吧。最后成功将系统GHOST了一个备份。呵呵<br />
+<br />
+&nbsp;</p></div>
+<div class="pagesss"></div>
+<div class="line"></div>
+<div class="main_xgyx">
+  <div class="xgyx_title">相关资讯</div>
+  <div class="xgyx_list">
+    <ul class="clearfix">
+            <li><a href="/article/99.html"><span></span>winxp系统微软补丁获取方法</a></li>
+            <li><a href="/article/100.html"><span></span>winxp迁移助手怎么样？360xp迁移助手功能大全</a></li>
+            <li><a href="/article/101.html"><span></span>winxp停止服务怎么办 winxp停止服务后解决方法</a></li>
+            <li><a href="/article/102.html"><span></span>xp系统停止服务 一大波黑客即将来袭</a></li>
+            <li><a href="/article/103.html"><span></span>xp系统停止服务后能再活5年</a></li>
+	
+          </ul>
+  </div>
+</div>
+<div id="SOHUCS"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cyrbiKxmG&conf=prod_8e11cfb50c20f2a0b31d59926e9e42c7">
+</script>
+<div class="footer">
+  <a href="javascript:void(0);" class="back_top"><span><img src="/statics/m_v2/skin_img/top.png" alt="" /></span><em>返回顶部</em></a>
+</div>
+<div class="fade"></div>
+<script src="/statics/m_v2/skin_js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<div style="display: none">
+  <script>
+$(function(){
+	$('.game_list .list_div:last,.rank_list .list_div:last,.zx_list .list_div').css('border-bottom-width',0);
+	$(".back_top").click(function(){
+		$('body,html').animate({scrollTop:0},100);
+		return false;
+	});
+	$('.paih_list').each(function(index, element) {
+		$(this).find('.list_div:last').css('border-bottom-width',0);
+	});
+	/*var imhwd=$('.mrd_pic').width();
+	$('.mrd_pic ul li').css('width',imhwd);
+	var imght=$('.mrd_pic li img').height();
+	$('.mrd_pic').css('height',imght);*/	
+	
+	$('.az_ios:last,.news_list dl:last').addClass('last');
+	
+	/*$('.zx_list .list_div_rg a').click(function() {
+		$('.fade').show();
+		$('.login_box').show();
+	});*/
+	$('.close').live('click',function() {
+		$('.fade').hide();
+		$('.login_box').hide();
+	});
+	
+	//
+	$('.span_close').click(function() {
+		$('.bt_gg').hide();
+		$('.footer').css('margin-bottom',0);
+	});
+})
+  </script>
+</div>
+</body>
+</html>

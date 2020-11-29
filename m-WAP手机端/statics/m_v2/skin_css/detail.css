@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+/*截图相关*/
+.art-con p{ line-height:1.5; padding:10px 0;}
+.art-con p img{width:100%!important; height:auto !important; max-width:640px; float:none!important; margin :0 auto;margin-bottom:10px;}
+
+.horizontal{
+    -webkit-transform:transition3d(0,0,0);
+    -moz-transform:transition3d(0,0,0);
+}
+.horizontal ul li{ float: left; padding-right: 5px;}
+.vertical img{ width: 300px;}
+.horizon img{ width: 135px;}
+
+.slider-wrap{  width: 100%; overflow: hidden;}
+.slide-nav{ position: absolute; bottom:8px; width: 100%; text-align: center; font-size: 0; z-index: 10;}
+.slide-nav span{ display: inline-block; width: 8px; height:8px; margin: 0 4px; border-radius: 4px; background-color: #c3c3c3;}
+.slide-nav .curr{ background-color: #ff6e00;}
+
+#shotCont{ position:relative;width: 100%; overflow: hidden; z-index: 2000;}
+#scroller{ position: absolute; transform:translateZ(0px); z-index: 1;}
+.shot-ul{ width: 4000px;}
+
+.pic-mask{ display:none;position: fixed; left: 0; top:0; right:0; bottom:0; background: rgba(0,0,0,0.7); z-index: 2040;}
+.pic-wrap{ position: fixed;left: 0;right: 0;top: 0;bottom: 0;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -moz-box-align: center
+    -webkit-box-align: center;
+}
+.pic-main li{float:left;text-align: center;}
+.pic-main li img{ display: inline-block;}
+/*.ver-trans-img img{*/
+    /*-moz-transform:rotate(90deg); *//* Firefox */
+    /*-webkit-transform:rotate(90deg); *//* Safari and Chrome */
+    /*-o-transform:rotate(90deg); *//* Opera */
+    /*transform:rotate(90deg);	*/
+    /*max-width:100%!important;*/
+/*}*/

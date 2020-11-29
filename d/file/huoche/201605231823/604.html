@@ -1,0 +1,639 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Qomo Linux系统0.8.0官方安装版 2.0 - 系统天堂</title>
+<meta name="description" content="Qomo Linux v0.8.0官方安装版 Linux系统---------------------------------------------------------------------1. 采用lzma压缩， 实现700M以内LiveCD ISO， 含有office等组件2. 集成ibus输入法框架, 默认...">
+<meta name="keywords" content="Qomo,Linux,Linux系统">
+<link href="/statics/skin_css/news_xpgod.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/statics/skin_js/jquery-1.8.3.min.js"></script>
+<link rel="alternate" media="only screen and(max-width: 640px)"  href="http://m.xpgod.com/soft/604.html" >
+<script type="text/javascript">
+    (function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){window.location.href="http://m.xpgod.com/soft/604.html"}})();
+</script>
+<script  type="text/javascript" src="/statics/js/searchword.js"></script>
+</head>
+
+<body>
+<a href="#top" class="go_top"><span>返回顶部</span></a>
+<div class="top_bg">
+   <div class="inner">
+           		<span id="27" class="xpTestPos"></span>
+		      <div class="logo"><a href="http://www.xpgod.com/"><img src="/statics/skin_img/logo.png" alt="系统天堂"></a></div>
+      <div class="tips"></div>
+      <div class="cen">
+         <div class="serachs">
+	   	<div id="search">
+		<div id="search_1">
+		 <form action="http://so.xpgod.com/cse/search" accept-charset="UTF-8" method="get" name="topForm" id="topForm" target="_blank">
+		  <div class="schsel">
+            <div class="schsel-now">
+            <span onmouseout="drop_mouseout('head');" onclick="show_search()" id="headSlected">软件</span>
+            <b onmouseout="drop_mouseout('head');" onclick="show_search()"></b>
+            </div>
+            <div class="clear"></div>
+            <ul style="display: none;" id="headSel">
+			  <li><a onmouseout="drop_mouseout('head');" onmouseover="drop_mouseover('head');" onclick="return search_show('head','down',this)" id="self">软件</a></li>
+               <li><a onmouseout="drop_mouseout('head');" onmouseover="drop_mouseover('head');" onclick="return search_show('head','news',this)" id="news">文章</a></li> 
+            </ul>
+          </div>
+	     <input class="keyword_input" type="text" name="q" id="searchfield" autocomplete="off">
+		 	<input class="schbtn" type="submit" value="">
+	   <input type="hidden" name="s" value="18284670986227967278"/>
+       <input type="hidden" name="nsid" value="2" id="typeid"/>
+		</form>
+		 <div class="clear"></div>
+	     </div>
+		 </div>
+	    </div>
+         <div class="gjc">
+		                             <a href="http://www.xpgod.com/shouji/game/810.html" target="_blank">梦幻西游</a>
+                                <a href="http://www.xpgod.com/soft/24252.html" target="_blank">qq2016</a>
+                                <a href="http://www.xpgod.com/soft/99.html" target="_blank">360卫士</a>
+                                <a href="http://www.xpgod.com/soft/18616.html" target="_blank">电脑管家</a>
+                                <a href="http://www.xpgod.com/soft/20446.html" target="_blank">抢票软件</a>
+                              </div>
+      </div>
+	<span id="1" class="xpTestPos"></span>
+   </div>
+   <div class="nav">
+      <div class="nav_box">
+	  <a href="/" ><span>首页</span><em></em></a>
+	            <a href="/soft/" class="on"><span>软件下载</span><em></em></a>
+         <a href="/zhuanti/yyzt.html" ><span>软件专题</span><em></em></a>
+         <a href="/zhuanti/" ><span>游戏专题</span><em></em></a>
+         <a href="/article/" ><span>文章教程</span><em></em></a>
+		  <a href="/shouji/soft/" target="_blank"><span>手机软件</span><em></em></a>
+		 <a href="/shouji/game/" target="_blank"><span>手机游戏</span><em></em></a>
+         <a href="/shouji/news/gonglue.html" target="_blank"><span>手游攻略</span><em></em></a>
+		   <a href="http://www.xpgod.com/shouji/phb.html" class="last" target="_blank"><span>手游排行榜</span><em></em></a>
+		 
+      </div>
+   </div>
+   <div class="nav_menu">
+    <div class="menu">
+      <a href="http://www.xpgod.com/soft/sys/27/" target="_blank">输入法</a>
+      <a href="http://www.xpgod.com/soft/2/wlll/" target="_blank">浏览器</a>
+      <a href="http://www.xpgod.com/soft/3/" target="_blank">系统软件</a>
+      <a href="http://www.xpgod.com/soft/sys/sort0126/" target="_blank">办公软件</a>
+      <a href="http://www.xpgod.com/soft/3/30/" target="_blank">驱动下载</a>
+      <a href="http://www.xpgod.com/soft/safe/60/" target="_blank">系统安全</a>
+      <a href="http://www.xpgod.com/soft/29/player/" target="_blank">视频播放</a>
+      <a href="http://www.xpgod.com/soft/29/yybf/" target="_blank">音乐播放</a>
+      <a href="http://www.xpgod.com/soft/35/82/" target="_blank">手机助手</a>
+      <a href="http://www.xpgod.com/soft/28/tpcl/" target="_blank">图形软件</a>
+      <a href="http://www.xpgod.com/soft/28/3D/" target="_blank">设计软件</a>
+      <a href="http://www.xpgod.com/soft/72/73/" target="_blank">游戏工具</a>
+      <a href="http://www.xpgod.com/soft/22059.html" target="_blank">安卓模拟器</a>
+   </div>
+  </div>
+</div>	
+<script type="text/javascript" src="/statics/js/dxzq.js"></script>
+<div id="main">
+   <div class="location">
+       位置：
+       <a href="/">首页</a><em>&gt;</em><a href="http://www.xpgod.com/soft/">下载中心</a><em>&gt;</em><a href="http://www.xpgod.com/soft/28/">图形图像</a><em>&gt;</em><a href="http://www.xpgod.com/soft/28/TPLL/">图片浏览</a><em>&gt;</em>Qomo Linux系统0.8.0官方安装版   </div>
+   <div class="softny1">
+      <div class="name">
+         <div id="view_name">Qomo Linux系统0.8.0官方安装版 2.0</div>
+         <div class="share">
+             <p>分享到：</p>
+             <div class="bdsharebuttonbox bdshare-button-style2-24" data-bd-bind="1450677490657">
+             <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+             <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+             <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+             <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+             <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+              </div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+         </div>
+      </div>
+      <div class="box">
+        <div class="box_l">
+           <div class="tbu">
+		   <div class="soft_snap">
+            <span id="9" class="xpTestPos"></span> 
+			</div>
+              <div class="info">
+                  <ul>
+				                      <li><p class="tit">软件大小：</p><p class="nr" id="ljdx">690MB</p></li>
+                    <li><p class="tit">更新时间：</p><p class="nr" id="gxsj">2015-07-25</p></li>
+                    <li><p class="tit">软件授权：</p><p class="nr" id="rjsq">免费版</p></li>
+                    <li><p class="tit">应用平台：</p><p class="nr">WinXP/win7/vista/</p></li>
+                    <li><p class="tit">软件等级：</p><p class="stars star4"></p></li>
+                    <li><p class="tit">官方主页：</p><p class="nr"><a href="http://www.xpgod.com/" target="_blank">www.xpgod.com</a></p></li>
+                    <li class="last">
+                      <p class="tit">安全检测：</p>
+                      <p class="nr">
+                         <span></span><a href="http://www.xpgod.com/soft/99.html" target="_blank">360安全卫士</a><em></em>
+                      </p>
+                      <p class="nr">
+                         <span class="sd"></span><a href="http://www.xpgod.com/soft/18485.html" target="_blank">360杀毒</a><em></em>
+                      </p>
+                      <p class="nr">
+                         <span class="dn"></span><a href="http://www.xpgod.com/soft/61.html" target="_blank">电脑管家</a><em></em>
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="bottom">
+				                           <a class="bnt" href="javascript:void(0);"><em>本地下载</em><span class="count">5021</span></a>
+                	   <div class="gg">
+				<span id="10" class="xpTestPos"></span> 
+                  </div>
+                  </div>
+              </div>
+           </div>
+           <div class="button">
+             <a href="javascript:void(0);" id="wypl"><span class="pl"></span>网友评论</a>
+              <a href="http://www.xpgod.com/article/23317.html" target="_blank"><span class="down"></span>下载教程</a>
+              <a href="javascript:;" onClick="AddFavorite('Qomo Linux系统0.8.0官方安装版');"><span class="sc"></span>收藏该页</a>
+              <a href="javascript:;" onClick="copyBBS('soft');return false;" ><span class="zt"></span>一键转帖</a>
+           </div>
+           <div class="soft_rmsy">
+             <div class="hd"><p class="icon"></p><p class="tit">热门手游</p></div>
+             <div class="bd">
+               <ul>
+			 			                <li><a href="http://www.xpgod.com/shouji/game/200.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2014/1216/20141216033156233.jpeg" alt="时空猎人"><em class="cover_70"></em><span>时空猎人</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/91.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2014/1209/20141209035437775.png" alt="全民奇迹"><em class="cover_70"></em><span>全民奇迹</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/2867.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2015/0518/20150518022721118.png" alt="乖离性百万亚瑟王"><em class="cover_70"></em><span>乖离性百万亚瑟王</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/59.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2014/1208/20141208025342928.png" alt="全民枪战"><em class="cover_70"></em><span>全民枪战</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/3121.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2015/0603/20150603011730770.png" alt="联盟传说"><em class="cover_70"></em><span>联盟传说</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/2765.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2015/0616/20150616091404198.jpg" alt="花千骨"><em class="cover_70"></em><span>花千骨</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/943.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2015/0121/20150121031411466.jpg" alt="名侦探柯南OL"><em class="cover_70"></em><span>名侦探柯南OL</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/2956.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2015/0522/20150522032027456.png" alt="功夫熊猫"><em class="cover_70"></em><span>功夫熊猫</span></a></li>
+                            <li><a href="http://www.xpgod.com/shouji/game/3848.html" target="_blank"><img src="http://www.xpgod.com/shouji/uploadfile/2015/0731/20150731050015362.png" alt="梦三国"><em class="cover_70"></em><span>梦三国</span></a></li>
+                           </ul>
+            </div>
+          </div>
+        </div>
+		  <div class="box_r">
+		  	   <div class="soft_snap">
+		 <span id="11" class="xpTestPos"></span> 
+		          </div>
+				  	   <div class="gg">
+		 <span id="23" class="xpTestPos"></span> 
+		   </div>
+		   </div>
+ 
+      </div>
+   </div>
+   <div class="softny3">
+      <div class="softny3_l">
+	        <div class="softny_main">
+         <div class="tabs">
+            <p class="cur" id="tab_1" onclick="tabs('1');"><span class="jianj"></span>软件简介</p>
+            <p id="tab_2" onclick="tabs('2');"><span class="jiet"></span>软件截图</p>           	          </div>
+         <link href="/statics/skin_css/common.css" type="text/css" rel="stylesheet">
+         <div class="box" id="tab_a1" style="display:block;">
+            <div class="scrollbar">
+               <div class="track">
+                 <div class="thumb">
+                    <div class="end"></div>
+                 </div>
+              </div>
+            </div>
+           <div class="viewport">
+           <div class="con overview" style="top:0px;" id="soft-intro">
+    		<p><img alt="\" src="/soft/UploadPic/2010-7/201072410113599161.jpg" /></p>
+<p>Qomo Linux v0.8.0官方安装版 Linux系统<br />
+---------------------------------------------------------------------<br />
+1. 采用lzma压缩， 实现700M以内LiveCD ISO， 含有<a href="http://www.xpgod.com/soft/988.html" target="_blank" class="keylink">office</a>等组件<br />
+2. 集成ibus<a href="http://www.xpgod.com/soft/58.html" target="_blank" class="keylink">输入法</a>框架, 默认支持<a href="http://www.xpgod.com/soft/1080.html" target="_blank" class="keylink">拼音</a>输入法, 可yum install ibus-table-chinese 安装更多的汉语输入法<br />
+3. 去掉了QQ 以及 amsn组件, 引入pidgin ，openfetion, flashget等组件<br />
+4. 集成firefox prism扩展功能, 实现了WebQQ, Gmail桌面化, 实现系统托盘消息提示功能<br />
+5. 更新xine-lib, 解决开关机没有系统声音, 无法正常关机,注销,重启问题<br />
+6. 更新kde-settings, 解决任务栏没有100%自适应长度问题<br />
+7. 修正了一些yum update冲突问题, 解决scim与firefox更新后崩溃现象<br />
+8. 暂时没有加入Qomo官方的主题风格, 而使用KDE默认设置, 如果想继续使用0.7的风格,可安装如下几个包:<br />
+图标 主题: kde-settings-redflag-icons<br />
+KDM主题: rfthemes-kdm<br />
+Ksplash主题: rfthemes-ksplash<br />
+壁纸: rfthemes-wallpapers</p>
+           </div>
+          </div>
+           <div class="xbtx">
+		                <p>
+              <em>【关键词】 </em>
+			  <a  target="_blank" href="http://www.xpgod.com/index.php?m=content&c=tag&catid=5&tag=Qomo">Qomo</a> 	<a  target="_blank" href="http://www.xpgod.com/index.php?m=content&c=tag&catid=5&tag=Linux">Linux</a> 	<a  target="_blank" href="http://www.xpgod.com/index.php?m=content&c=tag&catid=5&tag=Linux%CF%B5%CD%B3">Linux系统</a> 	            </p>
+           </div>
+          </div>
+		            <div class="box" id="tab_a2">
+          <script type="text/javascript" src="/statics/skin_js/jquery.scrollbar.js"></script>
+          <script type="text/javascript" src="/statics/skin_js/jquery.slider.js"></script>
+              <div class="showcase" id="showcase">
+               <div class="scrollbar">
+               <div class="s-box">
+               <ul class="s-content">
+                               <li class="picture active">
+               <img src="/soft/UploadPic/2010-7/201072410113599161.jpg" alt="">
+               <span class="bg"></span><span class="info"></span>
+               </li>
+                                </ul>
+               </div>
+               <div class="track" style="display: block;"><div style="position: absolute; width: 220.5263157894737px; left: 0px;"></div></div>
+               </div>
+               <div class="slider" style="">
+               <a class="trigger" href="javascript:void(0);">切换</a>
+               <a class="prev" href="javascript:void(0);">上一页</a>
+               <a class="next" href="javascript:void(0);">下一页</a>
+               <div class="s-box" itemprop="screenshots">
+               <ul class="s-content">
+                               <li><img itemprop="contentURL" src="/soft/UploadPic/2010-7/201072410113599161.jpg" alt=""></li>
+                              </ul>
+               </div>
+               <div class="s-nav">
+			                   <span class="picture"><span></span></span>
+                              </div>
+               </div>
+               </div>
+
+<script type="text/javascript" src="/statics/skin_js/content.js"></script>
+          </div>
+		  		  	         <script src="/statics/skin_js/tinyscrollbar.js"></script>
+      </div>
+         <div class="rmzt">
+            <div class="gy_tit"><a href="http://www.xpgod.com/zhuanti/" target="_blank">更多&gt;&gt;</a> 热门专题</div>
+            <ul>
+						  
+				 
+               <li><a href="http://www.xpgod.com/zhuanti/stpz/" target="_blank"><img src="http://www.xpgod.com/uploadfile/2016/0304/20160304032427852.png" alt="拍照搜题软件哪个好"><span class="tit">拍照搜题软件哪个好</span><span class="bnt"><em>进入专题</em></span></a></li>
+			    
+               <li><a href="http://www.xpgod.com/zhuanti/360aqws/" target="_blank"><img src="http://www.xpgod.com/uploadfile/2015/1105/20151105092801837.png" alt="360安全卫士下载官方最新版"><span class="tit">360安全卫士下载官方最新版</span><span class="bnt"><em>进入专题</em></span></a></li>
+			    
+               <li><a href="http://www.xpgod.com/zhuanti/jhgj/" target="_blank"><img src="http://www.xpgod.com/uploadfile/2015/1104/20151104111225381.png" alt="win7/win8/win10系统激活工具大全"><span class="tit">win7/win8/win10系统激活工具大全</span><span class="bnt"><em>进入专题</em></span></a></li>
+			               </ul>
+         </div>
+		 <div class="gg">
+		   <span id="13" class="xpTestPos"></span>
+		    </div>
+		          <div class="down_box" id="con_dxz" data="1" softid="604" name="Qomo">
+            <div class="hd">
+               <p class="cur" id="d1">Qomo下载地址</p>
+                                         </div>
+            <div class="bd">
+               <div class="down_l" style="display:block;" id="d1d">
+                     
+                <ul class="clearfix">
+                     <p><em></em>官方下载</p>
+					 					                       <li><a href="ftp://www.linux-ren.org/pub/qomo/iso/0.8/Qomo-0.8.0-i686-Live.iso" target="_blank"><span></span>下载地址1</a></li>
+                                         <li><a href="ftp://www.linux-ren.org/pub/qomo/iso/0.8/Qomo-0.8.0-i686-Live.iso" target="_blank"><span></span>下载地址2</a></li>
+                                      </ul>
+                 		
+                      
+               </div>
+			   			    			   <div class="down_r">
+			   	   <div class="gg1">
+			   <span id="14" class="xpTestPos"></span>
+			   </div>
+			     <div class="gg2">
+			   <span id="15" class="xpTestPos"></span>
+               </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottom">
+            <div class="gy_tit">相关文章</div>
+			 			                     				                                    		            <div class="comment">
+			 <input value="content_5-604-1" id="commentid" type="hidden">
+               <div class="cmt_plk">
+                  <div class="tit"><p>共<a href="/content_5-604-1_1.html" target="_blank">0</a>条评论</p>网友评论</div>
+                  <textarea id="saytext" my-placeholder="我要评论..." name="content" o-color="rgb(153, 153, 153)" style="color: rgb(153, 153, 153);"></textarea>
+                  <div class="sub_comment">
+                     <p class="bq" onclick="faceqq('saytext',this,'qq_cdsd')"></p>
+                     <p class="tips">温馨提示：您的评论需要经过审核才能显示,请文明发言！</p>
+                     <p class="bnt"><button class="button" onclick="comment('saytext')">发送评论</button></p>
+                  </div>
+               </div>
+               <div class="comment_box">
+			   <div id="comment_show_data">
+			   			    				                       					 					 </div>
+					  <input value="" id="commentids" type="hidden">
+					                </div>
+            </div>
+         </div>
+      </div>
+      <div class="softny3_r">
+	        <div class="art_lmr softny2_r">
+         <div class="gy_tit">分类导航</div>
+         <div class="fllb">
+                           <a href="http://www.xpgod.com/soft/28/TPLL/" target="_blank">图片浏览</a>
+                            <a href="http://www.xpgod.com/soft/28/tpcl/" target="_blank">图片处理</a>
+                            <a href="http://www.xpgod.com/soft/28/dzxc/" target="_blank">电子相册</a>
+                            <a href="http://www.xpgod.com/soft/28/tpzh/" target="_blank">图片转换</a>
+                            <a href="http://www.xpgod.com/soft/28/46/" target="_blank">动画制作</a>
+                            <a href="http://www.xpgod.com/soft/28/txjt/" target="_blank">图像截图</a>
+                            <a href="http://www.xpgod.com/soft/28/3D/" target="_blank">3D类制作</a>
+                            <a href="http://www.xpgod.com/soft/28/tbgj/" target="_blank">图标工具</a>
+                            <a href="http://www.xpgod.com/soft/28/tpqt/" target="_blank">图像其他</a>
+                        </div>
+          <div class="gy_tit">
+               <a class="tj_hyp" href="javascript:void(0);" id="anzhuo_huan" onclick="show_anzhuo('anzhuo_B')">换一批</a>
+               热门下载
+          </div>
+          <div class="sytj">
+
+           		                  <ul id="anzhuo_A" style="display:block;">
+			   	 				                  <li>
+                 <a href="http://www.xpgod.com/soft/30098.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2015/1228/20151228051653789.png" alt="辰龙捕鱼游戏中心官方免费版">
+                  <p class="t1"><span>辰龙捕鱼游戏中心官方免费版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/30098.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/25768.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2015/0911/20150911050302689.png" alt="大话西游手游安卓版官网手机版">
+                  <p class="t1"><span>大话西游手游安卓版官网手机版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/25768.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/25731.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2015/0518/20150518103608906.png" alt="chemdraw12.0汉化版">
+                  <p class="t1"><span>chemdraw12.0汉化版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/25731.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/22059.html" target="_blank">
+                  <img src="/uploadfile/2015/0122/20150122033319566.png" alt="小皮助手安卓模拟器电脑版">
+                  <p class="t1"><span>小皮助手安卓模拟器电脑版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/22059.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/20641.html" target="_blank">
+                  <img src="/uploadfile/2014/1217/20141217102051603.png" alt="qq浏览器抢票专版2016官方最新版">
+                  <p class="t1"><span>qq浏览器抢票专版2016官方最新版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/20641.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/19738.html" target="_blank">
+                  <img src="/uploadfile/2014/1125/20141125102756952.png" alt="多多网游加速器2015官方免费版">
+                  <p class="t1"><span>多多网游加速器2015官方免费版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/19738.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/18841.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2015/0911/20150911045459575.png" alt="梦幻西游手游官方安卓版">
+                  <p class="t1"><span>梦幻西游手游官方安卓版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/18841.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/18839.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2014/1023/20141023024903110.png" alt="qq空间音乐克隆器2016正式版官方免费版">
+                  <p class="t1"><span>qq空间音乐克隆器2016正式版官方免费版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/18839.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                  <li>
+                 <a href="http://www.xpgod.com/soft/18616.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2014/1017/20141017031102369.png" alt="腾讯电脑管家官方下载2016正式版">
+                  <p class="t1"><span>腾讯电脑管家官方下载2016正式版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/18616.html" target="_blank">立即下载</a>
+                 </li>
+				 				  				                </ul>
+               <ul id="anzhuo_B" style="display:none;">
+			   	                  <li>
+                 <a href="http://www.xpgod.com/soft/16838.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2015/0911/20150911045800916.png" alt="暖暖环游世界无限金币安卓版">
+                  <p class="t1"><span>暖暖环游世界无限金币安卓版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/16838.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/5502.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0222/20130222020848844.png" alt="qq音乐2016最新版官方下载正式版">
+                  <p class="t1"><span>qq音乐2016最新版官方下载正式版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/5502.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/4248.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0401/20130401020459211.jpg" alt="百度杀毒软件2015官方免费版">
+                  <p class="t1"><span>百度杀毒软件2015官方免费版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/4248.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/2912.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0227/20130227043019466.png" alt="360手机助手官方电脑版下载">
+                  <p class="t1"><span>360手机助手官方电脑版下载</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/2912.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/970.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0227/20130227103753618.png" alt="酷狗音乐盒2016官方免费版">
+                  <p class="t1"><span>酷狗音乐盒2016官方免费版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/970.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/921.html" target="_blank">
+                  <img src="http://www.33lc.com/uploadfile/2012/1204/20121204093338815.png" alt="暴风影音播放器2015官方最新版">
+                  <p class="t1"><span>暴风影音播放器2015官方最新版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/921.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/547.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0306/20130306034524220.png" alt="阿里旺旺2016买家版官方下载电脑版">
+                  <p class="t1"><span>阿里旺旺2016买家版官方下载电脑版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/547.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/482.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0226/20130226012908712.png" alt="360浏览器官方稳定正式版">
+                  <p class="t1"><span>360浏览器官方稳定正式版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/482.html" target="_blank">立即下载</a>
+                 </li>
+				                   <li>
+                 <a href="http://www.xpgod.com/soft/471.html" target="_blank">
+                  <img src="http://www.xpgod.com/uploadfile/2013/0226/20130226051202668.png" alt="Qvod快播播放器官方版绿色免费版">
+                  <p class="t1"><span>Qvod快播播放器官方版绿色免费版</span></p>
+                  <span class="cover85"></span>
+                 </a>
+                 <a class="down" href="http://www.xpgod.com/soft/471.html" target="_blank">立即下载</a>
+                 </li>
+				                 </ul>
+           </div>
+      </div>
+         <div class="blph">
+            <div class="gy_tit">本类排行</div>
+            <ul>
+			                  	               <li class="hover">
+                  <p class="top">
+                     <a href="http://www.xpgod.com/soft/14836.html" target="_blank"><img src="/uploadfile/2014/0519/20140519033048173.png" alt="看图纸cadsee plus附注册码"><span class="cover52"></span></a>
+                     <a class="tit" href="http://www.xpgod.com/soft/14836.html" target="_blank">看图纸cadsee plus附注册码</a>
+                     <span class="stars star5"></span>
+                     <span class="time">更新于2016-03-18</span>	
+                     <a class="bnt" href="http://www.xpgod.com/soft/14836.html" target="_blank">点击下载</a>
+                  </p>
+                  <p class="text">本站提供cadsee plus 免费版下载和注册码，cadsee plus免费版是一款多功能电脑看图纸软件，是专门为工程设计人员设计的图纸浏览软件，实现了AutoCAD DWG DWF DXF文件（R14-2014格式）脱离AutoCAD环境的快速查看和打印。</p>
+               </li>
+			                     <li >
+                  <p class="top">
+                     <a href="http://www.xpgod.com/soft/19420.html" target="_blank"><img src="/uploadfile/2014/1114/20141114111139577.png" alt="dwg trueview 2015简体中文版"><span class="cover52"></span></a>
+                     <a class="tit" href="http://www.xpgod.com/soft/19420.html" target="_blank">dwg trueview 2015简体中文版</a>
+                     <span class="stars star5"></span>
+                     <span class="time">更新于2016-03-18</span>	
+                     <a class="bnt" href="http://www.xpgod.com/soft/19420.html" target="_blank">点击下载</a>
+                  </p>
+                  <p class="text">本站提供trueview2015中文版下载，dwg trueview 2015简体中文版是一款cad看图软件由Autodesk公司官方2015年全新发布的；该软件不但能浏览CAD图纸还能进行版本之间的交换。这款软件是Auto CAD的官方发布的软件，该软件功能强大且永久免费，</p>
+               </li>
+			                     <li >
+                  <p class="top">
+                     <a href="http://www.xpgod.com/soft/438.html" target="_blank"><img src="http://www.xpgod.com/UploadPic/2010-7/20107713575719688.jpg" alt="红旗Linux V6.0 SP3中文官方精简安装版"><span class="cover52"></span></a>
+                     <a class="tit" href="http://www.xpgod.com/soft/438.html" target="_blank">红旗Linux V6.0 SP3中文官方精简安装版</a>
+                     <span class="stars star5"></span>
+                     <span class="time">更新于2016-03-15</span>	
+                     <a class="bnt" href="http://www.xpgod.com/soft/438.html" target="_blank">点击下载</a>
+                  </p>
+                  <p class="text"></p>
+               </li>
+			                     <li >
+                  <p class="top">
+                     <a href="http://www.xpgod.com/soft/12598.html" target="_blank"><img src="/uploadfile/2014/0303/20140303102735447.png" alt="acdsee15中文附注册码"><span class="cover52"></span></a>
+                     <a class="tit" href="http://www.xpgod.com/soft/12598.html" target="_blank">acdsee15中文附注册码</a>
+                     <span class="stars star5"></span>
+                     <span class="time">更新于2016-03-18</span>	
+                     <a class="bnt" href="http://www.xpgod.com/soft/12598.html" target="_blank">点击下载</a>
+                  </p>
+                  <p class="text">本站提供acdsee15免费版下载，acdsee15中文免费版是小编由网上收集的，里面包含了acdsee15许可证密钥注册码，让你免费使用acdsee15简体中文版是是非常流行的看图及处理工具之一</p>
+               </li>
+			                     <li >
+                  <p class="top">
+                     <a href="http://www.xpgod.com/soft/193.html" target="_blank"><img src="http://www.xpgod.com/UploadPic/2010-5/201052014411972414.jpg" alt="2010 Linux中文系统1.0 中文版"><span class="cover52"></span></a>
+                     <a class="tit" href="http://www.xpgod.com/soft/193.html" target="_blank">2010 Linux中文系统1.0 中文版</a>
+                     <span class="stars star5"></span>
+                     <span class="time">更新于2016-03-18</span>	
+                     <a class="bnt" href="http://www.xpgod.com/soft/193.html" target="_blank">点击下载</a>
+                  </p>
+                  <p class="text"></p>
+               </li>
+			                                   </ul>
+         </div>
+		 	   <div class="gg">
+		    <span id="21" class="xpTestPos"></span>
+         </div>
+         <div class="rmrj">
+            <div class="gy_tit">热门软件</div>
+            <ul class="clearfix">
+			 
+			                 <li><a href="http://www.xpgod.com/soft/22059.html" target="_blank"><img src="/uploadfile/2015/0122/20150122033319566.png" alt="小皮助手安卓模拟器电脑版"><span>小皮助手安卓模拟器电脑版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/20641.html" target="_blank"><img src="/uploadfile/2014/1217/20141217102051603.png" alt="qq浏览器抢票专版2016官方最新版"><span>qq浏览器抢票专版2016官方最新版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/17412.html" target="_blank"><img src="/uploadfile/2014/0819/20140819045832470.png" alt="小皮手游宝for android手机版"><span>小皮手游宝for android手机版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/5502.html" target="_blank"><img src="http://www.xpgod.com/uploadfile/2013/0222/20130222020848844.png" alt="qq音乐2016最新版官方下载正式版"><span>qq音乐2016最新版官方下载正式版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/4248.html" target="_blank"><img src="http://www.xpgod.com/uploadfile/2013/0401/20130401020459211.jpg" alt="百度杀毒软件2015官方免费版"><span>百度杀毒软件2015官方免费版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/2912.html" target="_blank"><img src="http://www.xpgod.com/uploadfile/2013/0227/20130227043019466.png" alt="360手机助手官方电脑版下载"><span>360手机助手官方电脑版下载</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/1879.html" target="_blank"><img src="/uploadfile/2013/0503/20130503053920646.jpg" alt="9158多人视频软件2015官方免费版"><span>9158多人视频软件2015官方免费版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/921.html" target="_blank"><img src="http://www.33lc.com/uploadfile/2012/1204/20121204093338815.png" alt="暴风影音播放器2015官方最新版"><span>暴风影音播放器2015官方最新版</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/547.html" target="_blank"><img src="http://www.xpgod.com/uploadfile/2013/0306/20130306034524220.png" alt="阿里旺旺2016"><span>阿里旺旺2016</span><em class="cover24"></em></a></li>
+                              <li><a href="http://www.xpgod.com/soft/313.html" target="_blank"><img src="http://www.xpgod.com/uploadfile/2013/0313/20130313102645403.png" alt="爱奇艺影音播放器"><span>爱奇艺影音播放器</span><em class="cover24"></em></a></li>
+               			   
+            </ul>
+         </div>
+         <div class="rmgjc">
+            <div class="gy_tit">热门关键词</div>
+            <div class="box">
+												               <a class="ys1" href="http://www.xpgod.com/soft/15655.html" target="_blank">vst全聚合电脑版</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/18132.html" target="_blank">支付宝下载</a>
+									               <a class="ys3" href="http://www.xpgod.com/soft/24252.html" target="_blank">qq2016最新版官方下载</a>
+									               <a class="ys1" href="http://www.xpgod.com/soft/4127.html" target="_blank">微信电脑版官方下载</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/20446.html" target="_blank">360抢票王三代</a>
+									               <a class="ys3" href="http://www.xpgod.com/soft/99.html" target="_blank">360安全卫士下载</a>
+									               <a class="ys1" href="http://www.xpgod.com/soft/18147.html" target="_blank">win10正式版下载</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/3970.html" target="_blank">仿宋GB2312字体下载</a>
+									               <a class="ys3" href="http://www.xpgod.com/soft/11297.html" target="_blank">我的世界1.7.2下载</a>
+									               <a class="ys1" href="ttp://www.xpgod.com/soft/18639.html" target="_blank">肥佬播放器下载</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/18485.html" target="_blank">360杀毒软件下载2016官方下载</a>
+									               <a class="ys3" href="http://www.xpgod.com/soft/26480.html" target="_blank">wps2016官方下载免费完整版</a>
+									               <a class="ys1" href="http://www.xpgod.com/soft/690.html" target="_blank">驱动精灵网卡版</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/71.html" target="_blank">pptv电视播放器2016最新版</a>
+									               <a class="ys3" href="http://www.xpgod.com/soft/770.html" target="_blank">迅雷看看播放器官方下载</a>
+									               <a class="ys1" href="http://www.xpgod.com/soft/970.html" target="_blank">酷够音乐盒2016官方免费下载</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/921.html" target="_blank">暴风影音2016官方下载</a>
+									               <a class="ys3" href="http://www.xpgod.com/soft/57.html" target="_blank">酷我音乐盒2016官方免费下载</a>
+									               <a class="ys1" href="http://www.xpgod.com/soft/24056.html" target="_blank">我的世界盒子下载</a>
+									               <a class="ys2" href="http://www.xpgod.com/soft/20487.html" target="_blank">安卓模拟器中文版</a>
+			                       </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer">
+   <div class="menu">
+      <a class="logo_foot" href="/"><img src="/statics/skin_img/logo_foot.png" alt="系统天堂"></a>
+      <div class="menu_r">
+        <ul>
+			<a href="/support/about.html" rel="nofollow" target="_blank" >关于本站</a><span>|</span>
+			<a href="/support/help.html" rel="nofollow" target="_blank" >网站帮助</a><span>|</span>
+			<a href="/support/advertise.html" rel="nofollow" target="_blank" >广告合作</a><span>|</span>
+			<a href="/support/rjfb.html" rel="nofollow" target="_blank" >软件发布</a><span>|</span>
+			<a href="/support/declare.html" rel="nofollow" target="_blank" >下载声明</a><span>|</span>
+			<a href="http://www.xpgod.com/link/" target="_blank">友情连接</a><span>|</span>
+			<a href="http://www.xpgod.com/sitemap.html" target="_blank" >网站地图</a><span>|</span>
+			<a href="http://www.xpgod.com/sitemaps.xml" target="_blank" >网站RSS</a>
+        </ul>
+        <p>闽ICP备15019302号-1</p>
+      </div>
+    </div>
+	<span id="28" class="xpTestPos"></span>
+<script type="text/javascript" src="/statics/skin_js/jquery.xpgod.js?1458283345"></script>
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	
+<script>xpLoader()</script><script class="closetag">xpLoader(true)</script>	</div>
+<script language="JavaScript" src="http://www.xpgod.com/api.php?op=count&id=604&modelid=2"></script>
+<script type="text/javascript" src="/statics/skin_js/comment.js"></script>
+<script type="text/javascript" src="/statics/skin_js/news_xpgod.js"></script>
+<script type="text/javascript" src="/statics/skin_js/reprint.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+function count_down(id,action){
+$.get("/api.php?op=countdown&action="+action+"&id="+id);
+}
+$('#d1d li a').click(function(){
+count_down('604','counts');
+});
+
+
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+安装说明；
+
+1.进行数据还原操作，访问：http//域名/Huifu 用户名：admin 密码：123456
+
+2.配置Mysql数据库连接路径： e\config\config.php 和 m-WAP手机端\e\config\config.php （共2处）
+
+3.后台管理地址：http://域名/e/admin/ 用户名：admin 密码：suibianlu.com520
+
+

@@ -1,0 +1,1 @@
+document.write("<div style=\"background:#fff;width:298px;height:208px;overflow:hidden;margin:auto;border:1px #f60 dashed;text-align:center;\">id_7诱导下载广告位-300*210</div>")

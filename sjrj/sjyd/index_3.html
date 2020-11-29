@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="GBK">
+		<title>手机阅读 - 1000s分享站</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="/shouji/statics/skin_css/index.css?sd" />
+		<script  type="text/javascript" src="/shouji/statics/skin_js/jquery-1.8.3.min.js"></script>
+		<script  type="text/javascript" src="/shouji/statics/skin_js/searchword.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/jquery.global.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/tupqh.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<base target="_blank" />
+	</head>
+	<body>
+<div class="top_bj">
+  <div class="top">
+    <div class="top_lf">
+      <ul>
+        <li><a href="http://www.1000s.cc" class="top_menu_a">首页</a></li>
+        <li onmouseover="show('quanzdh');" onmouseout="hide('quanzdh');" id="bj_hover" class=""> <a href="javascript:void(0)" target="_self" class="top_menu_a dh_bj">全站导航</a>
+          <div id="quanzdh" style="display: none;">
+            <div class="qh_top">
+              <div class="qh_top_title">下载专区</div>
+              <div class="qh_top_list"> <a href="/fjyx/" class="dh_a">游戏库</a> <a href="/sjrj/" class="dh_a">软件库</a> </div>
+              <div class="qh_top_title">资讯中心</div>
+              <div class="qh_top_list zx"> <a href="/news/gonglue/" class="dh_a">手游攻略</a> <a href="/news/yueyu/" class="dh_a">越狱教程</a> <a href="/news/shuaji/" class="dh_a">刷机教程</a> <a href="/news/video/" class="dh_a">精彩视频</a> <a href="/news/zixun/" class="dh_a">新闻资讯</a> </div>
+            </div>
+            <div class="qh_bottom">
+              <div class="qh_bottom_title">热门游戏</div>
+              <div class="qh_bottom_list">
+			  <a href="/phone/6337.html" class="qhbt_a">梦幻西游3</a> 
+			  <a href="/phone/5575.html" class="qhbt_a">斗犬OL</a> 
+			  <a href="/phone/5103.html" class="qhbt_a">御剑情缘</a> 
+			  <a href="/phone/6339.html" class="qhbt_a">决斗英雄</a> 
+			  <a href="/phone/6338.html" class="qhbt_a">天天打波利</a> 
+			  <a href="/phone/4902.html" class="qhbt_a">守望前线</a> 
+			  <a href="/phone/5335.html" class="qhbt_a">开心农场2:乡村度假无限钥匙版</a> 
+			  <a href="/phone/5561.html" class="qhbt_a">梦幻降魔录</a> 
+			  </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="top_rg"> <a onclick="SetHome(this,window.location)" class="top_menu_a a_pad">设为首页</a> <a class="top_menu_a a_pad" onclick="shoucang(document.title,window.location)">收藏本站</a> </div>
+  </div>
+</div>
+<div class="daohang_bj">
+  <div class="daohang">
+    <div class="search-box">
+      <form class="search-form" action="/e/search/index.php" method="post" name="searchform" id="searchform" target="_blank">
+        <input class="search-text" type="text" name="keyboard" id="keyboard">
+        <input type="image" class="search-btn" src="/shouji/statics/skin_img/search-btn.png">
+        <div class="search-select">
+          <div class="search-type">
+            <select name="tbname">
+              <option value="news" class="sedsa">资讯</option>
+              <option value="soft" class="sedsa">软件</option>
+              <option value="phone" class="sedsa">手机</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+      </form>
+    </div>
+    <div class="dh_logo"><a href="/" target="_self"><img src="/shouji/statics/skin_img//logo.png" alt="logo" target="_self"></a></div>
+    <div class="dh_menu dh_menu_paih">
+      <ul>
+        <li class="paihb_menu_li"><a href="/fjyx/" class="d_manu_a">下游戏</a><a href="/fjyx/xxyz/" class="x_menu_a">休闲</a><a href="/fjyx/sjqz/" class="x_menu_a">射击</a><a href="/shouji/phb.html" class="x_menu_a">排行</a></li>
+        <li class="paihb_menu_li"><a href="/sjrj/" class="d_manu_a">装应用</a><a href="/sjrj/xtgj/" class="x_menu_a">系统</a><a href="/sjrj/sjdh/" class="x_menu_a">导航</a><a href="/sjrj/sjyd/" class="x_menu_a">阅读</a></li>
+        <li class="paihb_menu_li"><a href="/news/" class="d_manu_a">看资讯</a><a href="/news/gonglue/" class="x_menu_a">攻略</a><a href="/news/yueyu/" class="x_menu_a">越狱</a><a href="/news/zixun/" class="x_menu_a">新闻</a></li>
+        <li class="paihb_menu_li"><a href="/news/video/" class="d_manu_a">看视频</a><a href="/news/shuaji/" class="x_menu_a">刷机</a><a href="/article/hardware/" class="x_menu_a">硬件</a><a href="/article/wljs/" class="x_menu_a">技术</a></li>
+      </ul>
+    </div>
+    <div class="dh_rmss"> 热门搜索:<a href='/e/search/result/?searchid=21' target=_blank>梦幻西游</a>&nbsp;<a href='/e/search/result/?searchid=23' target=_blank>qq</a>&nbsp;<a href='/e/search/result/?searchid=9' target=_blank>qq2016</a>&nbsp;<a href='/e/search/result/?searchid=22' target=_blank>360</a>&nbsp;<a href='/e/search/result/?searchid=29' target=_blank>2016</a>&nbsp;<a href='/e/search/result/?searchid=28' target=_blank>西游</a><br> </div>
+  </div>
+</div>
+
+		<div class="main_bj main_bjs">
+			<div class="w1204">
+				<div class="main_bpic">
+					<div class="bpic1"><script src="/d/js/acmsd/thea1.js"></script></div>
+    				<div class="bpic2"><script src="/d/js/acmsd/thea2.js"></script></div>
+				</div>
+				<div class="search_bj">
+					<div class="main_lf search_main_lfs">
+						<div class="main_lf_weizhi">您的位置：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/sjrj/">软件库</a>&nbsp;>&nbsp;<a href="/sjrj/sjyd/">手机阅读</a></div>
+						<div class="search_hd">
+							<div class="sliderbox">
+								<div class="btn_bj lfbd"><div id="btn-left" class="arrow-btn dasabled" style="cursor: auto;"></div></div>
+								<div class="slider">
+									<ul> 
+										<li>
+											<a href="/phone/4065.html" title="慕课网">
+												<img src="/d/file/huoche/2016052111/20160311091813133.png" alt="慕课网" />
+												<span></span>
+												<b class="slider_name">慕课网</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4062.html" title="汤圆创作">
+												<img src="/d/file/huoche/2016052111/20160311105725904.png" alt="汤圆创作" />
+												<span></span>
+												<b class="slider_name">汤圆创作</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4029.html" title="简书">
+												<img src="/d/file/huoche/2016052111/20160316110329110.png" alt="简书" />
+												<span></span>
+												<b class="slider_name">简书</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/4017.html" title="英语趣配音">
+												<img src="/d/file/huoche/2016052111/20160315103126349.png" alt="英语趣配音" />
+												<span></span>
+												<b class="slider_name">英语趣配音</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3999.html" title="知米背单词">
+												<img src="/d/file/huoche/2016052111/20160317094153665.png" alt="知米背单词" />
+												<span></span>
+												<b class="slider_name">知米背单词</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3994.html" title="微课掌上通">
+												<img src="/d/file/huoche/2016052111/20160317105834727.png" alt="微课掌上通" />
+												<span></span>
+												<b class="slider_name">微课掌上通</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3989.html" title="懒人听英语">
+												<img src="/d/file/huoche/2016052111/20160318032956332.png" alt="懒人听英语" />
+												<span></span>
+												<b class="slider_name">懒人听英语</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3978.html" title="元气弹漫画">
+												<img src="/d/file/huoche/2016052111/20160322094626508.jpg" alt="元气弹漫画" />
+												<span></span>
+												<b class="slider_name">元气弹漫画</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3957.html" title="Owhat">
+												<img src="/d/file/huoche/2016052111/20160321030626443.png" alt="Owhat" />
+												<span></span>
+												<b class="slider_name">Owhat</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3953.html" title="The Verge">
+												<img src="/d/file/huoche/2016052111/20160321090844322.png" alt="The Verge" />
+												<span></span>
+												<b class="slider_name">The Verge</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3935.html" title="翻易通">
+												<img src="/d/file/huoche/2016052111/20160324092653700.png" alt="翻易通" />
+												<span></span>
+												<b class="slider_name">翻易通</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3924.html" title="易车网">
+												<img src="/d/file/huoche/2016052111/20160328062748404.png" alt="易车网" />
+												<span></span>
+												<b class="slider_name">易车网</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3899.html" title="网易漫画">
+												<img src="/d/file/huoche/2016052111/20160325020600264.png" alt="网易漫画" />
+												<span></span>
+												<b class="slider_name">网易漫画</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3884.html" title="点点听书">
+												<img src="/d/file/huoche/2016052111/20160331100926768.png" alt="点点听书" />
+												<span></span>
+												<b class="slider_name">点点听书</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3863.html" title="咪咕阅读">
+												<img src="/d/file/huoche/2016052111/20160331024050178.jpg" alt="咪咕阅读" />
+												<span></span>
+												<b class="slider_name">咪咕阅读</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+										<li>
+											<a href="/phone/3864.html" title="快读小说">
+												<img src="/d/file/huoche/2016052111/20160331015935364.png" alt="快读小说" />
+												<span></span>
+												<b class="slider_name">快读小说</b>
+												<b class="slider_sort">手机阅读</b>
+											</a>
+										</li>
+								</div>
+								<div class="btn_bj rgbd"><div id="btn-right" class="arrow-btn" style="cursor: pointer;"></div></div>
+							  </div>
+						</div>
+						<div class="search_title">
+							<span class="search_title_lf">分类筛选</span>
+							<span class="search_title_rg">共计<b>104</b>款游戏</span>
+						</div>
+						<div class="search_sort">
+							<div class="search_pingtai">
+								<span class="search_tips">类别：</span>
+								<ul class="search_sort_ul">
+								<li class="search_sort_li "><a href="/sjrj/" target="_self">全部<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/xtgj/" target="_self">系统工具<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/mtbf/" target="_self">媒体播放<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/tpcl/" target="_self">图片处理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/wlll/" target="_self">网络浏览<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/txgl/" target="_self">通讯管理<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/sjdh/" target="_self">手机导航<span></span></a></li>
+													<li class="search_sort_li  searc_cur"><a href="/sjrj/sjyd/" target="_self">手机阅读<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/bjsh/" target="_self">便捷生活<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/spmh/" target="_self">锁屏美化<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/srf/" target="_self">输入法<span></span></a></li>
+													<li class="search_sort_li  "><a href="/sjrj/qtyy/" target="_self">其他应用<span></span></a></li>
+																		
+								</ul>
+							</div>
+						</div>
+						<div class="sort_list">
+							<ul class="sort_ul">
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4214.html" title="腾讯动漫">腾讯动漫</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4214.html" title="腾讯动漫" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160226090000510.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4214.html" title="腾讯动漫" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">腾讯动漫</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">腾讯动漫app下载是一款正版高清漫画阅读应用。热血、玄幻、恐怖、搞笑等各种类型漫画应有尽有，想看就看！“腾讯动漫”给您一个漫画书城！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4207.html" title="腾讯画报">腾讯画报</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4207.html" title="腾讯画报" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160226095347886.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4207.html" title="腾讯画报" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">腾讯画报</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">腾讯画报app下载是腾讯公司重磅推出的首款第三方图片社交应用。总有故事在身边，腾讯画报帮你用图片讲述故事，创作故事轻松流畅，多款模板随意切换，我们的生活，总有你好看。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4208.html" title="新浪博客">新浪博客</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4208.html" title="新浪博客" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160226093847392.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4208.html" title="新浪博客" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">新浪博客</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">新浪博客app下载是一款新浪博客网站手机端登入平台，方便用户移动记事，移动分享精彩的事物，随身关注好友微博动态，随时关注热点资讯等等。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4203.html" title="听会早新闻">听会早新闻</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4203.html" title="听会早新闻" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160226090657261.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4203.html" title="听会早新闻" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">听会早新闻</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">听会早新闻app下载是一款早间新闻阅读应用平台。听会早新闻时间客户端这个新闻阅读应用最大的特点就是可以听的新闻，又是一款懒癌患者最爱的应用。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4181.html" title="唔哩">唔哩</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4181.html" title="唔哩" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160301013520864.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4181.html" title="唔哩" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">唔哩</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">唔哩是一款专门为年轻人量身打造的泛阅读类新闻资讯app，拥有优质新鲜有趣的内容，个性化推荐的资讯，诚意满满的场景，娱乐互动的酷炫弹幕，满足用户任何时间和场景下轻松愉快的阅读需求，是年轻人的专属阅读神器。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4176.html" title="有道翻译官">有道翻译官</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4176.html" title="有道翻译官" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160303104330493.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4176.html" title="有道翻译官" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">有道翻译官</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">有道翻译官下载是网易有道公司出品的翻译应用，支持中英、中日、中韩和中法等多语种离线翻译，在没有网络的情况下也能顺畅使用。同时配备强大的摄像头取词和短信翻译功能，无需手动输入便可快速获取翻译结果。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4135.html" title="可可英语">可可英语</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4135.html" title="可可英语" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160306093318990.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4135.html" title="可可英语" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">可可英语</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">可可英语ios版下载是一款英语学习手机客户端，其内容涵盖了约上千个网站精选栏目。这其中包括了许多市面上需付费学习的内容，但是在我们的学习平台完全免费开放，资料齐全，质量优异。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4123.html" title="财经头条电脑版">财经头条电脑版</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4123.html" title="财经头条电脑版" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160309102228606.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4123.html" title="财经头条电脑版" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">财经头条电脑版</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">财经头条电脑版下载是一款为您提供财经行情，财经资讯的数据挖掘、个性化财经资讯智能推荐的应用。“财经头条”通过智能算法推荐用户应该知道的财经大事，满足用户需求、超越用户期望，实时推荐：快速、准确推荐用户感兴趣新闻，越用越懂你。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4112.html" title="国务院">国务院</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4112.html" title="国务院" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160307084054110.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4112.html" title="国务院" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">国务院</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">国务院手机客户端是国务院发布政务信息和提供在线服务的新媒体平台，由国务院办公厅主办，中国政府网运行中心负责运行维护。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4097.html" title="英语四级君">英语四级君</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4097.html" title="英语四级君" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160308102340276.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4097.html" title="英语四级君" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">英语四级君</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">英语四级君手机端下载是一款在线免费英语四级学习应用。  "英语四级君  "为您提供海量英语学习视频、词库、做题等功能，内容涵盖英语四级词汇、语法、听力、阅读、写作翻译等全部题型，让您轻松过英语四级考试。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4099.html" title="沪江听力酷">沪江听力酷</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4099.html" title="沪江听力酷" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160309085544601.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4099.html" title="沪江听力酷" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">沪江听力酷</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">沪江听力酷电脑版下载：想要一款随时随地的练听力应用？流量不够，想要离线练听力？听不清的时候想要循环复读、攻克难点？想要个性化的听力进阶方案？就来下载沪江听力酷体验。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4087.html" title="十句话">十句话</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4087.html" title="十句话" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160310090112362.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4087.html" title="十句话" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">十句话</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">十句话app下载：从平时的说话就可以看出一个人的性格，你信不信，反正小编是信了，话多容易出纰漏，祸从口出也是这个道理。每天十句话练习一个人的说话水平。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4065.html" title="慕课网">慕课网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4065.html" title="慕课网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160311091813133.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4065.html" title="慕课网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">慕课网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">慕课网app下载是一款it人士必备的手机客户端阅读神器，这是一个专门提供免费的互联网技术课程学习平台，课程涵盖了it行业的开发应用技术文章视频教程。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4062.html" title="汤圆创作">汤圆创作</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4062.html" title="汤圆创作" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160311105725904.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4062.html" title="汤圆创作" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">汤圆创作</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">汤圆创作电脑版下载是一款专门为写手创造的一个平台，可以让作者们和文学爱好者们立即写下自己的心得和灵感。汤圆创作app写到哪存到哪、写多少存多少；文学无价创作有酬！文学奖、大赛奖、创作基金、杂志稿酬。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4029.html" title="简书">简书</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4029.html" title="简书" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160316110329110.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4029.html" title="简书" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">简书</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">简书app手机版下载是一个开放而友好的社区，每个人都可以在这里自由地发现或是分享内容。热点新闻资讯解读、长微博、名人直播、最新段子都可以直接在这里阅读。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/4017.html" title="英语趣配音">英语趣配音</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/4017.html" title="英语趣配音" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160315103126349.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/4017.html" title="英语趣配音" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">英语趣配音</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">英语趣配音app下载是一款将被动学习英语变成兴趣学习的应用。“英语趣配音”提供热门国际大片、英文歌、动漫、英美剧等，任您离线配音、合成，做您的英语配音视频!让您学习、备战英语考试无压力！</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3999.html" title="知米背单词">知米背单词</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3999.html" title="知米背单词" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160317094153665.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3999.html" title="知米背单词" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">知米背单词</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">知米背单词电脑版下载是一款创新记忆单词的应用。原优趣背单词正式改名“知米背单词”，一如既往的陪伴您掌握单词，利用搭配记单词。帮助您不仅能记住单词，更学会如何用单词!</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3994.html" title="微课掌上通">微课掌上通</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3994.html" title="微课掌上通" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160317105834727.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3994.html" title="微课掌上通" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">微课掌上通</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">微课掌上通电脑版下载是一款教师与学生家长互动的手机应用。老师可通过 "微课掌上通 "给家长送通知、作业、日常表现、成绩等信息，家长实时接收这些信息，实现家校互联，让您随时随地都能了解到自己孩子的在校以及学习情况。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3989.html" title="懒人听英语">懒人听英语</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3989.html" title="懒人听英语" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160318032956332.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3989.html" title="懒人听英语" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">懒人听英语</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">懒人听英语app下载是一款英语学习练习辅助软件，让你学英语不在那么困难。初中英语、高中英语、大学英语、大学考试英语、新概念英语、商务英语、出国英语、VOA英语、日常口语、听电影学英语、听故事学英语、走遍美国、李阳疯狂英语等等。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3978.html" title="元气弹漫画">元气弹漫画</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3978.html" title="元气弹漫画" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160322094626508.jpg" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3978.html" title="元气弹漫画" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">元气弹漫画</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂官网提供元气弹漫画app下载，这是一款漫画作品欣赏聚集地，漫画已经深深的受到大家的喜爱，现在很多的知名漫画都可以直接用手机app漫画软件观看了，你还不下载元气弹漫画app么？</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3957.html" title="Owhat">Owhat</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3957.html" title="Owhat" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160321030626443.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3957.html" title="Owhat" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">Owhat</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">owhat官网下载与众多娱乐公司合作，为粉丝提供大量时下最热的明星线下活动的在线预定通道。合作公司涉及电影制作 发行 营销公司;经纪公司;娱乐公关公司;演出公司、媒体等。他们在这里直接免费粉丝的购买与互动。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3953.html" title="The Verge">The Verge</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3953.html" title="The Verge" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160321090844322.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3953.html" title="The Verge" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">The Verge</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">the verge中文版下载是一款美国科技新闻资讯手机客户端，专业的科技新闻，评测技术，硬件资讯等等一切跟科技挂钩的资讯应用新闻阅读工具。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3935.html" title="翻易通">翻易通</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3935.html" title="翻易通" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160324092653700.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3935.html" title="翻易通" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">翻易通</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供一款韩国人气第一的手机翻译软件，翻易通app下载，这是一个覆盖全球两百多个国家的语言翻译软件，功能强大是无人能及，出国在外最需要的就是翻译了。</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<li class="sort_li">
+									<div class="sort_li_top">
+										<p class="li_top_name"><a href="/phone/3924.html" title="易车网">易车网</a></p>
+										<p class="li_top_others">系统&nbsp;|&nbsp;1人安装</p>
+									</div>
+									<div class="sort_li_bt">
+										<a href="/phone/3924.html" title="易车网" class="li_bt_a addzw">
+											<img src="/d/file/huoche/2016052111/20160328062748404.png" /><span class="bt_txt">适用于：安卓,苹果</span>
+										</a>
+									</div>
+									<div class="sort_hover">
+										<a href="/phone/3924.html" title="易车网" class="sort_a">
+										<div class="sort_hover_top">
+											<p class="hover_top_name">易车网</p>
+											<p class="hover_top_others">1人安装</p>
+										</div>
+										<div class="sort_hover_md">手机天堂提供易车网app下载，这是一款汽车新闻门户,汽车视频,汽车报价大全为一体的汽车资讯易车手机客户端。你身边的选车专家，助你花少钱选好车!</div>
+										<div class="sort_hover_bt"><span>查看详情</span></div>
+                                                                             </a>
+									</div>
+								</li>
+<!--list.var5-->
+
+																						</ul>
+						</div>
+						<div class="fenye">
+							<ul class="fenye_ul"><a href="/sjrj/sjyd/index_2.html" class="pre" target="_self"><em>上一页</em></a><a href="/sjrj/sjyd/index.html" target="_self">首页</a><a href="/sjrj/sjyd/index.html" target="_self">1</a><a href="/sjrj/sjyd/index_2.html" target="_self">2</a><span>3</span><a href="/sjrj/sjyd/index_4.html" target="_self">4</a><a href="/sjrj/sjyd/index_5.html" target="_self">5</a><a href="/sjrj/sjyd/index_5.html" target="_self">尾页</a><a href="/sjrj/sjyd/index_4.html" class="next" target="_self"><em>下一页</em></a></ul>
+						</div>
+					</div>
+					<div class="main_rg search_main_rgs">
+						<script src="/d/js/acmsd/thea16.js"></script>
+						<div class="main_rg_yxtj">
+							<div class="yxtj_title"><span class="titles">热门推荐</span></div>
+							<div class="yxtj_list">
+								<ul class="search_yxtj_ul">
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="杂志汇"><img src="/d/file/huoche/2016052111/20160422033741235.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="杂志汇">杂志汇</a></p>
+												<p class="li_rg_other">7.92 MB&nbsp;|&nbsp;2次下载</p>
+												<p class="li_rg_other">手机阅读</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="掌上TGP"><img src="/d/file/huoche/2016052111/20160419040100921.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="掌上TGP">掌上TGP</a></p>
+												<p class="li_rg_other">18.9MB&nbsp;|&nbsp;1次下载</p>
+												<p class="li_rg_other">手机阅读</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="北京时间"><img src="/d/file/huoche/2016052111/20160419035540783.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="北京时间">北京时间</a></p>
+												<p class="li_rg_other">10.7MB&nbsp;|&nbsp;1次下载</p>
+												<p class="li_rg_other">手机阅读</p>
+											</div>
+										</li>
+							
+										<li class="search_yxtj_li">
+											<div class="search_li_img"><a href="?=$bqsr['titleurl']?>" title="微头条"><img src="/d/file/huoche/2016052111/20160419104440121.png" /><span></span></a></div>
+											<div class="search_li_rg">
+												<p class="li_rg_name"><a href="?=$bqsr['titleurl']?>" title="微头条">微头条</a></p>
+												<p class="li_rg_other">7.53MB&nbsp;|&nbsp;1次下载</p>
+												<p class="li_rg_other">手机阅读</p>
+											</div>
+										</li>
+																	
+								</ul>
+							</div>
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件专题</span></div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/minecraft/" class="rmzt_a" title="minecraft下载">
+									<img src="/d/file/p/2016-05-24/495c6d743bed4645b18edf9e114315c2.png" alt="minecraft下载">
+									<b>minecraft下载</b>	
+								</a>
+							</div>
+							<div class="rmzt_main mt14">
+								<a href="/zhuanti/yxlmfzdq/" class="rmzt_a" title="英雄联盟辅助大全">
+									<img src="/d/file/p/2016-05-25/1a5050ecad80a1413dd27821a14790ef.png" alt="英雄联盟辅助大全">
+									<b>英雄联盟辅助大全</b>	
+								</a>
+							</div>
+                    								
+						</div>
+						<div class="main_rg_rmzt main_rg_search">
+							<div class="yxtj_title"><span class="titles">软件排行榜</span></div>
+								<div class="forth_rg_list">
+									<ul class="forth_ul">
+										<li class="forth_li w78">排名</li>
+										<li class="forth_li w91">软件</li>
+										<li class="forth_li w68">人气</li>
+										<li class="forth_li w30">下载</li>
+									</ul>
+								</div>
+								<div class="forth_rg_rank">
+									<ul class="forth_ul_main">
+									 							  									 							  
+	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">1</span>
+												<span class="rank_name"><a href="/phone/4850.html" title="双开大师">双开大师</a></span>
+												<span class="rank_renqi">41</span>
+												<span class="rank_download"><a href="/phone/4850.html" title="双开大师">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">2</span>
+												<span class="rank_name"><a href="/phone/4474.html" title="腾讯wifi管家">腾讯wifi管家</a></span>
+												<span class="rank_renqi">23</span>
+												<span class="rank_download"><a href="/phone/4474.html" title="腾讯wifi管家">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co13">3</span>
+												<span class="rank_name"><a href="/phone/6346.html" title="电视猫">电视猫</a></span>
+												<span class="rank_renqi">16</span>
+												<span class="rank_download"><a href="/phone/6346.html" title="电视猫">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">4</span>
+												<span class="rank_name"><a href="/phone/6340.html" title="快手">快手</a></span>
+												<span class="rank_renqi">9</span>
+												<span class="rank_download"><a href="/phone/6340.html" title="快手">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">5</span>
+												<span class="rank_name"><a href="/phone/6345.html" title="芒果TV">芒果TV</a></span>
+												<span class="rank_renqi">8</span>
+												<span class="rank_download"><a href="/phone/6345.html" title="芒果TV">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">6</span>
+												<span class="rank_name"><a href="/phone/4842.html" title="万能遥控">万能遥控</a></span>
+												<span class="rank_renqi">7</span>
+												<span class="rank_download"><a href="/phone/4842.html" title="万能遥控">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">7</span>
+												<span class="rank_name"><a href="/phone/3564.html" title="随笔记">随笔记</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/3564.html" title="随笔记">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">8</span>
+												<span class="rank_name"><a href="/phone/4812.html" title="百度地图导航">百度地图导航</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/4812.html" title="百度地图导航">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">9</span>
+												<span class="rank_name"><a href="/phone/6343.html" title="PPTV网络电视">PPTV网络电视</a></span>
+												<span class="rank_renqi">6</span>
+												<span class="rank_download"><a href="/phone/6343.html" title="PPTV网络电视">下载</a></span>
+											</div>
+										</li>	
+										<li class="forth_li_main">
+											<div class="forth_li_top">
+												<span class="rank co410">10</span>
+												<span class="rank_name"><a href="/phone/4644.html" title="百度一键ROOT">百度一键ROOT</a></span>
+												<span class="rank_renqi">5</span>
+												<span class="rank_download"><a href="/phone/4644.html" title="百度一键ROOT">下载</a></span>
+											</div>
+										</li>										                                                                           											    									</ul>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="footer">
+			<p class="footer_top"><a href="/support/about.html">关于本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/help.html">网站帮助</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/advertise.html">广告合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/rjfb.html">软件发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">下载声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/support/declare.html">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemap.html">网站地图</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/sitemaps.xml">网站RSS</a></p>
+			<p class="footer_md">手机天堂是国内最专业的手机软件、手机游戏下载中心,手机天堂以服务用户为理念，努力打造成国内最大、最安全快速的手机软件、手机游戏下载平台。</p>
+		</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2016816'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/stat.php%3Fid%3D2016816%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>		</div>
+ 
+		<script type="text/javascript" src="/shouji/statics/skin_js/homeindex.js"></script>
+		<script src="/shouji/statics/skin_js/common.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/shouji/statics/skin_js/script_index2.js"></script>
+	</body>
+</html>
